@@ -37,6 +37,8 @@ The app uses `output: 'standalone'` in `next.config.mjs`, so Docker copies the m
 
 ## VPS Deployment
 
+### Caddy-only VPS
+
 1. Point DNS to the VPS:
 
 ```text
@@ -68,6 +70,20 @@ Expected behavior:
 - `http://polstan.ru` redirects to HTTPS.
 - `https://www.polstan.ru` redirects to `https://polstan.ru`.
 - Caddy issues and renews the TLS certificate automatically.
+
+### Existing nginx VPS
+
+Use this path when nginx already owns ports `80` and `443` on the server.
+
+```bash
+docker compose -f docker-compose.nginx.yml -p polstan up -d --build
+cp deploy/nginx/polstan.ru.conf /etc/nginx/sites-available/polstan.ru
+ln -sfn /etc/nginx/sites-available/polstan.ru /etc/nginx/sites-enabled/polstan.ru
+nginx -t && systemctl reload nginx
+certbot --nginx -d polstan.ru -d www.polstan.ru
+```
+
+The Next.js container binds to `127.0.0.1:3002` by default. Override with `POLSTAN_APP_PORT` if that port is already used.
 
 ## Roistat Attribution
 

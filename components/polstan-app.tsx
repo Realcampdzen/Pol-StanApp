@@ -341,16 +341,16 @@ function Proof({ content }: { content: SiteContent }) {
           </div>
         </motion.div>
         <motion.div
-          className="grid gap-3 sm:grid-cols-[1.2fr_0.8fr]"
+          className="grid gap-3 lg:grid-cols-[1.2fr_0.8fr]"
           initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.7, delay: 0.08 }}
           viewport={{ once: true, margin: '-120px' }}
           whileInView={{ opacity: 1, scale: 1 }}
         >
-          <div className="relative min-h-[390px] overflow-hidden border border-white/10">
+          <div className="relative aspect-[5/4] overflow-hidden border border-white/10 lg:aspect-auto lg:min-h-[390px]">
             <Image
               alt="Concert crowd with blue stage lighting"
-              className="object-cover"
+              className="object-cover object-top"
               fill
               sizes="(max-width: 768px) 100vw, 55vw"
               src="/media/crowd-stage.jpg"
@@ -358,10 +358,10 @@ function Proof({ content }: { content: SiteContent }) {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           </div>
           <div className="grid gap-3">
-            <div className="relative min-h-[188px] overflow-hidden border border-white/10">
+            <div className="relative aspect-[4/3] overflow-hidden border border-white/10 lg:aspect-auto lg:min-h-[188px]">
               <Image
                 alt="Tour team with instruments"
-                className="object-cover"
+                className="object-cover object-top"
                 fill
                 sizes="(max-width: 768px) 100vw, 30vw"
                 src="/media/tour-team.jpg"

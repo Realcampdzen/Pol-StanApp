@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_TELEGRAM_USERNAME: ${NEXT_PUBLIC_TELEGRAM_USERNAME:-polstan}
+    environment:
+      NEXT_PUBLIC_TELEGRAM_USERNAME: ${NEXT_PUBLIC_TELEGRAM_USERNAME:-polstan}
+    ports:
+      - "${POLSTAN_APP_BIND:-127.0.0.1}:${POLSTAN_APP_PORT:-3002}:3000"
+    restart: unless-stopped
