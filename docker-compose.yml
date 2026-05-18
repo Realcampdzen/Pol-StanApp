@@ -1,0 +1,32 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_TELEGRAM_USERNAME: ${NEXT_PUBLIC_TELEGRAM_USERNAME:-polstan}
+    environment:
+      NEXT_PUBLIC_TELEGRAM_USERNAME: ${NEXT_PUBLIC_TELEGRAM_USERNAME:-polstan}
+    restart: unless-stopped
+    expose:
+      - "3000"
+
+  caddy:
+    image: caddy:2.8-alpine
+    depends_on:
+      - web
+    environment:
+      ACME_EMAIL: ${ACME_EMAIL:-admin@polstan.ru}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    restart: unless-stopped
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

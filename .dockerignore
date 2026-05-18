@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.env
+.env*.local
+npm-debug.log*
+Dockerfile.local
+README.local.md
+.playwright-mcp
+polstan-*.png
+polstan-*-snapshot.md
+IMG_5163.MP4
+photo_2026-*.jpg
