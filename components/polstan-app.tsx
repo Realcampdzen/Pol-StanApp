@@ -495,9 +495,9 @@ function Contact({
 
   return (
     <section className="border-t border-white/10 bg-ink px-4 py-16 sm:px-6 lg:px-8 lg:py-24" id="contact">
-      <div className="mx-auto grid max-w-6xl gap-9 lg:grid-cols-[0.85fr_1.15fr]">
+      <div className="mx-auto grid max-w-6xl gap-9 xl:grid-cols-[0.85fr_1.15fr]">
         <div className="min-w-0">
-          <h2 className="break-words font-display text-5xl font-black uppercase leading-none sm:text-6xl">
+          <h2 className="font-display text-4xl font-black uppercase leading-[0.96] text-white sm:text-5xl xl:text-6xl">
             {content.contact.title}
           </h2>
           <p className="mt-5 max-w-md text-base leading-7 text-white/64">{content.contact.body}</p>

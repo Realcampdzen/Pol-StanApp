@@ -99,7 +99,7 @@ export const content: Record<Locale, SiteContent> = {
       }
     ],
     contact: {
-      title: 'Расскажите, что нужно собрать.',
+      title: 'Опишите задачу.',
       body:
         'Выберите направление, оставьте вводные и удобный контакт. Сообщение откроется в Telegram вместе с параметром Roistat, если он пришел из рекламы.',
       telegramCta: 'Открыть Telegram',
@@ -216,7 +216,7 @@ export const content: Record<Locale, SiteContent> = {
       }
     ],
     contact: {
-      title: 'Tell me what needs to be built.',
+      title: 'Tell me the task.',
       body:
         'Choose a direction, add context and a preferred contact. The Telegram message includes Roistat attribution when it came from an ad URL.',
       telegramCta: 'Open Telegram',
