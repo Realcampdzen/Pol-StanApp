@@ -19,7 +19,7 @@ const ruServices: ServicePackage[] = [
     idealFor: 'релизы, видео, игры, приложения, бренды',
     priceLabel: 'от 20 000₽',
     cta: 'Обсудить музыку',
-    media: '/media/services/music/cover.jpg',
+    media: '/media/services/music/cover-stage-premium.jpg',
     branch: 'polstan',
     useCases: [
       { title: 'Музыка для видео и рекламы', description: 'Треки, подложки, акценты и версии под монтаж.' },
@@ -340,7 +340,7 @@ const enServices: ServicePackage[] = [
     idealFor: 'releases, video, games, apps, brands',
     priceLabel: 'from 20,000 RUB',
     cta: 'Discuss music',
-    media: '/media/services/music/cover.jpg',
+    media: '/media/services/music/cover-stage-premium.jpg',
     branch: 'polstan',
     useCases: [
       { title: 'Music for video and ads', description: 'Tracks, beds, accents and versions shaped for editing.' },
