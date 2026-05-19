@@ -13,10 +13,12 @@ import {
   Plus,
   Send,
   ShoppingBag,
-  Sparkles
+  Sparkles,
+  Volume2,
+  VolumeX
 } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { FormEvent, useEffect, useMemo, useState } from 'react';
+import { FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import type { DropProduct, LeadIntent, Locale, ServiceOffer, ServicePackage, SiteContent } from '@/lib/types';
 import { ROISTAT_STORAGE_KEY } from '@/lib/roistat';
 import { buildTelegramLink, buildTelegramMessage, getTelegramUsername } from '@/lib/telegram';
@@ -208,27 +210,106 @@ function LocaleSwitch({ initialQueryString, locale }: { initialQueryString: stri
 }
 
 function Hero({ content, onContact }: { content: SiteContent; onContact: () => void }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [soundEnabled, setSoundEnabled] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+  const [isVideoReady, setIsVideoReady] = useState(false);
+  const SoundIcon = soundEnabled ? Volume2 : VolumeX;
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video || videoError) {
+      return;
+    }
+
+    video.defaultMuted = true;
+    video.muted = true;
+    if (video.readyState >= 2) {
+      setIsVideoReady(true);
+    }
+    void video.play().catch(() => undefined);
+  }, [videoError]);
+
+  function toggleSound() {
+    const video = videoRef.current;
+    if (!video || videoError) {
+      return;
+    }
+
+    const nextSoundEnabled = !soundEnabled;
+    video.muted = !nextSoundEnabled;
+    video.volume = nextSoundEnabled ? 1 : 0;
+    setSoundEnabled(nextSoundEnabled);
+
+    void video.play().catch(() => {
+      video.muted = true;
+      video.volume = 0;
+      setSoundEnabled(false);
+    });
+  }
+
+  const soundLabel = soundEnabled
+    ? content.locale === 'ru'
+      ? 'Выключить звук видео'
+      : 'Mute video'
+    : content.locale === 'ru'
+      ? 'Включить звук видео'
+      : 'Unmute video';
+
   return (
     <section
       className="relative isolate min-h-[72svh] overflow-hidden bg-ink pb-20 pt-20 sm:min-h-[80svh] lg:min-h-[64svh]"
       id="home"
     >
-      <div className="absolute inset-0">
-        <video
-          aria-label="Concert footage"
-          autoPlay
-          className="h-full w-full object-cover"
-          loop
-          muted
-          playsInline
-          poster="/media/crowd-stage.jpg"
-          preload="metadata"
-        >
-          <source src="/media/hero-concert.mp4" type="video/mp4" />
-        </video>
+      <div className="absolute inset-0 z-0 bg-black">
+        {videoError ? (
+          <Image
+            alt=""
+            className="object-cover"
+            fill
+            priority
+            sizes="100vw"
+            src="/media/crowd-stage.jpg"
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            aria-label="Concert footage"
+            autoPlay
+            className="h-full w-full object-cover"
+            loop
+            muted={!soundEnabled}
+            playsInline
+            preload="auto"
+            onCanPlay={() => setIsVideoReady(true)}
+            onError={() => setVideoError(true)}
+            onLoadedData={() => setIsVideoReady(true)}
+          >
+            <source src="/media/hero-concert.mp4" type="video/mp4" />
+          </video>
+        )}
       </div>
-      <div className="hero-vignette absolute inset-0" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/24 to-ink" />
+      {!videoError ? (
+        <div
+          className="absolute inset-0 z-[3] cursor-pointer"
+          role="presentation"
+          onClick={toggleSound}
+        />
+      ) : null}
+      {!videoError ? (
+        <button
+          aria-label={soundLabel}
+          className={`focus-ring absolute right-4 top-24 z-20 grid h-11 w-11 place-items-center border border-ice/45 bg-black/62 text-ice shadow-glow backdrop-blur-md transition hover:border-ice hover:bg-black/78 sm:right-6 ${
+            isVideoReady ? 'opacity-100' : 'opacity-60'
+          }`}
+          type="button"
+          onClick={toggleSound}
+        >
+          <SoundIcon aria-hidden="true" size={18} />
+        </button>
+      ) : null}
+      <div className="hero-vignette pointer-events-none absolute inset-0 z-[1]" />
+      <div className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-b from-black/55 via-black/24 to-ink" />
       <div className="relative z-10 mx-auto flex min-h-[calc(72svh-5rem)] max-w-6xl flex-col justify-end px-4 pb-8 sm:min-h-[calc(80svh-5rem)] sm:px-6 lg:min-h-[calc(64svh-5rem)] lg:px-8">
         <motion.div
           animate={{ opacity: 1, y: 0 }}
