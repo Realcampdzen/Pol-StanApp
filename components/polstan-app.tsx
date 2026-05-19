@@ -69,6 +69,10 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
   }, [initialRoistatVisit]);
 
   useEffect(() => {
+    document.documentElement.lang = content.locale;
+  }, [content.locale]);
+
+  useEffect(() => {
     const contact = document.getElementById('contact');
     if (!contact) {
       return;
@@ -286,7 +290,8 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
             onError={() => setVideoError(true)}
             onLoadedData={() => setIsVideoReady(true)}
           >
-            <source src="/media/hero-concert.mp4" type="video/mp4" />
+            <source media="(max-width: 640px)" src="/media/hero-concert-v2-mobile.mp4" type="video/mp4" />
+            <source src="/media/hero-concert-v2-desktop.mp4" type="video/mp4" />
           </video>
         )}
       </div>

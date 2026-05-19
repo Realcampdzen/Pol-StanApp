@@ -30,7 +30,8 @@ export async function generateMetadata({ params }: LocalePageProps): Promise<Met
       canonical: `/${locale}`,
       languages: {
         ru: '/ru',
-        en: '/en'
+        en: '/en',
+        'x-default': '/ru'
       }
     }
   };
