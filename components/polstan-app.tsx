@@ -47,6 +47,8 @@ type InquiryItem = {
 export function PolstanApp({ content, initialQueryString, initialRoistatVisit }: PolstanAppProps) {
   const initialSelection = content.services[0] ? [serviceKey(content.services[0])] : [];
   const [contactVisible, setContactVisible] = useState(false);
+  const [heroVisible, setHeroVisible] = useState(true);
+  const heroVisibleRef = useRef(true);
   const [selectedKeys, setSelectedKeys] = useState<string[]>(initialSelection);
   const [roistatVisit, setRoistatVisit] = useState(initialRoistatVisit);
   const catalogItems = useMemo(() => buildCatalogItems(content), [content]);
@@ -85,6 +87,39 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
 
     observer.observe(contact);
     return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    let frame = 0;
+
+    const updateHeroState = () => {
+      if (frame) {
+        return;
+      }
+
+      frame = window.requestAnimationFrame(() => {
+        frame = 0;
+        const hero = document.getElementById('home');
+        const nextHeroVisible = hero ? hero.getBoundingClientRect().bottom > 80 : false;
+
+        if (heroVisibleRef.current !== nextHeroVisible) {
+          heroVisibleRef.current = nextHeroVisible;
+          setHeroVisible(nextHeroVisible);
+        }
+      });
+    };
+
+    updateHeroState();
+    window.addEventListener('scroll', updateHeroState, { passive: true });
+    window.addEventListener('resize', updateHeroState);
+
+    return () => {
+      if (frame) {
+        window.cancelAnimationFrame(frame);
+      }
+      window.removeEventListener('scroll', updateHeroState);
+      window.removeEventListener('resize', updateHeroState);
+    };
   }, []);
 
   function selectAndContact(item: InquiryItem) {
@@ -144,7 +179,7 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
       <InquiryDock
         content={content}
         count={selectedOfferings.length}
-        hidden={contactVisible}
+        hidden={contactVisible || heroVisible}
         onContact={() => scrollToId('contact')}
       />
       <BottomNav content={content} />
@@ -263,7 +298,7 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
 
   return (
     <section
-      className="relative isolate min-h-[72svh] overflow-hidden bg-ink pb-20 pt-20 sm:min-h-[80svh] lg:min-h-[64svh]"
+      className="relative isolate min-h-[72svh] overflow-hidden bg-ink pb-8 pt-20 sm:min-h-[80svh] sm:pb-20 lg:min-h-[60svh] lg:pb-10 xl:min-h-[62svh]"
       id="home"
     >
       <div className="absolute inset-0 z-0 bg-black">
@@ -281,7 +316,7 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
             ref={videoRef}
             aria-label="Concert footage"
             autoPlay
-            className="h-full w-full object-cover"
+            className="hero-video h-full w-full object-cover"
             loop
             muted={!soundEnabled}
             playsInline
@@ -303,20 +338,22 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
         />
       ) : null}
       {!videoError ? (
-        <button
-          aria-label={soundLabel}
-          className={`focus-ring absolute right-4 top-24 z-20 grid h-11 w-11 place-items-center border border-ice/45 bg-black/62 text-ice shadow-glow backdrop-blur-md transition hover:border-ice hover:bg-black/78 sm:right-6 ${
-            isVideoReady ? 'opacity-100' : 'opacity-60'
-          }`}
-          type="button"
-          onClick={toggleSound}
-        >
-          <SoundIcon aria-hidden="true" size={18} />
-        </button>
+        <div className="pointer-events-none absolute inset-x-0 top-24 z-20 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <button
+            aria-label={soundLabel}
+            className={`focus-ring pointer-events-auto ml-auto grid h-11 w-11 place-items-center border border-ice/45 bg-black/62 text-ice shadow-glow backdrop-blur-md transition hover:border-ice hover:bg-black/78 ${
+              isVideoReady ? 'opacity-100' : 'opacity-60'
+            }`}
+            type="button"
+            onClick={toggleSound}
+          >
+            <SoundIcon aria-hidden="true" size={18} />
+          </button>
+        </div>
       ) : null}
       <div className="hero-vignette pointer-events-none absolute inset-0 z-[1]" />
-      <div className="pointer-events-none absolute inset-0 z-[2] bg-gradient-to-b from-black/55 via-black/24 to-ink" />
-      <div className="relative z-10 mx-auto flex min-h-[calc(72svh-5rem)] max-w-6xl flex-col justify-end px-4 pb-8 sm:min-h-[calc(80svh-5rem)] sm:px-6 lg:min-h-[calc(64svh-5rem)] lg:px-8">
+      <div className="hero-depth pointer-events-none absolute inset-0 z-[2]" />
+      <div className="relative z-10 mx-auto flex min-h-[calc(72svh-5rem)] max-w-6xl flex-col justify-end px-4 pb-4 sm:min-h-[calc(80svh-5rem)] sm:px-6 sm:pb-8 lg:min-h-[calc(60svh-5rem)] lg:px-8 lg:pb-6 xl:min-h-[calc(62svh-5rem)]">
         <motion.div
           animate={{ opacity: 1, y: 0 }}
           className="max-w-4xl"
@@ -372,7 +409,7 @@ function Services({
   return (
     <section className="section-shell border-t border-white/10 bg-ink" id="services">
       <motion.div
-        className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-24"
+        className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:pb-24 lg:pt-16"
         initial={{ opacity: 0, y: 26 }}
         transition={{ duration: 0.55 }}
         viewport={{ once: true, margin: '-120px' }}
