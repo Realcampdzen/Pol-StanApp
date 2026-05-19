@@ -539,7 +539,7 @@ function ServiceRow({
                 {service.offers?.length ? (
                   <div className="grid gap-2">
                     <p className="text-xs uppercase text-bronze">
-                      {locale === 'ru' ? 'Быстрые офферы' : 'Fast offers'}
+                      {locale === 'ru' ? 'Готовые пакеты' : 'Ready packages'}
                     </p>
                     <div className="grid gap-2 sm:grid-cols-2">
                       {service.offers.map((offer) => (
@@ -679,7 +679,11 @@ function Proof({ content }: { content: SiteContent }) {
             </div>
             <div className="border border-bronze/35 bg-bronze/8 p-5">
               <p className="font-display text-4xl font-black uppercase leading-none text-bronze">Live</p>
-              <p className="mt-3 text-sm leading-6 text-white/58">stage-tested work, direct production contact</p>
+              <p className="mt-3 text-sm leading-6 text-white/58">
+                {content.locale === 'ru'
+                  ? 'опыт сцены, студии и запуска в одном проекте'
+                  : 'stage, studio and launch experience in one project'}
+              </p>
             </div>
           </div>
         </motion.div>
@@ -872,8 +876,8 @@ function Contact({
               {emptySelection ? (
                 <p className="border border-white/10 bg-black/24 px-3 py-4 text-sm leading-6 text-white/52">
                   {content.locale === 'ru'
-                    ? 'Выберите хотя бы одну услугу выше, чтобы собрать заявку.'
-                    : 'Choose at least one service above to build an inquiry.'}
+                    ? 'Добавьте хотя бы одну услугу или дроп выше, чтобы собрать заявку.'
+                    : 'Add at least one service or drop above to build an inquiry.'}
                 </p>
               ) : null}
             </div>
@@ -943,7 +947,6 @@ function Contact({
             {content.contact.submitCta}
           </button>
           {submitted ? <p className="text-sm text-ice">{content.contact.success}</p> : null}
-          {roistatVisit ? <p className="text-xs uppercase text-white/40">Roistat: {roistatVisit}</p> : null}
         </form>
       </div>
     </section>

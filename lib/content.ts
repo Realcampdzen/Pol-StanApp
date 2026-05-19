@@ -12,10 +12,10 @@ const ruServices: ServicePackage[] = [
     slug: 'music',
     title: 'Создание музыки',
     cardTitle: 'СОЗДАНИЕ МУЗЫКИ',
-    cardBenefit: 'Треки, темы, джинглы и музыкальная айдентика',
+    cardBenefit: 'Музыкальная тема, джинглы, лупы и стемы под проект',
     description:
-      'Авторская музыка для игр, видео, рекламы, подкастов, приложений и творческих проектов.',
-    deliverables: ['треки и темы', 'джинглы', 'лупы и стемы', 'версии под монтаж'],
+      'Пишем авторскую музыку для игр, видео, рекламы, подкастов, приложений и творческих проектов.',
+    deliverables: ['основной трек', 'джинглы', 'лупы и стемы', 'версии под монтаж'],
     idealFor: 'релизы, видео, игры, приложения, бренды',
     priceLabel: 'от 20 000₽',
     cta: 'Обсудить музыку',
@@ -26,11 +26,11 @@ const ruServices: ServicePackage[] = [
       { title: 'Музыка для игр и приложений', description: 'Темы, лупы, стемы и атмосферные слои.' },
       { title: 'Музыкальная айдентика', description: 'Короткие мотивы и звуковые логотипы для бренда.' }
     ],
-    formats: ['Полная версия трека', 'Cut-down версии', 'Лупы и стемы', 'Интро, аутро и джинглы'],
+    formats: ['Полная версия трека', 'Короткие версии', 'Лупы и стемы', 'Интро, аутро и джинглы'],
     whatYouGet: [
-      'Музыку, написанную под конкретную задачу.',
+      'Музыкальную основу, написанную под вашу задачу.',
       'Файлы в нужных форматах и длительностях.',
-      'Систему, которую можно развивать дальше.'
+      'Материал, который можно развивать в следующих релизах и роликах.'
     ]
   },
   {
@@ -38,21 +38,21 @@ const ruServices: ServicePackage[] = [
     slug: 'sound-design',
     title: 'Озвучка и саунд-дизайн',
     cardTitle: 'ОЗВУЧКА И САУНД-ДИЗАЙН',
-    cardBenefit: 'Голос, SFX и чистый звук под площадки',
+    cardBenefit: 'Озвучка, SFX и чистый звук под площадки',
     description:
-      'Профессиональная озвучка, обработка, саунд-дизайн и звуковые эффекты для видео, игр, курсов и приложений.',
-    deliverables: ['voice-over', 'SFX', 'аудио-чистка', 'сведение и мастеринг'],
+      'Готовим голос, чистим запись, собираем саунд-дизайн и эффекты для видео, игр, курсов и приложений.',
+    deliverables: ['озвучка', 'звуковые эффекты', 'чистка аудио', 'сведение и мастеринг'],
     idealFor: 'ролики, игры, курсы, приложения, подкасты',
     priceLabel: 'от 15 000₽',
     cta: 'Обсудить звук',
     media: '/media/services/sound-design/cover.jpg',
     branch: 'polstan',
     useCases: [
-      { title: 'Озвучка и voice-over', description: 'Рекламные ролики, курсы, инструкции, подкасты и презентации.' },
+      { title: 'Озвучка', description: 'Рекламные ролики, курсы, инструкции, подкасты и презентации.' },
       { title: 'Саунд-дизайн и SFX', description: 'Звуки интерфейса, окружения, действий, переходов и спецэффектов.' },
       { title: 'Обработка звука', description: 'Очистка, выравнивание громкости, сведение и подготовка под публикацию.' }
     ],
-    formats: ['Voice-over', 'Пакеты SFX', 'Звуки интерфейса', 'WAV/MP3/OGG-файлы'],
+    formats: ['Озвучка', 'Пакеты SFX', 'Звуки интерфейса', 'WAV/MP3/OGG-файлы'],
     whatYouGet: [
       'Профессионально подготовленный звук.',
       'Пакет файлов под вашу платформу.',
@@ -64,37 +64,37 @@ const ruServices: ServicePackage[] = [
     slug: 'creative-production',
     title: 'Creative Direction + AI Production',
     cardTitle: 'CREATIVE DIRECTION + AI PRODUCTION',
-    cardBenefit: 'Визуальный мир, сайт, релиз, мерч и промо-материалы проекта',
+    cardBenefit: 'Образ проекта, сайт, релиз, мерч и промо в одной системе',
     description:
-      'Продюсируем творческие проекты как цельную вселенную: идея, visual world, сайт, релиз, тур, мерч, контент и запуск.',
-    deliverables: ['creative direction', 'AI key visual', 'сайт или лендинг', 'релиз, тур, мерч и SMM-пакет'],
+      'Собираем творческий проект как цельный мир: идея, визуальный язык, сайт, релиз, тур, мерч, контент и запуск.',
+    deliverables: ['креативная концепция', 'AI-визуалы', 'сайт или лендинг', 'релиз, тур, мерч и SMM-пакет'],
     idealFor: 'артисты, релизы, спецпроекты, авторские бренды',
     priceLabel: 'от 150 000₽',
     cta: 'Обсудить проект',
     media: '/media/services/creative-production/dominia-key-visual.png',
     branch: 'polstan',
     useCases: [
-      { title: 'Музыкальный или творческий релиз', description: 'Visual world, сайт, обложки, афиши, промо и digital-точка сборки.' },
+      { title: 'Музыкальный или творческий релиз', description: 'Визуальный мир, сайт, обложки, афиши, промо и точка сборки проекта.' },
       { title: 'Спецпроект или медиаистория', description: 'Клип, серия роликов, персонажи, промо-материалы, сайт и сценарий запуска.' },
-      { title: 'Упаковка автора или бренда', description: 'Визуальная система, tone of voice, контент и присутствие на площадках.' }
+      { title: 'Упаковка автора или бренда', description: 'Визуальная система, тон коммуникации, контент и присутствие на площадках.' }
     ],
-    formats: ['Creative direction', 'AI key visual', 'Сайт или лендинг', 'Релиз, тур, мерч и SMM-пакет'],
+    formats: ['Креативная концепция', 'AI-визуалы', 'Сайт или лендинг', 'Релиз, тур, мерч и SMM-пакет'],
     whatYouGet: [
       'Визуальный мир проекта, который можно развивать в разных форматах.',
       'Сайт, промо-материалы и контент-систему вместо разрозненных файлов.',
-      'План запуска, где creative, production и digital работают вместе.'
+      'План запуска, где креатив, продакшн и digital работают вместе.'
     ]
   },
   {
     id: 'ai-video',
     slug: 'ai-video',
-    title: 'AI-видео и рекламные рилсы',
+    title: 'AI-видео и рекламные ролики',
     cardTitle: 'ПРОДАЮЩИЕ РЕКЛАМНЫЕ РОЛИКИ С AI',
-    cardBenefit: 'Ролики под рекламу, Reels, клипы и запуск продукта',
+    cardBenefit: 'Вертикальные ролики, клипы и промо для запуска',
     description:
       'Создаём рекламные ролики, клипы и вертикальные видео на базе AI-инструментов с режиссурой, монтажом и звуком.',
     deliverables: ['концепция и сценарий', 'AI-сцены', 'монтаж и титры', 'музыка, озвучка и SFX'],
-    idealFor: 'запуски, клипы, reels, performance-реклама',
+    idealFor: 'запуски, клипы, reels, рекламные тесты',
     priceLabel: 'от 80 000₽',
     cta: 'Обсудить ролик',
     media: '/media/services/ai-video/cover-influencer-reel-2026.jpg',
@@ -104,11 +104,11 @@ const ruServices: ServicePackage[] = [
       { title: 'Reels, Shorts и VK-клипы', description: 'Вертикальный контент, который можно быстро тестировать в соцсетях.' },
       { title: 'Клипы и визуалайзеры', description: 'Музыкальные и атмосферные видео с единым визуальным стилем.' }
     ],
-    formats: ['9:16', '16:9', 'cut-down версии', 'постеры и кадры для баннеров'],
+    formats: ['9:16', '16:9', 'короткие версии', 'постеры и кадры для баннеров'],
     whatYouGet: [
       'Готовый ролик под нужные площадки.',
       'Пакет постеров и кадров для промо.',
-      'Возможность масштабировать концепцию в серию роликов.'
+      'Концепцию, которую можно масштабировать в серию роликов.'
     ]
   },
   {
@@ -118,7 +118,7 @@ const ruServices: ServicePackage[] = [
     cardTitle: 'SMM И КОНТЕНТ',
     cardBenefit: 'Контент-план, тексты, сценарии и регулярные публикации',
     description:
-      'Выстраиваем систему контента: стратегия, рубрикатор, тексты, сценарии видео, нейросети как рабочий инструмент.',
+      'Выстраиваем систему контента: стратегия, рубрики, тексты, сценарии видео и AI-инструменты для регулярной работы.',
     deliverables: ['стратегия', 'контент-план', 'посты и сценарии', 'AI-шаблоны'],
     idealFor: 'бренды, эксперты, студии, авторские проекты',
     priceLabel: 'от 40 000₽',
@@ -126,26 +126,26 @@ const ruServices: ServicePackage[] = [
     media: '/media/services/smm-content/cover-smm-manager-2026.jpg',
     branch: 'shared',
     useCases: [
-      { title: 'Стратегия и позиционирование', description: 'Цели, аудитория, роль площадок, ключевые смыслы и tone of voice.' },
-      { title: 'Контент-архитектура', description: 'Рубрикатор, регулярные форматы, сценарии и календарь выпусков.' },
+      { title: 'Стратегия и позиционирование', description: 'Цели, аудитория, роль площадок, ключевые смыслы и тон коммуникации.' },
+      { title: 'Контент-архитектура', description: 'Рубрики, регулярные форматы, сценарии и календарь выпусков.' },
       { title: 'AI как рабочий инструмент', description: 'Промпты, шаблоны и процессы, которые ускоряют команду.' }
     ],
     formats: ['Контент-стратегия', 'Контент-план на 4-8 недель', 'Пакет постов и сценариев', 'AI-шаблоны для команды'],
     whatYouGet: [
       'Систему контента с понятной логикой.',
       'Регулярные материалы под выбранные площадки.',
-      'Редакторский контроль и понятный tone of voice.'
+      'Редакторский контроль и понятный тон коммуникации.'
     ]
   },
   {
     id: 'ai-photo',
     slug: 'ai-photo',
-    title: 'AI-фото для e-commerce и key visual',
+    title: 'AI-фото и key visual',
     cardTitle: 'AI ФОТО',
-    cardBenefit: 'Визуалы для карточек, баннеров, рекламы и key visual',
+    cardBenefit: 'Визуалы для карточек, баннеров, рекламы и главного образа кампании',
     description:
       'Генерируем и доводим AI-фото для брендов, e-commerce, digital-баннеров, кампаний и соцсетей.',
-    deliverables: ['предметные визуалы', 'key visual', 'баннеры', 'адаптации под площадки'],
+    deliverables: ['предметные визуалы', 'главный визуал', 'баннеры', 'адаптации под площадки'],
     idealFor: 'e-commerce, бренды, кампании, соцсети',
     priceLabel: 'от 20 000₽ за сет',
     cta: 'Заказать визуалы',
@@ -167,22 +167,22 @@ const ruServices: ServicePackage[] = [
     id: 'ecom-animation',
     slug: 'ecom-animation',
     title: 'ИИ-анимация и инфографика для e-commerce',
-    cardTitle: 'ИИ АНИМАЦИЯ И ИНФОГРАФИКА ДЛЯ E-COM',
+    cardTitle: 'AI-АНИМАЦИЯ ДЛЯ E-COM',
     cardBenefit: 'Движение, товарные сцены и понятная визуальная подача',
     description:
-      'Делаем товарную анимацию, короткие product loops и визуальную инфографику для e-commerce и рекламы.',
-    deliverables: ['product loops', 'товарные сцены', 'визуальная инфографика', 'постеры и кадры'],
+      'Делаем товарную анимацию, короткие ролики и визуальную инфографику для e-commerce и рекламы.',
+    deliverables: ['товарные анимации', 'товарные сцены', 'визуальная инфографика', 'постеры и кадры'],
     idealFor: 'маркетплейсы, каталоги, карточки, реклама',
     priceLabel: 'от 35 000₽',
     cta: 'Обсудить анимацию',
     media: '/media/services/ecom-animation/cover.jpg',
     branch: 'shared',
     useCases: [
-      { title: 'Карточки товаров', description: 'Короткие loops и кадры для маркетплейсов, каталога и сайта.' },
+      { title: 'Карточки товаров', description: 'Короткие анимации и кадры для маркетплейсов, каталога и сайта.' },
       { title: 'Запуски и акции', description: 'Визуалы для кампаний, где продукт нужно показать эффектно и быстро.' },
-      { title: 'Соцсети и performance', description: 'Версии под Reels, Shorts, VK-клипы и рекламные кабинеты.' }
+      { title: 'Соцсети и реклама', description: 'Версии под Reels, Shorts, VK-клипы и рекламные кабинеты.' }
     ],
-    formats: ['Loops 4-8 секунд', 'Постеры 16:9 и 1:1', 'Вертикальные версии 9:16', 'Набор кадров для баннеров'],
+    formats: ['Анимации 4-8 секунд', 'Постеры 16:9 и 1:1', 'Вертикальные версии 9:16', 'Набор кадров для баннеров'],
     whatYouGet: [
       'Движение продукта без полноценной съёмки.',
       'Кадры и ролики под рекламные тесты.',
@@ -192,34 +192,34 @@ const ruServices: ServicePackage[] = [
   {
     id: 'agentic-ai-dev',
     slug: 'agentic-ai-dev',
-    title: 'Вайбкодинг и agentic AI dev',
-    cardTitle: 'ВАЙБКОДИНГ И AGENTIC AI DEV',
-    cardBenefit: 'MVP, SaaS, TMA, AI-боты и стабилизация AI-кода до production',
+    title: 'Вайбкодинг и AI-разработка',
+    cardTitle: 'ВАЙБКОДИНГ И AI-РАЗРАБОТКА',
+    cardBenefit: 'MVP, SaaS, Telegram Apps, AI-боты и доведение AI-кода до релиза',
     description:
-      'Agentic full-stack разработка под ключ: беру идею, сырой прототип или сломанный AI-код и довожу до стабильного релиза.',
-    deliverables: ['Next.js / React / TypeScript', 'backend и БД', 'OpenAI API', 'Telegram Bot API и deploy'],
-    idealFor: 'MVP, TMA, AI-боты, SaaS, rescue после AI-генераторов',
+      'Быстрая разработка цифровых продуктов: от идеи, сырого прототипа или сломанного AI-кода до стабильного запуска.',
+    deliverables: ['фронтенд на React/Next.js', 'бэкенд и база данных', 'AI-интеграции', 'Telegram и запуск'],
+    idealFor: 'MVP, Telegram Apps, AI-боты, SaaS, спасение AI-прототипов',
     priceLabel: 'разработка от 30 000₽',
     cta: 'Разобрать задачу',
     media: '/media/services/agentic-ai-dev/cover-hermes-product-2026.jpg',
     branch: 'real-vibe',
     useCases: [
-      { title: 'Telegram Mini App для бизнеса', description: 'TMA до 3 экранов, API, авторизация initData, база данных и мобильный UX.' },
-      { title: 'AI-бот с базой и admin-панелью', description: 'OpenAI API, PostgreSQL/Supabase, роли, заявки и управление.' },
+      { title: 'Telegram Mini App для бизнеса', description: 'Мини-приложение до 3 экранов, API, авторизация, база данных и мобильный UX.' },
+      { title: 'AI-бот с базой и админ-панелью', description: 'OpenAI API, база данных, роли, заявки и управление процессом.' },
       { title: 'MVP веб-сервиса или SaaS', description: 'Авторизация, дашборды, роли, API, база, деплой и модульная архитектура.' },
-      { title: 'Стабилизация Cursor, Lovable, v0, Bolt', description: 'Аудит, типизация, state, БД, секреты, сборка, деплой и критичные фиксы.' }
+      { title: 'Стабилизация Cursor, Lovable, v0, Bolt', description: 'Аудит, типизация, состояние, база, сборка, деплой и критичные фиксы.' }
     ],
-    formats: ['React / Next.js / TypeScript', 'FastAPI / Django / Node.js', 'PostgreSQL / Supabase / Docker / Vercel', 'OpenAI API / Telegram Bot API'],
+    formats: ['React / Next.js / TypeScript', 'Бэкенд на Node.js или Python', 'PostgreSQL / Supabase / Docker', 'OpenAI API / Telegram Bot API'],
     whatYouGet: [
-      'Рабочий production-ready этап, а не почти готовый прототип.',
+      'Рабочий этап, который можно показывать пользователям, команде или инвесторам.',
       'Понятную архитектуру, которую можно развивать после запуска.',
-      'Код, который можно поддерживать, показывать инвесторам и подключать к реальному бизнесу.'
+      'Код, который можно поддерживать и подключать к реальному бизнесу.'
     ],
     offers: [
-      { id: 'telegram-mini-app', title: 'Telegram Mini App', priceLabel: 'от 30 000₽', description: 'Базовый TMA до 3 экранов + API, Telegram auth/initData и мобильный UX.' },
-      { id: 'ai-bot-db-admin', title: 'AI-бот + база + admin', priceLabel: 'от 10 000₽', description: 'Бот с OpenAI API, базой данных, сценариями, заявками и панелью управления.' },
-      { id: 'ai-code-rescue', title: 'AI-code rescue', priceLabel: 'от 7 000₽', description: 'Аудит и стабилизация проекта после Cursor, Lovable, Bolt, v0 или другого AI-генератора.' },
-      { id: 'mvp-saas-module', title: 'MVP / SaaS модуль', priceLabel: 'от 50 000₽', description: 'Авторизация, первый дашборд, база, роли, API и deploy-ready структура.' }
+      { id: 'telegram-mini-app', title: 'Telegram Mini App', priceLabel: 'от 30 000₽', description: 'Мини-приложение до 3 экранов, API, Telegram-авторизация и мобильный UX.' },
+      { id: 'ai-bot-db-admin', title: 'AI-бот + база + админка', priceLabel: 'от 10 000₽', description: 'Бот с OpenAI API, базой данных, сценариями, заявками и панелью управления.' },
+      { id: 'ai-code-rescue', title: 'Спасение AI-кода', priceLabel: 'от 7 000₽', description: 'Аудит и стабилизация проекта после Cursor, Lovable, Bolt, v0 или другого AI-генератора.' },
+      { id: 'mvp-saas-module', title: 'MVP / SaaS модуль', priceLabel: 'от 50 000₽', description: 'Авторизация, первый дашборд, база, роли, API и структура для деплоя.' }
     ]
   },
   {
@@ -227,10 +227,10 @@ const ruServices: ServicePackage[] = [
     slug: 'apps',
     title: 'MVP, SaaS и приложения с AI-функциями',
     cardTitle: 'MVP И SAAS-ПЛАТФОРМЫ С AI',
-    cardBenefit: 'От прототипа до рабочего продукта с архитектурой, базой и деплоем',
+    cardBenefit: 'От прототипа до рабочего продукта с архитектурой, базой и запуском',
     description:
       'Проектируем и разрабатываем MVP, SaaS, CRM, дашборды и приложения с AI-логикой, ролями, базой данных и понятным путём к релизу.',
-    deliverables: ['MVP-модуль', 'дашборды и роли', 'БД и API', 'AI-функции'],
+    deliverables: ['MVP-модуль', 'дашборды и роли', 'база данных и API', 'AI-функции'],
     idealFor: 'стартапы, внутренние сервисы, CRM, SaaS',
     priceLabel: 'от 50 000₽ за MVP-модуль',
     cta: 'Обсудить MVP',
@@ -239,24 +239,24 @@ const ruServices: ServicePackage[] = [
     useCases: [
       { title: 'MVP и SaaS-платформы', description: 'Авторизация, роли пользователей, дашборды, бизнес-логика, платежи и интеграции.' },
       { title: 'CRM и внутренние сервисы', description: 'Инструменты для команды: заявки, клиенты, задачи, статусы, аналитика и админка.' },
-      { title: 'AI-функции внутри продукта', description: 'Генерация, анализ, поиск по базе знаний, ассистенты, workflow и автоматизация.' }
+      { title: 'AI-функции внутри продукта', description: 'Генерация, анализ, поиск по базе знаний, ассистенты и автоматизация.' }
     ],
-    formats: ['Авторизация и роли', 'Дашборды и admin-панель', 'PostgreSQL/Supabase', 'OpenAI API и Telegram Bot API'],
+    formats: ['Авторизация и роли', 'Дашборды и админ-панель', 'PostgreSQL/Supabase', 'OpenAI API и Telegram Bot API'],
     whatYouGet: [
       'Рабочий модуль или MVP, который можно показывать клиентам, команде или инвесторам.',
-      'Код на TypeScript/Python/Node.js без случайной AI-хаотичности.',
+      'Код на TypeScript, Python или Node.js без случайных решений.',
       'Понятный план следующих этапов.'
     ]
   },
   {
     id: 'bots',
     slug: 'bots',
-    title: 'Telegram-боты с AI, базой и admin-панелью',
+    title: 'Telegram-боты с AI, базой и админ-панелью',
     cardTitle: 'TELEGRAM-БОТЫ С AI И БАЗОЙ',
     cardBenefit: 'Боты для заявок, поддержки, контента, оплат и внутренних процессов',
     description:
       'Создаём Telegram-ботов и AI-ботов с базой данных, админ-панелью, сценариями, OpenAI API и интеграциями под реальные задачи бизнеса.',
-    deliverables: ['Telegram Bot API', 'AI-логика', 'БД', 'admin-панель'],
+    deliverables: ['Telegram Bot API', 'AI-логика', 'база данных', 'админ-панель'],
     idealFor: 'заявки, поддержка, продажи, внутренние процессы',
     priceLabel: 'от 10 000₽',
     cta: 'Заказать бота',
@@ -267,7 +267,7 @@ const ruServices: ServicePackage[] = [
       { title: 'Поддержка клиентов', description: 'FAQ, статусы, запись, помощь с выбором и разгрузка команды.' },
       { title: 'AI-бот с памятью', description: 'Ответы на основе базы знаний, истории пользователя и правил вашего проекта.' }
     ],
-    formats: ['Telegram Bot API', 'AI-логика OpenAI API', 'PostgreSQL/Supabase', 'Admin-панель и роли'],
+    formats: ['Telegram Bot API', 'AI-логика OpenAI API', 'PostgreSQL/Supabase', 'Админ-панель и роли'],
     whatYouGet: [
       'Бота, который решает конкретный сценарий.',
       'Базу данных, админскую часть и интеграции по задаче.',
@@ -281,9 +281,9 @@ const ruServices: ServicePackage[] = [
     cardTitle: 'САЙТЫ И ВЕБ-СЕРВИСЫ С AI',
     cardBenefit: 'Лендинги, кабинеты, сервисы и AI-интеграции под бизнес-задачу',
     description:
-      'Делаем сайты, лендинги и веб-сервисы с современным дизайном, быстрым frontend, формами, аналитикой, AI-чатом и интеграциями.',
+      'Делаем сайты, лендинги и веб-сервисы с современным дизайном, быстрым фронтендом, формами, аналитикой, AI-чатом и интеграциями.',
     deliverables: ['лендинг или сайт', 'формы и квизы', 'AI-чат', 'интеграции'],
-    idealFor: 'услуги, бренды, продукты, спецпосадочные',
+    idealFor: 'услуги, бренды, продукты, посадочные страницы',
     priceLabel: 'от 70 000₽',
     cta: 'Обсудить сайт',
     media: '/media/services/websites/cover-white-monitor.jpg',
@@ -305,10 +305,10 @@ const ruServices: ServicePackage[] = [
     slug: 'ai-agents',
     title: 'AI-агенты и GPT-ассистенты',
     cardTitle: 'AI-АГЕНТЫ ДЛЯ БИЗНЕСА',
-    cardBenefit: 'Ассистенты, workflow и базы знаний под реальные процессы',
+    cardBenefit: 'Ассистенты, рабочие сценарии и базы знаний под реальные процессы',
     description:
-      'Создаём GPT-ассистентов и AI-агентов для бизнеса: база знаний, инструкции, workflow, проверка входных данных и помощь команде.',
-    deliverables: ['роль и инструкции', 'база знаний', 'workflow', 'тестовые сценарии'],
+      'Создаём GPT-ассистентов и AI-агентов для бизнеса: база знаний, инструкции, рабочие сценарии, проверка входных данных и помощь команде.',
+    deliverables: ['роль и инструкции', 'база знаний', 'рабочие сценарии', 'тестовые сценарии'],
     idealFor: 'команды, обучение, маркетинг, внутренние процессы',
     priceLabel: 'от 25 000₽',
     cta: 'Собрать ассистента',
@@ -317,9 +317,9 @@ const ruServices: ServicePackage[] = [
     useCases: [
       { title: 'Ассистент по базе знаний', description: 'Ответы по регламентам, продуктам, инструкциям и внутренним документам.' },
       { title: 'Маркетинговый GPT', description: 'Черновики постов, сценариев, писем и адаптаций под площадки.' },
-      { title: 'Workflow-агент', description: 'Помощник для повторяемых задач, маршрутизации и проверки входных данных.' }
+      { title: 'Агент под рабочий процесс', description: 'Помощник для повторяемых задач, маршрутизации и проверки входных данных.' }
     ],
-    formats: ['Custom GPT', 'AI-агент под процесс', 'Ассистент базы знаний', 'Workflow и approval-gates'],
+    formats: ['Custom GPT', 'AI-агент под процесс', 'Ассистент базы знаний', 'Рабочий сценарий и этапы согласования'],
     whatYouGet: [
       'Настроенного помощника под вашу задачу.',
       'Структурированные материалы и правила поведения.',
@@ -347,7 +347,7 @@ const enServices: ServicePackage[] = [
       { title: 'Music for games and apps', description: 'Themes, loops, stems and atmospheric layers.' },
       { title: 'Sonic identity', description: 'Short motifs and audio logos for brands.' }
     ],
-    formats: ['Full track', 'Cut-down versions', 'Loops and stems', 'Intro, outro and jingles'],
+    formats: ['Full track', 'Short versions', 'Loops and stems', 'Intro, outro and jingles'],
     whatYouGet: ['Music written for the exact task.', 'Files in the required formats and lengths.', 'A system that can be extended later.']
   },
   {
@@ -376,7 +376,7 @@ const enServices: ServicePackage[] = [
     slug: 'creative-production',
     title: 'Creative Direction + AI Production',
     cardTitle: 'CREATIVE DIRECTION + AI PRODUCTION',
-    cardBenefit: 'Visual world, site, release, merch and promo materials',
+    cardBenefit: 'Project identity, site, release, merch and promo in one system',
     description: 'A creative project built as a complete world: idea, visual language, site, release, tour, merch, content and launch.',
     deliverables: ['creative direction', 'AI key visual', 'site or landing', 'release, tour, merch and SMM pack'],
     idealFor: 'artists, releases, special projects, author brands',
@@ -385,12 +385,12 @@ const enServices: ServicePackage[] = [
     media: '/media/services/creative-production/dominia-key-visual.png',
     branch: 'polstan',
     useCases: [
-      { title: 'Music or creative release', description: 'Visual world, site, covers, posters, promo and a digital hub.' },
+      { title: 'Music or creative release', description: 'Visual identity, site, covers, posters, promo and a digital hub.' },
       { title: 'Special project or media story', description: 'Clip, video series, characters, promo materials, site and launch plan.' },
-      { title: 'Author or brand packaging', description: 'Visual system, tone of voice, content and platform presence.' }
+      { title: 'Author or brand packaging', description: 'Visual system, communication tone, content and platform presence.' }
     ],
     formats: ['Creative direction', 'AI key visual', 'Site or landing', 'Release, tour, merch and SMM pack'],
-    whatYouGet: ['A visual world that can scale across formats.', 'A site, promo assets and content system.', 'A launch plan connecting creative, production and digital.']
+    whatYouGet: ['A project world that can scale across formats.', 'A site, promo assets and content system.', 'A launch plan connecting creative, production and digital.']
   },
   {
     id: 'ai-video',
@@ -400,7 +400,7 @@ const enServices: ServicePackage[] = [
     cardBenefit: 'Videos for ads, Reels, clips and product launches',
     description: 'Advertising videos, clips and vertical content built with AI tools, direction, editing and sound.',
     deliverables: ['concept and script', 'AI scenes', 'editing and titles', 'music, voice and SFX'],
-    idealFor: 'launches, clips, reels, performance ads',
+    idealFor: 'launches, clips, reels, ad tests',
     priceLabel: 'from 80,000 RUB',
     cta: 'Discuss video',
     media: '/media/services/ai-video/cover-influencer-reel-2026.jpg',
@@ -410,7 +410,7 @@ const enServices: ServicePackage[] = [
       { title: 'Reels, Shorts and VK clips', description: 'Vertical content made for fast social testing.' },
       { title: 'Clips and visualizers', description: 'Music-driven videos with a unified visual style.' }
     ],
-    formats: ['9:16', '16:9', 'cut-down versions', 'posters and banner frames'],
+    formats: ['9:16', '16:9', 'short versions', 'posters and banner frames'],
     whatYouGet: ['A ready video for the target platforms.', 'Promo posters and frames.', 'A concept that can scale into a series.']
   },
   {
@@ -419,7 +419,7 @@ const enServices: ServicePackage[] = [
     title: 'SMM and content',
     cardTitle: 'SMM AND CONTENT',
     cardBenefit: 'Content plan, copy, scripts and regular publishing',
-    description: 'A content system: strategy, rubricator, copy, video scripts and AI as a working tool.',
+    description: 'A content system: strategy, content pillars, copy, video scripts and AI tools for regular production.',
     deliverables: ['strategy', 'content plan', 'posts and scripts', 'AI templates'],
     idealFor: 'brands, experts, studios, author projects',
     priceLabel: 'from 40,000 RUB',
@@ -427,12 +427,12 @@ const enServices: ServicePackage[] = [
     media: '/media/services/smm-content/cover-smm-manager-2026.jpg',
     branch: 'shared',
     useCases: [
-      { title: 'Strategy and positioning', description: 'Goals, audience, platform roles, key meanings and tone of voice.' },
-      { title: 'Content architecture', description: 'Rubricator, recurring formats, scripts and publishing calendar.' },
+      { title: 'Strategy and positioning', description: 'Goals, audience, platform roles, key messages and communication tone.' },
+      { title: 'Content architecture', description: 'Content pillars, recurring formats, scripts and publishing calendar.' },
       { title: 'AI as a production tool', description: 'Prompts, templates and processes that speed up the team.' }
     ],
     formats: ['Content strategy', '4-8 week content plan', 'Posts and scripts pack', 'AI templates for the team'],
-    whatYouGet: ['A content system with clear logic.', 'Regular materials for selected platforms.', 'Editorial control and tone of voice.']
+    whatYouGet: ['A content system with clear logic.', 'Regular materials for selected platforms.', 'Editorial control and communication tone.']
   },
   {
     id: 'ai-photo',
@@ -471,7 +471,7 @@ const enServices: ServicePackage[] = [
     useCases: [
       { title: 'Product cards', description: 'Short loops and frames for marketplaces, catalogues and sites.' },
       { title: 'Launches and campaigns', description: 'Visuals where the product needs to look clear and impressive fast.' },
-      { title: 'Social and performance', description: 'Versions for Reels, Shorts, VK clips and ad cabinets.' }
+      { title: 'Social and ads', description: 'Versions for Reels, Shorts, VK clips and ad accounts.' }
     ],
     formats: ['4-8 second loops', '16:9 and 1:1 posters', '9:16 vertical versions', 'Banner frame pack'],
     whatYouGet: ['Product motion without a full shoot.', 'Frames and videos for ad tests.', 'A unified visual system for the product line.']
@@ -479,26 +479,26 @@ const enServices: ServicePackage[] = [
   {
     id: 'agentic-ai-dev',
     slug: 'agentic-ai-dev',
-    title: 'Vibe coding and agentic AI dev',
-    cardTitle: 'VIBE CODING AND AGENTIC AI DEV',
-    cardBenefit: 'MVP, SaaS, TMA, AI bots and AI-code stabilization',
-    description: 'Agentic full-stack development: from idea, raw prototype or broken AI-generated code to stable release.',
-    deliverables: ['Next.js / React / TypeScript', 'backend and DB', 'OpenAI API', 'Telegram Bot API and deploy'],
-    idealFor: 'MVP, TMA, AI bots, SaaS, rescue after AI generators',
+    title: 'Vibe coding and AI development',
+    cardTitle: 'VIBE CODING AND AI DEVELOPMENT',
+    cardBenefit: 'MVP, SaaS, Telegram Apps, AI bots and AI-code stabilization',
+    description: 'Fast digital product development: from idea, raw prototype or broken AI-generated code to a stable launch.',
+    deliverables: ['React/Next.js frontend', 'backend and database', 'AI integrations', 'Telegram and deploy'],
+    idealFor: 'MVP, Telegram Apps, AI bots, SaaS, AI-prototype rescue',
     priceLabel: 'development from 30,000 RUB',
     cta: 'Review task',
     media: '/media/services/agentic-ai-dev/cover-hermes-product-2026.jpg',
     branch: 'real-vibe',
     useCases: [
-      { title: 'Telegram Mini App', description: 'TMA up to 3 screens, API, initData auth, database and mobile UX.' },
-      { title: 'AI bot with DB and admin', description: 'OpenAI API, PostgreSQL/Supabase, roles, requests and management.' },
+      { title: 'Telegram Mini App', description: 'Mini app up to 3 screens, API, auth, database and mobile UX.' },
+      { title: 'AI bot with DB and admin', description: 'OpenAI API, database, roles, requests and process management.' },
       { title: 'MVP or SaaS web service', description: 'Auth, dashboards, roles, API, database, deploy and modular architecture.' },
       { title: 'Cursor, Lovable, v0, Bolt stabilization', description: 'Audit, typing, state, DB, secrets, build, deploy and critical fixes.' }
     ],
-    formats: ['React / Next.js / TypeScript', 'FastAPI / Django / Node.js', 'PostgreSQL / Supabase / Docker / Vercel', 'OpenAI API / Telegram Bot API'],
-    whatYouGet: ['A production-ready stage, not an almost-working prototype.', 'Architecture that can grow after launch.', 'Maintainable code suitable for business use.'],
+    formats: ['React / Next.js / TypeScript', 'Node.js or Python backend', 'PostgreSQL / Supabase / Docker', 'OpenAI API / Telegram Bot API'],
+    whatYouGet: ['A working stage ready for users, team or investors.', 'Architecture that can grow after launch.', 'Maintainable code suitable for business use.'],
     offers: [
-      { id: 'telegram-mini-app', title: 'Telegram Mini App', priceLabel: 'from 30,000 RUB', description: 'Basic TMA up to 3 screens + API, Telegram auth/initData and mobile UX.' },
+      { id: 'telegram-mini-app', title: 'Telegram Mini App', priceLabel: 'from 30,000 RUB', description: 'Mini app up to 3 screens, API, Telegram auth and mobile UX.' },
       { id: 'ai-bot-db-admin', title: 'AI bot + DB + admin', priceLabel: 'from 10,000 RUB', description: 'Bot with OpenAI API, database, scenarios, requests and admin panel.' },
       { id: 'ai-code-rescue', title: 'AI-code rescue', priceLabel: 'from 7,000 RUB', description: 'Audit and stabilization after Cursor, Lovable, Bolt, v0 or another AI generator.' },
       { id: 'mvp-saas-module', title: 'MVP / SaaS module', priceLabel: 'from 50,000 RUB', description: 'Auth, first dashboard, database, roles, API and deploy-ready structure.' }
@@ -509,9 +509,9 @@ const enServices: ServicePackage[] = [
     slug: 'apps',
     title: 'MVP, SaaS and apps with AI functions',
     cardTitle: 'MVP AND AI SAAS PLATFORMS',
-    cardBenefit: 'From prototype to product with architecture, DB and deploy',
+    cardBenefit: 'From prototype to product with architecture, database and launch',
     description: 'MVP, SaaS, CRM, dashboards and apps with AI logic, roles, database and a clear release path.',
-    deliverables: ['MVP module', 'dashboards and roles', 'DB and API', 'AI functions'],
+    deliverables: ['MVP module', 'dashboards and roles', 'database and API', 'AI functions'],
     idealFor: 'startups, internal tools, CRM, SaaS',
     priceLabel: 'from 50,000 RUB per MVP module',
     cta: 'Discuss MVP',
@@ -520,17 +520,17 @@ const enServices: ServicePackage[] = [
     useCases: [
       { title: 'MVP and SaaS platforms', description: 'Auth, user roles, dashboards, business logic, payments and integrations.' },
       { title: 'CRM and internal tools', description: 'Requests, clients, tasks, statuses, analytics and admin panels.' },
-      { title: 'AI features inside products', description: 'Generation, analysis, knowledge search, assistants, workflow and automation.' }
+      { title: 'AI features inside products', description: 'Generation, analysis, knowledge search, assistants and automation.' }
     ],
     formats: ['Auth and roles', 'Dashboards and admin', 'PostgreSQL/Supabase', 'OpenAI API and Telegram Bot API'],
-    whatYouGet: ['A working module or MVP for clients, team or investors.', 'Code without random AI-generated chaos.', 'A clear next-step roadmap.']
+    whatYouGet: ['A working module or MVP for clients, team or investors.', 'Code without random AI shortcuts.', 'A clear next-step roadmap.']
   },
   {
     id: 'bots',
     slug: 'bots',
     title: 'Telegram bots with AI, DB and admin panel',
     cardTitle: 'TELEGRAM BOTS WITH AI AND DB',
-    cardBenefit: 'Bots for leads, support, content, payments and internal workflows',
+    cardBenefit: 'Bots for leads, support, content, payments and internal processes',
     description: 'Telegram bots and AI bots with database, admin panel, scenarios, OpenAI API and integrations.',
     deliverables: ['Telegram Bot API', 'AI logic', 'database', 'admin panel'],
     idealFor: 'leads, support, sales, internal processes',
@@ -572,9 +572,9 @@ const enServices: ServicePackage[] = [
     slug: 'ai-agents',
     title: 'AI agents and GPT assistants',
     cardTitle: 'AI AGENTS FOR BUSINESS',
-    cardBenefit: 'Assistants, workflows and knowledge bases for real processes',
-    description: 'GPT assistants and AI agents for business: knowledge base, instructions, workflow, input checks and team support.',
-    deliverables: ['role and instructions', 'knowledge base', 'workflow', 'test scenarios'],
+    cardBenefit: 'Assistants, operating scenarios and knowledge bases for real processes',
+    description: 'GPT assistants and AI agents for business: knowledge base, instructions, operating scenarios, input checks and team support.',
+    deliverables: ['role and instructions', 'knowledge base', 'operating scenarios', 'test scenarios'],
     idealFor: 'teams, training, marketing, internal processes',
     priceLabel: 'from 25,000 RUB',
     cta: 'Build assistant',
@@ -583,9 +583,9 @@ const enServices: ServicePackage[] = [
     useCases: [
       { title: 'Knowledge-base assistant', description: 'Answers based on regulations, products, instructions and internal documents.' },
       { title: 'Marketing GPT', description: 'Drafts for posts, scripts, emails and platform adaptations.' },
-      { title: 'Workflow agent', description: 'Support for repeatable tasks, routing and input validation.' }
+      { title: 'Process agent', description: 'Support for repeatable tasks, routing and input validation.' }
     ],
-    formats: ['Custom GPT', 'Process AI agent', 'Knowledge-base assistant', 'Workflow and approval gates'],
+    formats: ['Custom GPT', 'Process AI agent', 'Knowledge-base assistant', 'Operating scenario and approval gates'],
     whatYouGet: ['An assistant configured for your task.', 'Structured materials and behavior rules.', 'Instructions and test scenarios for use.']
   }
 ];
@@ -596,7 +596,7 @@ export const content: Record<Locale, SiteContent> = {
     meta: {
       title: 'Stanislav Polesko - Music, Creative Direction, AI Production',
       description:
-        'Мобильная витрина услуг Станислава Полеско: музыка, creative direction, AI production и полный каталог Real Vibe услуг.'
+        'Музыка, звук, AI-видео, визуалы, сайты, боты и MVP под задачи артистов, брендов и бизнеса.'
     },
     nav: {
       home: 'Главная',
@@ -606,9 +606,9 @@ export const content: Record<Locale, SiteContent> = {
     },
     hero: {
       name: 'STANISLAV POLESKO',
-      role: 'Grammy producer / composer / creative direction / AI production',
+      role: 'Grammy producer / composer / creative director / AI production',
       body:
-        'Музыка, визуальные решения, AI production и полный production stack для артистов, брендов и бизнес-задач.',
+        'Музыка, звук, визуальные решения, AI-продакшн и digital-разработка для артистов, брендов и бизнес-задач.',
       primaryCta: 'Собрать заявку',
       secondaryCta: 'Смотреть услуги',
       status: 'Moscow / worldwide'
@@ -616,54 +616,54 @@ export const content: Record<Locale, SiteContent> = {
     servicesIntro: {
       title: 'Что нужно собрать?',
       body:
-        'Музыка, звук, AI-видео, визуалы, контент, сайты, боты и MVP. Добавьте одно или несколько направлений в заявку.'
+        'Выберите одно направление или соберите проект из нескольких: музыка, звук, AI-видео, визуалы, контент, сайты, боты и MVP.'
     },
     services: ruServices,
     proof: {
-      title: 'Сцена, студия, продукт.',
+      title: 'Живой опыт. Цифровой запуск.',
       body:
-        'Визуальная система сайта держится на реальном концертном материале: свет, дым, плотность зала и темная металлическая эстетика.',
-      points: ['live energy', 'production discipline', 'sales funnel']
+        'Проект собирается не из шаблонов: концертная практика, студийная работа, визуальный продакшн и AI-инструменты сходятся в один понятный результат.',
+      points: ['музыка и звук', 'визуал и видео', 'сайт, бот, запуск']
     },
     dropsIntro: {
-      title: 'Limited drops',
+      title: 'Лимитированные дропы',
       body:
-        'Мерч и артефакты проекта остаются отдельной витриной. Их можно добавить в ту же заявку вместе с услугами.'
+        'Мерч и редкие вещи проекта. Добавьте интересующий дроп в заявку, и мы уточним наличие, размер и доставку.'
     },
     drops: [
       {
         id: 'dominina-shirt',
         title: 'Dominina shirt',
-        type: 'Merch / limited',
+        type: 'Мерч / лимитировано',
         media: '/media/dominina-shirt.jpg',
-        status: 'manual order',
-        availabilityLabel: 'наличие уточняется',
-        cta: 'Добавить дроп'
+        status: 'по запросу',
+        availabilityLabel: 'размеры и наличие уточним в Telegram',
+        cta: 'Добавить мерч'
       }
     ],
     contact: {
-      title: 'Опишите задачу.',
+      title: 'Расскажите о проекте.',
       body:
-        'Соберите подборку услуг, оставьте вводные и удобный контакт. Telegram-сообщение уйдет с услугами, ценами и Roistat, если он пришел из рекламы.',
-      telegramCta: 'Открыть Telegram',
-      submitCta: 'Собрать заявку',
-      success: 'Заявка собрана. Telegram откроется в новом окне.',
+        'Выберите услуги, добавьте детали и оставьте контакт. В Telegram откроется готовое сообщение с подборкой, бюджетом, сроками и ссылкой на страницу.',
+      telegramCta: 'Написать в Telegram',
+      submitCta: 'Отправить в Telegram',
+      success: 'Сообщение собрано. Telegram откроется в новом окне.',
       fields: {
         selectedOffering: 'Подборка',
         name: 'Имя',
         contact: 'Контакт',
         budgetRange: 'Бюджет',
         timeline: 'Срок',
-        message: 'Вводные'
+        message: 'Задача'
       },
       placeholders: {
-        name: 'Как к вам обращаться',
-        contact: '@telegram, email или телефон',
-        message: 'Коротко: проект, задача, референсы, дедлайн'
+        name: 'Ваше имя',
+        contact: 'Telegram, email или телефон',
+        message: 'Что нужно сделать, какие есть референсы и сроки'
       },
       options: {
-        budget: ['уточнить после вводных', 'до 50 000₽', '50 000-150 000₽', '150 000₽+'],
-        timeline: ['срочно', '2-4 недели', '1-3 месяца', 'исследуем']
+        budget: ['решим после обсуждения', 'до 50 000₽', '50 000-150 000₽', '150 000₽+'],
+        timeline: ['срочно', '2-4 недели', '1-3 месяца', 'пока исследуем']
       }
     }
   },
@@ -672,7 +672,7 @@ export const content: Record<Locale, SiteContent> = {
     meta: {
       title: 'Stanislav Polesko - Music, Creative Direction, AI Production',
       description:
-        'Mobile services showcase for Stanislav Polesko: music, creative direction, AI production and the full Real Vibe service catalog.'
+        'Music, sound, AI video, visuals, websites, bots and MVPs for artists, brands and business launches.'
     },
     nav: {
       home: 'Home',
@@ -682,9 +682,9 @@ export const content: Record<Locale, SiteContent> = {
     },
     hero: {
       name: 'STANISLAV POLESKO',
-      role: 'Grammy producer / composer / creative direction / AI production',
+      role: 'Grammy producer / composer / creative director / AI production',
       body:
-        'Music, visual systems, AI production and a full production stack for artists, brands and business tasks.',
+        'Music, sound, visual direction, AI production and digital development for artists, brands and business tasks.',
       primaryCta: 'Build inquiry',
       secondaryCta: 'View services',
       status: 'Moscow / worldwide'
@@ -692,19 +692,19 @@ export const content: Record<Locale, SiteContent> = {
     servicesIntro: {
       title: 'What should we build?',
       body:
-        'Music, sound, AI video, visuals, content, websites, bots and MVPs. Add one or more directions to the inquiry.'
+        'Choose one direction or combine several: music, sound, AI video, visuals, content, websites, bots and MVPs.'
     },
     services: enServices,
     proof: {
-      title: 'Stage, studio, product.',
+      title: 'Live craft. Digital launch.',
       body:
-        'The site system is built from real concert material: light, smoke, room pressure and a dark metal-driven atmosphere.',
-      points: ['live energy', 'production discipline', 'sales funnel']
+        'Projects are built beyond templates: stage experience, studio work, visual production and AI tools come together as one clear result.',
+      points: ['music and sound', 'visuals and video', 'website, bot, launch']
     },
     dropsIntro: {
       title: 'Limited drops',
       body:
-        'Merch and project artifacts remain a separate shop surface. They can be added to the same inquiry with services.'
+        'Merch and rare project pieces. Add a drop to the inquiry and we will confirm size, availability and delivery.'
     },
     drops: [
       {
@@ -712,33 +712,33 @@ export const content: Record<Locale, SiteContent> = {
         title: 'Dominina shirt',
         type: 'Merch / limited',
         media: '/media/dominina-shirt.jpg',
-        status: 'manual order',
-        availabilityLabel: 'availability on request',
-        cta: 'Add drop'
+        status: 'on request',
+        availabilityLabel: 'sizes and availability confirmed in Telegram',
+        cta: 'Add merch'
       }
     ],
     contact: {
-      title: 'Tell me the task.',
+      title: 'Tell me about the project.',
       body:
-        'Build a service selection, add context and a preferred contact. The Telegram message includes services, prices and Roistat attribution when present.',
-      telegramCta: 'Open Telegram',
-      submitCta: 'Build inquiry',
-      success: 'Inquiry prepared. Telegram will open in a new window.',
+        'Choose services, add context and leave a contact. Telegram will open with a prepared message including the selection, budget, timeline and page link.',
+      telegramCta: 'Message on Telegram',
+      submitCta: 'Send to Telegram',
+      success: 'Message prepared. Telegram will open in a new window.',
       fields: {
         selectedOffering: 'Selection',
         name: 'Name',
         contact: 'Contact',
         budgetRange: 'Budget',
         timeline: 'Timeline',
-        message: 'Context'
+        message: 'Task'
       },
       placeholders: {
-        name: 'How should we address you',
-        contact: '@telegram, email or phone',
-        message: 'Project, task, references, deadline'
+        name: 'Your name',
+        contact: 'Telegram, email or phone',
+        message: 'What should be done, references and timing'
       },
       options: {
-        budget: ['define after context', 'under 50,000 RUB', '50,000-150,000 RUB', '150,000 RUB+'],
+        budget: ['discuss after context', 'under 50,000 RUB', '50,000-150,000 RUB', '150,000 RUB+'],
         timeline: ['urgent', '2-4 weeks', '1-3 months', 'exploring']
       }
     }
