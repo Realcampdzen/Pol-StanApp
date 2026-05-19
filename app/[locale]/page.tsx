@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PolstanApp } from '@/components/polstan-app';
 import { content, isLocale, locales } from '@/lib/content';
+import { buildQueryString } from '@/lib/query-string';
 import { normalizeRoistatVisit } from '@/lib/roistat';
 
 type LocalePageProps = {
@@ -49,22 +50,4 @@ export default async function LocalePage({ params, searchParams }: LocalePagePro
       initialRoistatVisit={normalizeRoistatVisit(query.roistat_visit)}
     />
   );
-}
-
-function buildQueryString(query: Record<string, string | string[] | undefined>) {
-  const params = new URLSearchParams();
-
-  for (const [key, value] of Object.entries(query)) {
-    if (Array.isArray(value)) {
-      value.forEach((entry) => params.append(key, entry));
-      continue;
-    }
-
-    if (value) {
-      params.set(key, value);
-    }
-  }
-
-  const serialized = params.toString();
-  return serialized ? `?${serialized}` : '';
 }

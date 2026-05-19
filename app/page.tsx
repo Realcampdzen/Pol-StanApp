@@ -1,5 +1,12 @@
 import { redirect } from 'next/navigation';
+import { buildQueryString } from '@/lib/query-string';
 
-export default function HomePage() {
-  redirect('/ru');
+type HomePageProps = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function HomePage({ searchParams }: HomePageProps) {
+  const query = await searchParams;
+
+  redirect(`/ru${buildQueryString(query)}`);
 }

@@ -132,6 +132,7 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
       />
       <Contact
         content={content}
+        initialQueryString={initialQueryString}
         onToggleSelection={toggleSelection}
         roistatVisit={roistatVisit}
         selectedOfferings={selectedOfferings}
@@ -723,15 +724,18 @@ function Drops({
 
 function Contact({
   content,
+  initialQueryString,
   onToggleSelection,
   roistatVisit,
   selectedOfferings
 }: {
   content: SiteContent;
+  initialQueryString: string;
   onToggleSelection: (item: InquiryItem) => void;
   roistatVisit: string;
   selectedOfferings: InquiryItem[];
 }) {
+  const fallbackSourceUrl = `https://polstan.ru/${content.locale}${initialQueryString}`;
   const [form, setForm] = useState<FormState>({
     name: '',
     contact: '',
@@ -739,18 +743,23 @@ function Contact({
     timeline: content.contact.options.timeline[0],
     message: ''
   });
+  const [sourceUrl, setSourceUrl] = useState(fallbackSourceUrl);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    setSourceUrl(window.location.href);
+  }, []);
 
   function updateField(field: keyof FormState, value: string) {
     setForm((current) => ({ ...current, [field]: value }));
   }
 
-  function buildIntent(sourceOverride?: string): LeadIntent {
+  function buildIntent(): LeadIntent {
     const selectedOffering = selectedOfferings.map((item) => item.title).join(', ');
 
     return {
       locale: content.locale,
-      source: sourceOverride ?? (typeof window === 'undefined' ? `https://polstan.ru/${content.locale}` : window.location.href),
+      source: sourceUrl,
       selectedOffering,
       selectedOfferings: selectedOfferings.map((item) => ({
         title: item.title,
@@ -769,7 +778,7 @@ function Contact({
     window.open(link, '_blank', 'noopener,noreferrer');
   }
 
-  const quickTelegramMessage = buildTelegramMessage(buildIntent(`https://polstan.ru/${content.locale}`));
+  const quickTelegramMessage = buildTelegramMessage(buildIntent());
   const emptySelection = selectedOfferings.length === 0;
 
   return (
@@ -968,14 +977,14 @@ function scrollToId(id: string) {
 
 const branchLabels: Record<Locale, Record<ServicePackage['branch'], string>> = {
   ru: {
-    polstan: 'PolStan branch',
-    'real-vibe': 'Real Vibe stack',
-    shared: 'Shared production'
+    polstan: 'Music / creative',
+    'real-vibe': 'Digital / AI',
+    shared: 'Production'
   },
   en: {
-    polstan: 'PolStan branch',
-    'real-vibe': 'Real Vibe stack',
-    shared: 'Shared production'
+    polstan: 'Music / creative',
+    'real-vibe': 'Digital / AI',
+    shared: 'Production'
   }
 };
 

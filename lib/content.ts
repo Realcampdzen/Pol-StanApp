@@ -614,9 +614,9 @@ export const content: Record<Locale, SiteContent> = {
       status: 'Moscow / worldwide'
     },
     servicesIntro: {
-      title: 'Полная витрина: звук, визуал, AI, web и запуск.',
+      title: 'Что нужно собрать?',
       body:
-        'PolStan-first подача с полным каталогом Real Vibe: выберите одно или несколько направлений, а форма соберёт единый brief в Telegram.'
+        'Музыка, звук, AI-видео, визуалы, контент, сайты, боты и MVP. Добавьте одно или несколько направлений в заявку.'
     },
     services: ruServices,
     proof: {
@@ -628,7 +628,7 @@ export const content: Record<Locale, SiteContent> = {
     dropsIntro: {
       title: 'Limited drops',
       body:
-        'Мерч и артефакты проекта остаются отдельной витриной. Их можно добавить в тот же brief вместе с услугами.'
+        'Мерч и артефакты проекта остаются отдельной витриной. Их можно добавить в ту же заявку вместе с услугами.'
     },
     drops: [
       {
@@ -662,7 +662,7 @@ export const content: Record<Locale, SiteContent> = {
         message: 'Коротко: проект, задача, референсы, дедлайн'
       },
       options: {
-        budget: ['уточнить после брифа', 'до 50 000₽', '50 000-150 000₽', '150 000₽+'],
+        budget: ['уточнить после вводных', 'до 50 000₽', '50 000-150 000₽', '150 000₽+'],
         timeline: ['срочно', '2-4 недели', '1-3 месяца', 'исследуем']
       }
     }
@@ -690,9 +690,9 @@ export const content: Record<Locale, SiteContent> = {
       status: 'Moscow / worldwide'
     },
     servicesIntro: {
-      title: 'Full showcase: sound, visual, AI, web and launch.',
+      title: 'What should we build?',
       body:
-        'PolStan-first presentation with the full Real Vibe catalog: choose one or more directions and the form builds one Telegram brief.'
+        'Music, sound, AI video, visuals, content, websites, bots and MVPs. Add one or more directions to the inquiry.'
     },
     services: enServices,
     proof: {
@@ -704,7 +704,7 @@ export const content: Record<Locale, SiteContent> = {
     dropsIntro: {
       title: 'Limited drops',
       body:
-        'Merch and project artifacts remain a separate shop surface. They can be added to the same brief with services.'
+        'Merch and project artifacts remain a separate shop surface. They can be added to the same inquiry with services.'
     },
     drops: [
       {
@@ -738,7 +738,7 @@ export const content: Record<Locale, SiteContent> = {
         message: 'Project, task, references, deadline'
       },
       options: {
-        budget: ['define after brief', 'under 50,000 RUB', '50,000-150,000 RUB', '150,000 RUB+'],
+        budget: ['define after context', 'under 50,000 RUB', '50,000-150,000 RUB', '150,000 RUB+'],
         timeline: ['urgent', '2-4 weeks', '1-3 months', 'exploring']
       }
     }
