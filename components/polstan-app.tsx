@@ -44,6 +44,7 @@ type InquiryItem = {
 
 export function PolstanApp({ content, initialQueryString, initialRoistatVisit }: PolstanAppProps) {
   const initialSelection = content.services[0] ? [serviceKey(content.services[0])] : [];
+  const [contactVisible, setContactVisible] = useState(false);
   const [selectedKeys, setSelectedKeys] = useState<string[]>(initialSelection);
   const [roistatVisit, setRoistatVisit] = useState(initialRoistatVisit);
   const catalogItems = useMemo(() => buildCatalogItems(content), [content]);
@@ -64,6 +65,21 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
       setRoistatVisit(storedVisit);
     }
   }, [initialRoistatVisit]);
+
+  useEffect(() => {
+    const contact = document.getElementById('contact');
+    if (!contact) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(([entry]) => setContactVisible(entry.isIntersecting), {
+      rootMargin: '0px 0px -35% 0px',
+      threshold: 0.08
+    });
+
+    observer.observe(contact);
+    return () => observer.disconnect();
+  }, []);
 
   function selectAndContact(item: InquiryItem) {
     setSelectedKeys((current) => (current.includes(item.key) ? current : [...current, item.key]));
@@ -118,7 +134,12 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
         roistatVisit={roistatVisit}
         selectedOfferings={selectedOfferings}
       />
-      <InquiryDock content={content} count={selectedOfferings.length} onContact={() => scrollToId('contact')} />
+      <InquiryDock
+        content={content}
+        count={selectedOfferings.length}
+        hidden={contactVisible}
+        onContact={() => scrollToId('contact')}
+      />
       <BottomNav content={content} />
     </main>
   );
@@ -671,7 +692,7 @@ function Contact({
   const emptySelection = selectedOfferings.length === 0;
 
   return (
-    <section className="border-t border-white/10 bg-ink px-4 py-16 sm:px-6 lg:px-8 lg:py-24" id="contact">
+    <section className="border-t border-white/10 bg-ink px-4 pb-40 pt-16 sm:px-6 sm:pb-44 lg:px-8 lg:py-24" id="contact">
       <div className="mx-auto grid max-w-6xl gap-9 xl:grid-cols-[0.85fr_1.15fr]">
         <div className="min-w-0">
           <h2 className="font-display text-4xl font-black uppercase leading-[0.96] text-white sm:text-5xl xl:text-6xl">
@@ -797,8 +818,18 @@ function Contact({
   );
 }
 
-function InquiryDock({ content, count, onContact }: { content: SiteContent; count: number; onContact: () => void }) {
-  if (count === 0) return null;
+function InquiryDock({
+  content,
+  count,
+  hidden,
+  onContact
+}: {
+  content: SiteContent;
+  count: number;
+  hidden: boolean;
+  onContact: () => void;
+}) {
+  if (count === 0 || hidden) return null;
 
   return (
     <button
