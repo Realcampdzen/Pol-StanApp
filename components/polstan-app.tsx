@@ -5,6 +5,7 @@ import {
   ArrowUpRight,
   BriefcaseBusiness,
   ChevronDown,
+  Check,
   Home,
   Languages,
   MessageCircle,
@@ -14,9 +15,9 @@ import {
   ShoppingBag,
   Sparkles
 } from 'lucide-react';
-import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { FormEvent, useEffect, useMemo, useState } from 'react';
-import type { LeadIntent, Locale, ServicePackage, SiteContent } from '@/lib/types';
+import type { DropProduct, LeadIntent, Locale, ServiceOffer, ServicePackage, SiteContent } from '@/lib/types';
 import { ROISTAT_STORAGE_KEY } from '@/lib/roistat';
 import { buildTelegramLink, buildTelegramMessage, getTelegramUsername } from '@/lib/telegram';
 
@@ -34,9 +35,22 @@ type FormState = {
   message: string;
 };
 
+type InquiryItem = {
+  key: string;
+  title: string;
+  priceLabel: string;
+  source: 'service' | 'offer' | 'drop';
+};
+
 export function PolstanApp({ content, initialQueryString, initialRoistatVisit }: PolstanAppProps) {
-  const [selectedOffering, setSelectedOffering] = useState(content.services[0]?.title ?? '');
+  const initialSelection = content.services[0] ? [serviceKey(content.services[0])] : [];
+  const [selectedKeys, setSelectedKeys] = useState<string[]>(initialSelection);
   const [roistatVisit, setRoistatVisit] = useState(initialRoistatVisit);
+  const catalogItems = useMemo(() => buildCatalogItems(content), [content]);
+  const selectedOfferings = useMemo(
+    () => selectedKeys.map((key) => catalogItems.get(key)).filter((item): item is InquiryItem => Boolean(item)),
+    [catalogItems, selectedKeys]
+  );
 
   useEffect(() => {
     if (initialRoistatVisit) {
@@ -51,9 +65,20 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
     }
   }, [initialRoistatVisit]);
 
-  function chooseOffering(offering: string) {
-    setSelectedOffering(offering);
+  function selectAndContact(item: InquiryItem) {
+    setSelectedKeys((current) => (current.includes(item.key) ? current : [...current, item.key]));
     scrollToId('contact');
+  }
+
+  function toggleSelection(item: InquiryItem) {
+    setSelectedKeys((current) => {
+      if (current.includes(item.key)) {
+        const next = current.filter((key) => key !== item.key);
+        return next.length > 0 ? next : current;
+      }
+
+      return [...current, item.key];
+    });
   }
 
   return (
@@ -64,16 +89,36 @@ export function PolstanApp({ content, initialQueryString, initialRoistatVisit }:
         locale={content.locale}
         onContact={() => scrollToId('contact')}
       />
-      <Hero content={content} onContact={() => chooseOffering(content.services[0].title)} />
-      <Services content={content} onChoose={chooseOffering} />
+      <Hero
+        content={content}
+        onContact={() => {
+          if (content.services[0]) {
+            selectAndContact(toServiceInquiryItem(content.services[0]));
+          } else {
+            scrollToId('contact');
+          }
+        }}
+      />
+      <Services
+        content={content}
+        selectedKeys={selectedKeys}
+        onSelectAndContact={selectAndContact}
+        onToggleSelection={toggleSelection}
+      />
       <Proof content={content} />
-      <Drops content={content} onChoose={chooseOffering} />
+      <Drops
+        content={content}
+        selectedKeys={selectedKeys}
+        onSelectAndContact={selectAndContact}
+        onToggleSelection={toggleSelection}
+      />
       <Contact
         content={content}
-        selectedOffering={selectedOffering}
-        setSelectedOffering={setSelectedOffering}
+        onToggleSelection={toggleSelection}
         roistatVisit={roistatVisit}
+        selectedOfferings={selectedOfferings}
       />
+      <InquiryDock content={content} count={selectedOfferings.length} onContact={() => scrollToId('contact')} />
       <BottomNav content={content} />
     </main>
   );
@@ -142,16 +187,12 @@ function LocaleSwitch({ initialQueryString, locale }: { initialQueryString: stri
 }
 
 function Hero({ content, onContact }: { content: SiteContent; onContact: () => void }) {
-  const shouldReduceMotion = useReducedMotion();
-  const { scrollYProgress } = useScroll();
-  const mediaY = useTransform(scrollYProgress, [0, 0.32], shouldReduceMotion ? ['0%', '0%'] : ['0%', '11%']);
-
   return (
     <section
       className="relative isolate min-h-[72svh] overflow-hidden bg-ink pb-20 pt-20 sm:min-h-[80svh] lg:min-h-[64svh]"
       id="home"
     >
-      <motion.div className="absolute inset-0" style={{ y: mediaY }}>
+      <div className="absolute inset-0">
         <video
           aria-label="Concert footage"
           autoPlay
@@ -164,14 +205,14 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
         >
           <source src="/media/hero-concert.mp4" type="video/mp4" />
         </video>
-      </motion.div>
+      </div>
       <div className="hero-vignette absolute inset-0" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/24 to-ink" />
       <div className="relative z-10 mx-auto flex min-h-[calc(72svh-5rem)] max-w-6xl flex-col justify-end px-4 pb-8 sm:min-h-[calc(80svh-5rem)] sm:px-6 lg:min-h-[calc(64svh-5rem)] lg:px-8">
         <motion.div
           animate={{ opacity: 1, y: 0 }}
           className="max-w-4xl"
-          initial={shouldReduceMotion ? false : { opacity: 0, y: 34 }}
+          initial={{ opacity: 0, y: 34 }}
           transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1 className="font-display text-5xl font-black uppercase leading-[0.9] text-white min-[430px]:text-6xl sm:text-7xl lg:text-8xl">
@@ -207,15 +248,24 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
   );
 }
 
-function Services({ content, onChoose }: { content: SiteContent; onChoose: (offering: string) => void }) {
+function Services({
+  content,
+  selectedKeys,
+  onSelectAndContact,
+  onToggleSelection
+}: {
+  content: SiteContent;
+  selectedKeys: string[];
+  onSelectAndContact: (item: InquiryItem) => void;
+  onToggleSelection: (item: InquiryItem) => void;
+}) {
   const [openService, setOpenService] = useState(content.services[0].id);
-  const shouldReduceMotion = useReducedMotion();
 
   return (
     <section className="section-shell border-t border-white/10 bg-ink" id="services">
       <motion.div
         className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-16 lg:px-8 lg:py-24"
-        initial={shouldReduceMotion ? false : { opacity: 0, y: 26 }}
+        initial={{ opacity: 0, y: 26 }}
         transition={{ duration: 0.55 }}
         viewport={{ once: true, margin: '-120px' }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -233,8 +283,11 @@ function Services({ content, onChoose }: { content: SiteContent; onChoose: (offe
                 index={index}
                 isOpen={openService === service.id}
                 key={service.id}
-                onChoose={onChoose}
+                locale={content.locale}
+                onSelectAndContact={onSelectAndContact}
                 onToggle={() => setOpenService(openService === service.id ? '' : service.id)}
+                onToggleSelection={onToggleSelection}
+                selectedKeys={selectedKeys}
                 service={service}
               />
             ))}
@@ -248,16 +301,33 @@ function Services({ content, onChoose }: { content: SiteContent; onChoose: (offe
 function ServiceRow({
   index,
   isOpen,
-  onChoose,
+  locale,
+  onSelectAndContact,
   onToggle,
+  onToggleSelection,
+  selectedKeys,
   service
 }: {
   index: number;
   isOpen: boolean;
-  onChoose: (offering: string) => void;
+  locale: Locale;
+  onSelectAndContact: (item: InquiryItem) => void;
   onToggle: () => void;
+  onToggleSelection: (item: InquiryItem) => void;
+  selectedKeys: string[];
   service: ServicePackage;
 }) {
+  const serviceItem = toServiceInquiryItem(service);
+  const serviceSelected = selectedKeys.includes(serviceItem.key);
+  const branchLabel = branchLabels[locale][service.branch];
+  const toggleLabel = serviceSelected
+    ? locale === 'ru'
+      ? 'В подборке'
+      : 'Selected'
+    : locale === 'ru'
+      ? 'Добавить'
+      : 'Add';
+
   return (
     <article className="border-t border-white/10">
       <button
@@ -283,29 +353,85 @@ function ServiceRow({
             initial={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.28, ease: 'easeOut' }}
           >
-            <div className="grid gap-6 pb-7 sm:grid-cols-[1fr_0.8fr]">
-              <p className="text-base leading-7 text-white/70">{service.description}</p>
-              <div>
-                <p className="mb-3 text-xs uppercase text-white/45">{service.idealFor}</p>
-                <ul className="grid gap-2 text-sm text-white/62">
-                  {service.deliverables.map((item) => (
-                    <li className="flex items-center gap-2" key={item}>
-                      <span className="h-px w-4 bg-ice" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+            <div className="grid gap-6 pb-7 lg:grid-cols-[0.86fr_1fr]">
+              <div className="relative aspect-[16/10] overflow-hidden border border-white/10 bg-black/40">
+                <Image
+                  alt={service.cardTitle}
+                  className="object-cover"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 34vw"
+                  src={service.media}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/12 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-4">
+                  <span className="max-w-[62%] text-[11px] font-semibold uppercase leading-4 text-white/70">
+                    {branchLabel}
+                  </span>
+                  <span className="text-right text-xs font-semibold uppercase text-bronze">{service.priceLabel}</span>
+                </div>
               </div>
-              <div className="sm:col-span-2 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                <span className="text-sm uppercase text-bronze">{service.priceLabel}</span>
-                <button
-                  className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 border border-white/18 px-5 text-sm font-semibold uppercase text-white transition hover:border-ice hover:text-ice"
-                  type="button"
-                  onClick={() => onChoose(service.title)}
-                >
-                  {service.cta}
-                  <ArrowUpRight aria-hidden="true" size={17} />
-                </button>
+              <div className="grid gap-5">
+                <p className="text-base leading-7 text-white/70">{service.description}</p>
+                <div>
+                  <p className="mb-3 text-xs uppercase text-white/45">{service.idealFor}</p>
+                  <ul className="grid gap-2 text-sm text-white/62 sm:grid-cols-2">
+                    {service.deliverables.map((item) => (
+                      <li className="flex items-center gap-2" key={item}>
+                        <span className="h-px w-4 shrink-0 bg-ice" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="grid gap-3">
+                  {service.useCases.slice(0, 2).map((item) => (
+                    <div className="border-l border-ice/40 pl-4" key={item.title}>
+                      <p className="text-xs font-semibold uppercase text-white/70">{item.title}</p>
+                      <p className="mt-1 text-sm leading-6 text-white/52">{item.description}</p>
+                    </div>
+                  ))}
+                </div>
+                {service.offers?.length ? (
+                  <div className="grid gap-2">
+                    <p className="text-xs uppercase text-bronze">
+                      {locale === 'ru' ? 'Быстрые офферы' : 'Fast offers'}
+                    </p>
+                    <div className="grid gap-2 sm:grid-cols-2">
+                      {service.offers.map((offer) => (
+                        <OfferButton
+                          key={offer.id}
+                          locale={locale}
+                          offer={offer}
+                          selected={selectedKeys.includes(offerKey(service, offer))}
+                          service={service}
+                          onToggleSelection={onToggleSelection}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <button
+                    className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 border px-5 text-sm font-semibold uppercase transition ${
+                      serviceSelected
+                        ? 'border-ice bg-ice text-black'
+                        : 'border-white/18 text-white hover:border-ice hover:text-ice'
+                    }`}
+                    type="button"
+                    onClick={() => onToggleSelection(serviceItem)}
+                  >
+                    {serviceSelected ? <Check aria-hidden="true" size={17} /> : <Plus aria-hidden="true" size={17} />}
+                    {toggleLabel}
+                  </button>
+                  <button
+                    className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 bg-white px-5 text-sm font-semibold uppercase text-black transition hover:bg-ice"
+                    type="button"
+                    onClick={() => onSelectAndContact(serviceItem)}
+                  >
+                    {service.cta}
+                    <ArrowUpRight aria-hidden="true" size={17} />
+                  </button>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -315,14 +441,53 @@ function ServiceRow({
   );
 }
 
-function Proof({ content }: { content: SiteContent }) {
-  const shouldReduceMotion = useReducedMotion();
+function OfferButton({
+  locale,
+  offer,
+  selected,
+  service,
+  onToggleSelection
+}: {
+  locale: Locale;
+  offer: ServiceOffer;
+  selected: boolean;
+  service: ServicePackage;
+  onToggleSelection: (item: InquiryItem) => void;
+}) {
+  const item = toOfferInquiryItem(service, offer);
 
+  return (
+    <button
+      className={`focus-ring flex min-h-[5rem] items-start justify-between gap-3 border p-3 text-left transition ${
+        selected ? 'border-ice bg-ice/12' : 'border-white/10 bg-black/24 hover:border-ice/60'
+      }`}
+      type="button"
+      onClick={() => onToggleSelection(item)}
+    >
+      <span className="min-w-0">
+        <span className="block text-sm font-semibold uppercase leading-5 text-white">{offer.title}</span>
+        <span className="mt-1 block text-xs uppercase text-bronze">{offer.priceLabel}</span>
+        <span className="mt-2 block text-xs leading-5 text-white/48">{offer.description}</span>
+      </span>
+      <span
+        className={`grid h-8 w-8 shrink-0 place-items-center border ${
+          selected ? 'border-ice bg-ice text-black' : 'border-white/14 text-white/70'
+        }`}
+        aria-hidden="true"
+      >
+        {selected ? <Check size={15} /> : <Plus size={15} />}
+      </span>
+      <span className="sr-only">{selected ? (locale === 'ru' ? 'Убрать' : 'Remove') : (locale === 'ru' ? 'Добавить' : 'Add')}</span>
+    </button>
+  );
+}
+
+function Proof({ content }: { content: SiteContent }) {
   return (
     <section className="bg-[#050607]" id="proof">
       <div className="mx-auto grid max-w-6xl gap-9 px-4 py-16 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8 lg:py-24">
         <motion.div
-          initial={shouldReduceMotion ? false : { opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 24 }}
           transition={{ duration: 0.55 }}
           viewport={{ once: true, margin: '-120px' }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -342,7 +507,7 @@ function Proof({ content }: { content: SiteContent }) {
         </motion.div>
         <motion.div
           className="grid gap-3 lg:grid-cols-[1.2fr_0.8fr]"
-          initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.98 }}
+          initial={{ opacity: 0, scale: 0.98 }}
           transition={{ duration: 0.7, delay: 0.08 }}
           viewport={{ once: true, margin: '-120px' }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -378,15 +543,26 @@ function Proof({ content }: { content: SiteContent }) {
   );
 }
 
-function Drops({ content, onChoose }: { content: SiteContent; onChoose: (offering: string) => void }) {
+function Drops({
+  content,
+  selectedKeys,
+  onSelectAndContact,
+  onToggleSelection
+}: {
+  content: SiteContent;
+  selectedKeys: string[];
+  onSelectAndContact: (item: InquiryItem) => void;
+  onToggleSelection: (item: InquiryItem) => void;
+}) {
   const drop = content.drops[0];
-  const shouldReduceMotion = useReducedMotion();
+  const dropItem = toDropInquiryItem(drop);
+  const dropSelected = selectedKeys.includes(dropItem.key);
 
   return (
     <section className="bg-ink-soft" id="drops">
       <motion.div
         className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_0.86fr] lg:px-8 lg:py-24"
-        initial={shouldReduceMotion ? false : { opacity: 0, y: 26 }}
+        initial={{ opacity: 0, y: 26 }}
         transition={{ duration: 0.55 }}
         viewport={{ once: true, margin: '-120px' }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -419,12 +595,22 @@ function Drops({ content, onChoose }: { content: SiteContent; onChoose: (offerin
             </div>
             <p className="text-sm uppercase text-white/50">{drop.availabilityLabel}</p>
             <button
-              className="focus-ring mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 bg-white px-5 text-sm font-semibold uppercase text-black transition hover:bg-ice"
+              className={`focus-ring mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 px-5 text-sm font-semibold uppercase transition ${
+                dropSelected ? 'bg-ice text-black' : 'bg-white text-black hover:bg-ice'
+              }`}
               type="button"
-              onClick={() => onChoose(drop.title)}
+              onClick={() => onToggleSelection(dropItem)}
             >
-              <ShoppingBag aria-hidden="true" size={18} />
-              {drop.cta}
+              {dropSelected ? <Check aria-hidden="true" size={18} /> : <ShoppingBag aria-hidden="true" size={18} />}
+              {dropSelected ? (content.locale === 'ru' ? 'В подборке' : 'Selected') : drop.cta}
+            </button>
+            <button
+              className="focus-ring mt-3 inline-flex min-h-12 w-full items-center justify-center gap-2 border border-white/18 px-5 text-sm font-semibold uppercase text-white transition hover:border-ice hover:text-ice"
+              type="button"
+              onClick={() => onSelectAndContact(dropItem)}
+            >
+              {content.locale === 'ru' ? 'Перейти к заявке' : 'Go to inquiry'}
+              <ArrowUpRight aria-hidden="true" size={17} />
             </button>
           </div>
         </div>
@@ -435,19 +621,15 @@ function Drops({ content, onChoose }: { content: SiteContent; onChoose: (offerin
 
 function Contact({
   content,
-  selectedOffering,
-  setSelectedOffering,
-  roistatVisit
+  onToggleSelection,
+  roistatVisit,
+  selectedOfferings
 }: {
   content: SiteContent;
-  selectedOffering: string;
-  setSelectedOffering: (value: string) => void;
+  onToggleSelection: (item: InquiryItem) => void;
   roistatVisit: string;
+  selectedOfferings: InquiryItem[];
 }) {
-  const offerings = useMemo(
-    () => [...content.services.map((service) => service.title), ...content.drops.map((drop) => drop.title)],
-    [content.drops, content.services]
-  );
   const [form, setForm] = useState<FormState>({
     name: '',
     contact: '',
@@ -457,21 +639,21 @@ function Contact({
   });
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    if (!offerings.includes(selectedOffering)) {
-      setSelectedOffering(offerings[0] ?? '');
-    }
-  }, [offerings, selectedOffering, setSelectedOffering]);
-
   function updateField(field: keyof FormState, value: string) {
     setForm((current) => ({ ...current, [field]: value }));
   }
 
-  function buildIntent(): LeadIntent {
+  function buildIntent(sourceOverride?: string): LeadIntent {
+    const selectedOffering = selectedOfferings.map((item) => item.title).join(', ');
+
     return {
       locale: content.locale,
-      source: typeof window === 'undefined' ? `https://polstan.ru/${content.locale}` : window.location.href,
+      source: sourceOverride ?? (typeof window === 'undefined' ? `https://polstan.ru/${content.locale}` : window.location.href),
       selectedOffering,
+      selectedOfferings: selectedOfferings.map((item) => ({
+        title: item.title,
+        priceLabel: item.priceLabel
+      })),
       roistatVisit,
       ...form
     };
@@ -485,13 +667,8 @@ function Contact({
     window.open(link, '_blank', 'noopener,noreferrer');
   }
 
-  const quickTelegramMessage = buildTelegramMessage({
-    locale: content.locale,
-    source: `https://polstan.ru/${content.locale}`,
-    selectedOffering,
-    roistatVisit,
-    ...form
-  });
+  const quickTelegramMessage = buildTelegramMessage(buildIntent(`https://polstan.ru/${content.locale}`));
+  const emptySelection = selectedOfferings.length === 0;
 
   return (
     <section className="border-t border-white/10 bg-ink px-4 py-16 sm:px-6 lg:px-8 lg:py-24" id="contact">
@@ -512,18 +689,42 @@ function Contact({
           </a>
         </div>
         <form className="grid min-w-0 gap-4 border border-white/10 bg-white/[0.035] p-4 sm:p-6" onSubmit={submitInquiry}>
-          <label className="grid gap-2">
-            <span className="text-xs uppercase text-white/46">{content.contact.fields.selectedOffering}</span>
-            <select
-              className="input-control"
-              value={selectedOffering}
-              onChange={(event) => setSelectedOffering(event.target.value)}
-            >
-              {offerings.map((offering) => (
-                <option key={offering}>{offering}</option>
+          <div className="grid gap-3">
+            <div className="flex items-center justify-between gap-4">
+              <span className="text-xs uppercase text-white/46">{content.contact.fields.selectedOffering}</span>
+              <span className="text-xs uppercase text-bronze">
+                {selectedOfferings.length} {content.locale === 'ru' ? 'поз.' : 'items'}
+              </span>
+            </div>
+            <div className="grid gap-2">
+              {selectedOfferings.map((item) => (
+                <div
+                  className="flex min-h-12 items-center justify-between gap-3 border border-white/10 bg-black/24 px-3 py-2"
+                  key={item.key}
+                >
+                  <div className="min-w-0">
+                    <p className="truncate text-sm font-semibold uppercase text-white">{item.title}</p>
+                    <p className="mt-1 text-xs uppercase text-white/45">{item.priceLabel}</p>
+                  </div>
+                  <button
+                    aria-label={content.locale === 'ru' ? 'Убрать из подборки' : 'Remove from selection'}
+                    className="focus-ring grid h-9 w-9 shrink-0 place-items-center border border-white/14 text-white/70 transition hover:border-ice hover:text-ice"
+                    type="button"
+                    onClick={() => onToggleSelection(item)}
+                  >
+                    <Minus aria-hidden="true" size={15} />
+                  </button>
+                </div>
               ))}
-            </select>
-          </label>
+              {emptySelection ? (
+                <p className="border border-white/10 bg-black/24 px-3 py-4 text-sm leading-6 text-white/52">
+                  {content.locale === 'ru'
+                    ? 'Выберите хотя бы одну услугу выше, чтобы собрать заявку.'
+                    : 'Choose at least one service above to build an inquiry.'}
+                </p>
+              ) : null}
+            </div>
+          </div>
           <div className="grid gap-4 sm:grid-cols-2">
             <label className="grid gap-2">
               <span className="text-xs uppercase text-white/46">{content.contact.fields.name}</span>
@@ -581,7 +782,8 @@ function Contact({
             />
           </label>
           <button
-            className="focus-ring inline-flex min-h-[3.25rem] items-center justify-center gap-3 bg-white px-6 text-sm font-semibold uppercase text-black transition hover:bg-ice"
+            className="focus-ring inline-flex min-h-[3.25rem] items-center justify-center gap-3 bg-white px-6 text-sm font-semibold uppercase text-black transition hover:bg-ice disabled:cursor-not-allowed disabled:opacity-40"
+            disabled={emptySelection}
             type="submit"
           >
             <Send aria-hidden="true" size={18} />
@@ -592,6 +794,28 @@ function Contact({
         </form>
       </div>
     </section>
+  );
+}
+
+function InquiryDock({ content, count, onContact }: { content: SiteContent; count: number; onContact: () => void }) {
+  if (count === 0) return null;
+
+  return (
+    <button
+      className="focus-ring fixed inset-x-4 bottom-[5.15rem] z-40 mx-auto flex min-h-12 max-w-md items-center justify-between gap-4 border border-ice/35 bg-black/86 px-4 text-left shadow-glow backdrop-blur-md transition hover:border-ice lg:hidden"
+      type="button"
+      onClick={onContact}
+    >
+      <span className="flex min-w-0 items-center gap-3">
+        <ShoppingBag aria-hidden="true" className="shrink-0 text-ice" size={18} />
+        <span className="truncate text-xs font-semibold uppercase text-white/78">
+          {content.locale === 'ru' ? 'Подборка' : 'Selection'}: {count}
+        </span>
+      </span>
+      <span className="shrink-0 text-xs font-semibold uppercase text-bronze">
+        {content.locale === 'ru' ? 'Заявка' : 'Inquiry'}
+      </span>
+    </button>
   );
 }
 
@@ -628,4 +852,77 @@ function BottomNav({ content }: { content: SiteContent }) {
 
 function scrollToId(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+const branchLabels: Record<Locale, Record<ServicePackage['branch'], string>> = {
+  ru: {
+    polstan: 'PolStan branch',
+    'real-vibe': 'Real Vibe stack',
+    shared: 'Shared production'
+  },
+  en: {
+    polstan: 'PolStan branch',
+    'real-vibe': 'Real Vibe stack',
+    shared: 'Shared production'
+  }
+};
+
+function serviceKey(service: ServicePackage) {
+  return `service:${service.id}`;
+}
+
+function offerKey(service: ServicePackage, offer: ServiceOffer) {
+  return `offer:${service.id}:${offer.id}`;
+}
+
+function dropKey(drop: DropProduct) {
+  return `drop:${drop.id}`;
+}
+
+function toServiceInquiryItem(service: ServicePackage): InquiryItem {
+  return {
+    key: serviceKey(service),
+    title: service.title,
+    priceLabel: service.priceLabel,
+    source: 'service'
+  };
+}
+
+function toOfferInquiryItem(service: ServicePackage, offer: ServiceOffer): InquiryItem {
+  return {
+    key: offerKey(service, offer),
+    title: `${service.title}: ${offer.title}`,
+    priceLabel: offer.priceLabel,
+    source: 'offer'
+  };
+}
+
+function toDropInquiryItem(drop: DropProduct): InquiryItem {
+  return {
+    key: dropKey(drop),
+    title: drop.title,
+    priceLabel: drop.availabilityLabel,
+    source: 'drop'
+  };
+}
+
+function buildCatalogItems(content: SiteContent) {
+  const items = new Map<string, InquiryItem>();
+
+  content.services.forEach((service) => {
+    const serviceItem = toServiceInquiryItem(service);
+    items.set(serviceItem.key, serviceItem);
+
+    service.offers?.forEach((offer) => {
+      const offerItem = toOfferInquiryItem(service, offer);
+      items.set(offerItem.key, offerItem);
+    });
+  });
+
+  content.drops.forEach((drop) => {
+    const dropItem = toDropInquiryItem(drop);
+    items.set(dropItem.key, dropItem);
+  });
+
+  return items;
 }

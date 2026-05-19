@@ -7,9 +7,20 @@ export function getTelegramUsername() {
 }
 
 export function buildTelegramMessage(intent: LeadIntent) {
+  const selectedOfferings = intent.selectedOfferings?.length
+    ? intent.selectedOfferings
+    : [{ title: intent.selectedOffering }];
+  const offeringsText = selectedOfferings
+    .map((offering, index) => {
+      const price = offering.priceLabel ? ` — ${offering.priceLabel}` : '';
+      return `${index + 1}. ${offering.title}${price}`;
+    })
+    .join('\n');
+
   const lines = [
     `PolStan inquiry (${intent.locale.toUpperCase()})`,
-    `Offering: ${intent.selectedOffering}`,
+    'Offerings:',
+    offeringsText,
     `Name: ${intent.name || '-'}`,
     `Contact: ${intent.contact || '-'}`,
     `Budget: ${intent.budgetRange || '-'}`,

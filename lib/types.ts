@@ -1,13 +1,36 @@
 export type Locale = 'ru' | 'en';
 
-export type ServicePackage = {
+export type ServiceBranch = 'polstan' | 'real-vibe' | 'shared';
+
+export type ServiceUseCase = {
+  title: string;
+  description: string;
+};
+
+export type ServiceOffer = {
   id: string;
   title: string;
+  priceLabel: string;
+  description: string;
+};
+
+export type ServicePackage = {
+  id: string;
+  slug: string;
+  title: string;
+  cardTitle: string;
+  cardBenefit: string;
   description: string;
   deliverables: string[];
   idealFor: string;
   priceLabel: string;
   cta: string;
+  media: string;
+  branch: ServiceBranch;
+  useCases: ServiceUseCase[];
+  formats: string[];
+  whatYouGet: string[];
+  offers?: ServiceOffer[];
 };
 
 export type DropProduct = {
@@ -24,6 +47,10 @@ export type LeadIntent = {
   locale: Locale;
   source: string;
   selectedOffering: string;
+  selectedOfferings?: Array<{
+    title: string;
+    priceLabel?: string;
+  }>;
   name: string;
   contact: string;
   message: string;
