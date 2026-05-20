@@ -71,6 +71,20 @@ export type SiteContent = {
     drops: string;
     contact: string;
   };
+  mobileNav: {
+    home: string;
+    selection: string;
+    services: string;
+    drops: string;
+    contact: string;
+  };
+  serviceFilters: {
+    all: string;
+    music: string;
+    sound: string;
+    video: string;
+    ai: string;
+  };
   hero: {
     name: string;
     role: string;

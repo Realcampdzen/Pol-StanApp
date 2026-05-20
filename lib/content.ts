@@ -604,6 +604,20 @@ export const content: Record<Locale, SiteContent> = {
       drops: 'Дропы',
       contact: 'Контакт'
     },
+    mobileNav: {
+      home: 'Главная',
+      selection: 'Подборка',
+      services: 'Услуги',
+      drops: 'Дропы',
+      contact: 'Контакт'
+    },
+    serviceFilters: {
+      all: 'Все',
+      music: 'Музыка',
+      sound: 'Звук',
+      video: 'Видео',
+      ai: 'AI'
+    },
     hero: {
       name: 'STANISLAV POLESKO',
       role: 'Grammy producer / composer / creative director / AI production',
@@ -679,6 +693,20 @@ export const content: Record<Locale, SiteContent> = {
       services: 'Services',
       drops: 'Drops',
       contact: 'Contact'
+    },
+    mobileNav: {
+      home: 'Home',
+      selection: 'Selection',
+      services: 'Services',
+      drops: 'Drops',
+      contact: 'Contact'
+    },
+    serviceFilters: {
+      all: 'All',
+      music: 'Music',
+      sound: 'Sound',
+      video: 'Video',
+      ai: 'AI'
     },
     hero: {
       name: 'STANISLAV POLESKO',

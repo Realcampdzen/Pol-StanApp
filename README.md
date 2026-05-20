@@ -2,6 +2,12 @@
 
 Mobile-first personal web app for Stanislav Polesko: services, limited drops, concert video hero, Telegram-first lead flow and VPS deployment.
 
+## Technical Docs
+
+- [Technical architecture and operations](docs/TECHNICAL.md)
+- [Android TWA build and Play release](android-twa/README.md)
+- [Changelog](CHANGELOG.md)
+
 ## Local Development
 
 ```bash
@@ -23,6 +29,7 @@ Set:
 
 - `NEXT_PUBLIC_TELEGRAM_USERNAME` - Telegram username without `@`.
 - `ACME_EMAIL` - email used by Caddy for Let's Encrypt.
+- `ANDROID_SHA256_CERT_FINGERPRINTS` - comma or whitespace separated Play App Signing SHA-256 fingerprints for `/.well-known/assetlinks.json`.
 
 If `.env` is absent, Docker Compose falls back to `polstan` and `admin@polstan.ru`.
 
@@ -90,3 +97,17 @@ The Next.js container binds to `127.0.0.1:3002` by default. Override with `POLST
 When the site opens with `?roistat_visit=11254905`, the value is stored in `localStorage` and included in generated Telegram lead text.
 
 Full Roistat script integration is intentionally deferred until the project/counter ID is available.
+
+## Android TWA
+
+The Android v1 wrapper lives in `android-twa/` and targets package `ru.polstan.app`.
+
+Build flow:
+
+```powershell
+cd android-twa
+copy local.properties.example local.properties
+npx --yes @bubblewrap/cli@1.24.1 build
+```
+
+Keep the upload keystore in `../.secrets/` or another location outside git. After Play Console creates the internal testing release, copy the **App signing key certificate** SHA-256 fingerprint into `ANDROID_SHA256_CERT_FINGERPRINTS` and redeploy the web app so `https://polstan.ru/.well-known/assetlinks.json` verifies the TWA fullscreen relationship.

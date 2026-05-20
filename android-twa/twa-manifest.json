@@ -1,0 +1,64 @@
+{
+  "packageId": "ru.polstan.app",
+  "host": "polstan.ru",
+  "name": "Stanislav Polesko",
+  "launcherName": "PolStan",
+  "display": "standalone",
+  "themeColor": "#030405",
+  "themeColorDark": "#030405",
+  "navigationColor": "#030405",
+  "navigationColorDark": "#030405",
+  "navigationDividerColor": "#000000",
+  "navigationDividerColorDark": "#000000",
+  "backgroundColor": "#030405",
+  "enableNotifications": false,
+  "startUrl": "/ru",
+  "iconUrl": "https://polstan.ru/icons/icon-512.png",
+  "maskableIconUrl": "https://polstan.ru/icons/icon-maskable-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "../.secrets/polstan-upload.keystore",
+    "alias": "polstan-upload"
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [
+    {
+      "name": "Услуги",
+      "shortName": "Услуги",
+      "url": "https://polstan.ru/ru#services",
+      "chosenIconUrl": "https://polstan.ru/icons/icon-192.png"
+    },
+    {
+      "name": "Заявка",
+      "shortName": "Заявка",
+      "url": "https://polstan.ru/ru#contact",
+      "chosenIconUrl": "https://polstan.ru/icons/icon-192.png"
+    }
+  ],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://polstan.ru/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://polstan.ru/",
+  "minSdkVersion": 23,
+  "orientation": "portrait",
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": [],
+  "protocolHandlers": [],
+  "fileHandlers": [],
+  "launchHandlerClientMode": "",
+  "displayOverride": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "appVersion": "1.0.0"
+}

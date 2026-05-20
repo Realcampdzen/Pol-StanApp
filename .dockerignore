@@ -3,6 +3,10 @@ node_modules
 .git
 .env
 .env*.local
+.secrets
+android-twa
+app-release*.aab
+app-release*.apk
 npm-debug.log*
 Dockerfile.local
 README.local.md
