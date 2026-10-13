@@ -1,0 +1,22 @@
+{
+  "release": "kinetic-20261014",
+  "deployedAt": "2026-10-13T23:17:26.440074+00:00",
+  "image": "sha256:2661a85970ff470a184dd011d74d602157b6170be26a1ac3809707666362d3d9",
+  "buildId": "_XOXdkzz2gwiPi_Ry69WQ",
+  "previousImage": "sha256:b0c5c5fe50915a34fdb3c866d801d4ef5968ea50ecd52eadffed75c8b81f71f6",
+  "canary": true,
+  "range206": true,
+  "originalVideoHashesVerified": true,
+  "nginxUnchanged": true,
+  "buildMemoryLimit": "900m",
+  "buildCpuLimit": 1,
+  "linuxStandalone": true,
+  "sourceFilesVerified": 81,
+  "publicVerification": "passed",
+  "publicBrowserRequests": 48,
+  "publicBrowserErrors": [],
+  "cleanupCompletedAt": "2026-10-13T23:20:15.335870+00:00",
+  "temporaryBuildFilesRemoved": true,
+  "rollbackScript": "/opt/polstan-app-backups/rollback-kinetic-20261014.sh",
+  "sourceArchiveSha256": "ef9e1b45b164cdd2e5f88281de9d14776e542c501e0a4c92689744f92dae996a"
+}

@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { type ImageProps } from 'next/image';
 import {
   ArrowUpRight,
   BriefcaseBusiness,
@@ -49,6 +49,10 @@ type ServiceFilter = keyof SiteContent['serviceFilters'];
 
 const mobileSectionIds: MobileSection[] = ['home', 'services', 'drops', 'contact'];
 const serviceFilters: ServiceFilter[] = ['all', 'music', 'sound', 'video', 'ai'];
+
+function LocalMediaImage({ alt, ...props }: ImageProps) {
+  return <Image {...props} alt={alt} unoptimized />;
+}
 
 export function PolstanApp({ content, initialQueryString, initialRoistatVisit }: PolstanAppProps) {
   const initialSelection = content.services[0] ? [serviceKey(content.services[0])] : [];
@@ -310,7 +314,7 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
     >
       <div className="absolute inset-0 z-0 bg-black">
         {videoError ? (
-          <Image
+          <LocalMediaImage
             alt=""
             className="object-cover"
             fill
@@ -394,7 +398,7 @@ function Hero({ content, onContact }: { content: SiteContent; onContact: () => v
                   key={service.id}
                 >
                   <div className="relative h-full min-h-16 overflow-hidden border border-white/8 bg-black">
-                    <Image
+                    <LocalMediaImage
                       alt=""
                       className="object-cover"
                       fill
@@ -569,13 +573,13 @@ function MobileServiceCard({
     >
       <div className="grid grid-cols-[5.5rem_1fr_3rem] gap-3 p-3">
         <button className="focus-ring relative min-h-24 overflow-hidden border border-white/10 bg-black" type="button" onClick={() => setExpanded((current) => !current)}>
-          <Image alt="" className="object-cover" fill sizes="88px" src={service.media} />
+          <LocalMediaImage alt="" className="object-cover" fill sizes="88px" src={service.media} />
           <span className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
         </button>
         <button className="focus-ring min-w-0 py-1 text-left" type="button" onClick={() => setExpanded((current) => !current)}>
           <span className="block text-[11px] font-semibold uppercase text-ice">{service.cardTitle}</span>
-          <span className="mt-1 block text-base font-black leading-5 text-white">{service.title}</span>
-          <span className="mt-1 line-clamp-2 block text-sm leading-5 text-white/58">{service.description}</span>
+          <span className="mt-1 block break-words text-[15px] font-black leading-6 text-white">{service.title}</span>
+          <span className="mt-2 line-clamp-3 block text-sm leading-6 text-white/58">{service.description}</span>
           <span className="mt-2 block text-xs font-semibold text-bronze">{service.priceLabel}</span>
         </button>
         <button
@@ -737,7 +741,7 @@ function ServiceRow({
           >
             <div className="grid gap-6 pb-7 lg:grid-cols-[0.86fr_1fr]">
               <div className="relative aspect-[16/10] overflow-hidden border border-white/10 bg-black/40">
-                <Image
+                <LocalMediaImage
                   alt={service.cardTitle}
                   className="object-cover"
                   fill
@@ -895,7 +899,7 @@ function Proof({ content }: { content: SiteContent }) {
           whileInView={{ opacity: 1, scale: 1 }}
         >
           <div className="relative aspect-[5/4] overflow-hidden border border-white/10 lg:aspect-auto lg:min-h-[390px]">
-            <Image
+            <LocalMediaImage
               alt="Concert crowd with blue stage lighting"
               className="object-cover object-top"
               fill
@@ -906,7 +910,7 @@ function Proof({ content }: { content: SiteContent }) {
           </div>
           <div className="grid gap-3">
             <div className="relative aspect-[4/3] overflow-hidden border border-white/10 lg:aspect-auto lg:min-h-[188px]">
-              <Image
+              <LocalMediaImage
                 alt="Tour team with instruments"
                 className="object-cover object-top"
                 fill
@@ -951,7 +955,7 @@ function Drops({
         <p className="mt-3 text-sm leading-6 text-white/62">{content.dropsIntro.body}</p>
         <div className="mt-6 overflow-hidden border border-white/12 bg-black/34">
           <div className="relative aspect-[4/3] bg-white">
-            <Image
+            <LocalMediaImage
               alt={drop.title}
               className="object-contain"
               fill
@@ -1006,7 +1010,7 @@ function Drops({
         </div>
         <div className="border border-white/10 bg-black/28">
           <div className="relative aspect-[16/10] overflow-hidden border-b border-white/10 bg-white">
-            <Image
+            <LocalMediaImage
               alt={drop.title}
               className="object-contain"
               fill
@@ -1134,7 +1138,7 @@ function Contact({
                   key={item.key}
                 >
                   <div className="relative h-12 overflow-hidden border border-white/8 bg-black">
-                    <Image alt="" className="object-cover" fill sizes="56px" src={getInquiryMedia(content, item)} />
+                    <LocalMediaImage alt="" className="object-cover" fill sizes="56px" src={getInquiryMedia(content, item)} />
                   </div>
                   <div className="min-w-0">
                     <p className="truncate text-sm font-semibold leading-5 text-white">{item.title}</p>

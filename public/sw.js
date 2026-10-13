@@ -1,4 +1,4 @@
-const VERSION = 'polstan-pwa-v2';
+const VERSION = 'polstan-pwa-v9-kinetic-brand';
 const SHELL_CACHE = `${VERSION}-shell`;
 const STATIC_CACHE = `${VERSION}-static`;
 const MEDIA_CACHE = `${VERSION}-media`;
@@ -12,7 +12,18 @@ const APP_SHELL = [
   '/icons/icon-512.png',
   '/icons/icon-maskable-512.png',
   '/media/crowd-stage.jpg',
-  '/media/tour-team.jpg'
+  '/media/tour-team.jpg',
+  '/media/dominina-shirt.jpg',
+  '/media/services/music/cover-stage-premium.jpg',
+  '/media/services/sound-design/cover.jpg',
+  '/media/services/creative-production/dominia-key-visual.jpg',
+  '/media/brand/live-poster-v4.webp',
+  '/media/brand/tamas-v4.jpg',
+  '/media/brand/bach-v4.webp',
+  '/media/brand/billboard-dominia.jpg',
+  '/media/brand/billboard-cover.jpg',
+  '/media/brand/metalfan-chart.jpg',
+  '/media/brand/metro-projects.jpg'
 ];
 
 self.addEventListener('install', (event) => {

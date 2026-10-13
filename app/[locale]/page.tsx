@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { PolstanApp } from '@/components/polstan-app';
+import { BrandExperience } from '@/components/brand-experience';
 import { content, isLocale, locales } from '@/lib/content';
+import { getBrandContent } from '@/lib/brand-content';
 import { buildQueryString } from '@/lib/query-string';
 import { normalizeRoistatVisit } from '@/lib/roistat';
 
@@ -21,11 +22,20 @@ export async function generateMetadata({ params }: LocalePageProps): Promise<Met
     return {};
   }
 
-  const pageContent = content[locale];
+  const pageContent = getBrandContent(locale);
 
   return {
     title: pageContent.meta.title,
     description: pageContent.meta.description,
+    openGraph: {
+      type: 'website',
+      locale: locale === 'ru' ? 'ru_RU' : 'en_US',
+      url: `/${locale}`,
+      title: pageContent.meta.title,
+      description: pageContent.meta.description,
+      images: [{ url: '/media/crowd-stage.jpg', width: 1280, height: 1024, alt: 'DOMINIA live' }]
+    },
+    twitter: { card: 'summary_large_image', title: pageContent.meta.title, description: pageContent.meta.description, images: ['/media/crowd-stage.jpg'] },
     alternates: {
       canonical: `/${locale}`,
       languages: {
@@ -45,7 +55,7 @@ export default async function LocalePage({ params, searchParams }: LocalePagePro
   }
 
   return (
-    <PolstanApp
+    <BrandExperience
       content={content[locale]}
       initialQueryString={buildQueryString(query)}
       initialRoistatVisit={normalizeRoistatVisit(query.roistat_visit)}

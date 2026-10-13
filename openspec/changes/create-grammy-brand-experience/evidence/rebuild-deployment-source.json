@@ -1,0 +1,420 @@
+{
+  "release": "kinetic-20261014",
+  "preparedAt": "2026-10-13T23:10:36.117004+00:00",
+  "localBuildId": "X1Oxj-jj7g_wjzMr04ouJ",
+  "sourceFiles": [
+    {
+      "path": ".dockerignore",
+      "sha256": "91258563bca7f282bacd5163c3f61e2849dc518dd7ce0ef119c6ce512f74840c",
+      "bytes": 226
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "27e5258a898e4086df872f280698fedafdae27ab5919ee2af5111ccc0823346c",
+      "bytes": 806
+    },
+    {
+      "path": "app/.well-known/assetlinks.json/route.ts",
+      "sha256": "193e036cd88eab803ad4c5f7fc9a1123ec38fe2dbf37b1d57982e77228a70a13",
+      "bytes": 975
+    },
+    {
+      "path": "app/[locale]/page.tsx",
+      "sha256": "5a4b40e03dc367af2948f3c45f090e7ca297e96f831c2075768d6b809e6b9fef",
+      "bytes": 1944
+    },
+    {
+      "path": "app/brand.css",
+      "sha256": "c6c3e75a7398b9d42a8ba67ea8226174883a23b4df336e04202f1cb54337843e",
+      "bytes": 28908
+    },
+    {
+      "path": "app/fonts/CormorantName-Italic.woff2",
+      "sha256": "73c55cdf6244b0c608714ca58d2c5691b73f1562d59a939c7902a707fdd2dca5",
+      "bytes": 5288
+    },
+    {
+      "path": "app/fonts/CormorantName-OFL.txt",
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "bytes": 4387
+    },
+    {
+      "path": "app/fonts/DelaName-OFL.txt",
+      "sha256": "c0014792d4f4abc0508c295b277f2b17ae44465c8dc88d12af9cea48279b5fda",
+      "bytes": 4392
+    },
+    {
+      "path": "app/fonts/DelaName.woff2",
+      "sha256": "c626b83877416a305d49b6a36f6d986b03b22198d9d07071de24a75a70b67baa",
+      "bytes": 3296
+    },
+    {
+      "path": "app/fonts/Onest-OFL.txt",
+      "sha256": "071195d8806e226faeee60259c28ca67b458227af5195a73f5cfcab06e3003bc",
+      "bytes": 4384
+    },
+    {
+      "path": "app/fonts/Onest.woff2",
+      "sha256": "be1f0ff04d26dc7438e793c2ead0e6a977636e296e1dea62bab7fa2b8a6c31ea",
+      "bytes": 83912
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "0aa05ea2187ab234e0bbb9599c02a6d2c7c551e543ce7d3c6f91cf11fb66539a",
+      "bytes": 3207
+    },
+    {
+      "path": "app/layout.tsx",
+      "sha256": "0af44348823629bdaabf6e28dad95103a9ab89c4b87efef26ec3675b22165b1a",
+      "bytes": 2330
+    },
+    {
+      "path": "app/not-found.tsx",
+      "sha256": "f014556cfa7bfcaa9921bac4dbb559d55c8f43d10294fa9cc5f655f3fe38c652",
+      "bytes": 513
+    },
+    {
+      "path": "app/page.tsx",
+      "sha256": "e8ca8c126918bb5cf65486aab62fdfccf87e86bd282ed46adbbab78e28435b43",
+      "bytes": 357
+    },
+    {
+      "path": "app/robots.ts",
+      "sha256": "16df1e7cdca99f6b3c9b83c49040314c95481915d8b74dc2e83f2036d9883959",
+      "bytes": 224
+    },
+    {
+      "path": "app/sitemap.ts",
+      "sha256": "4babb64532db4563b3096c9c56f593a327692607b80e33ace4894fe5325205dc",
+      "bytes": 386
+    },
+    {
+      "path": "components/brand-experience.tsx",
+      "sha256": "982169d0864a8409bdd300625a053f4a6e8a49d102f962c98989a7ec871ca13a",
+      "bytes": 16437
+    },
+    {
+      "path": "components/brand-inquiry.tsx",
+      "sha256": "34f0ebf5dd1352d1a15e9f9856d08650e782f8ef6c76083091765aa8515f8229",
+      "bytes": 8299
+    },
+    {
+      "path": "components/brand-motion.tsx",
+      "sha256": "a3f6216696123a87432c6e145e4808c28d7a565bc83286d31a9212a13e5607b2",
+      "bytes": 20426
+    },
+    {
+      "path": "components/live-hero.tsx",
+      "sha256": "e9fccd8bf13699dbacac3525e84586fb10f4be54e37520e5233a24984731c24f",
+      "bytes": 3967
+    },
+    {
+      "path": "components/polstan-app.tsx",
+      "sha256": "c5eb9e3fffd9617265c54d6893b70e33e855ae72967df70807c340947b1836c1",
+      "bytes": 62385
+    },
+    {
+      "path": "components/press-document.tsx",
+      "sha256": "287bbe314f07d90ba37ecfa3fcc9dd576ab9aa3504bd20c1be419e1e015cb9c1",
+      "bytes": 4027
+    },
+    {
+      "path": "docker-compose.nginx.yml",
+      "sha256": "1ca14577712a4731c3da7de1e21f582cafe5fcc41d8bf2cf1d5c4e795db201b4",
+      "bytes": 452
+    },
+    {
+      "path": "eslint.config.mjs",
+      "sha256": "cdb35a86774bda61a2a4c6e8abd45b3fcb237621c9d1c0d8de1a181dd6f4d870",
+      "bytes": 517
+    },
+    {
+      "path": "lib/brand-content.ts",
+      "sha256": "4f6965fff527f8230a08ff223fb5932be29fb5ee794762bc284b0c51dd663e8f",
+      "bytes": 30182
+    },
+    {
+      "path": "lib/content.ts",
+      "sha256": "3921dd78333febab7ee6333db435f371ebfcc3d9b40e0c9080c805dd0d96117e",
+      "bytes": 48596
+    },
+    {
+      "path": "lib/query-string.ts",
+      "sha256": "b588d41da576bdfcf61211fdc04faab27ea77c47ae6d84801f09b79bacbeac47",
+      "bytes": 495
+    },
+    {
+      "path": "lib/roistat.ts",
+      "sha256": "4a32145e764ea99dd3298cfd39825b2ea5ad4f243e20351ffd7a4b6d16de6ff0",
+      "bytes": 221
+    },
+    {
+      "path": "lib/telegram.ts",
+      "sha256": "988d6fc13af5836997a8fa62a95af35d7628c6fb1342792eb802608883884ca8",
+      "bytes": 1297
+    },
+    {
+      "path": "lib/types.ts",
+      "sha256": "edd73630eea8952aaf673a4d87a2ee66f08fa78294366c4070e35b6008ec018c",
+      "bytes": 2401
+    },
+    {
+      "path": "middleware.ts",
+      "sha256": "790dfb39bc8d249819f065e1b344bcd090bb1a0fc4c6ac4b4fc05dd2e1893e5c",
+      "bytes": 377
+    },
+    {
+      "path": "next-env.d.ts",
+      "sha256": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6",
+      "bytes": 262
+    },
+    {
+      "path": "next.config.mjs",
+      "sha256": "a6d9720906b71b03cffe436bf70370db07dfc921acc931385ef397f139f540f3",
+      "bytes": 1208
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "78dae62b289a50c815160e3633fbda5a5bd4816cc894974707459aa82dfd0d0c",
+      "bytes": 171540
+    },
+    {
+      "path": "package.json",
+      "sha256": "2144218ec6bf5be433ca6c7082ed56fa0c1bc92f522e1b77074c5e8c40763fb4",
+      "bytes": 1111
+    },
+    {
+      "path": "postcss.config.mjs",
+      "sha256": "2147573f4053310e348ad9d722882426c884376f42a354daea89bcd663b33b25",
+      "bytes": 103
+    },
+    {
+      "path": "public/apple-touch-icon.png",
+      "sha256": "82de0f21d6bc9d2b7f07dbedd2600bf04d16cd148a797162d5bd3408bbe5d788",
+      "bytes": 1396
+    },
+    {
+      "path": "public/favicon.ico",
+      "sha256": "564c7d6a77186f43650f4fd4ab906f8285427bc0b8764b5a1e3db42f738c7ce8",
+      "bytes": 2793
+    },
+    {
+      "path": "public/icon.svg",
+      "sha256": "9eafdaa737d0a2589d138739fa0c1ab16447be4d707507401f79826e5f1789d5",
+      "bytes": 791
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "sha256": "82de0f21d6bc9d2b7f07dbedd2600bf04d16cd148a797162d5bd3408bbe5d788",
+      "bytes": 1396
+    },
+    {
+      "path": "public/icons/icon-512.png",
+      "sha256": "1fffb972c500d85cf33a9286dd168b2242b4cea7c3d738048e1eaf9425a3153c",
+      "bytes": 4454
+    },
+    {
+      "path": "public/icons/icon-maskable-512.png",
+      "sha256": "6ece6ae83108be3304ae12e5d179a575e69190165df1a94546a5e93d9bc7b99b",
+      "bytes": 4082
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "sha256": "2d9615aabc21f1a227f416304a9944d3f9770c86734bbc33d0955afcf8bd2483",
+      "bytes": 1519
+    },
+    {
+      "path": "public/media/brand/bach-v4.webp",
+      "sha256": "67a13ef2bf94474b0b33790aef80da17524facf0ed7aeb8e4c342ac5291cf779",
+      "bytes": 43160
+    },
+    {
+      "path": "public/media/brand/billboard-cover.jpg",
+      "sha256": "a69ff4f70e19889da2ae28a050174435d95d54dc4926367bac03b952b06786bf",
+      "bytes": 972748
+    },
+    {
+      "path": "public/media/brand/billboard-dominia.jpg",
+      "sha256": "63460c892d435742028a8a3709cba0d9e89667ebfe11a7e87655f4b1a9027a33",
+      "bytes": 878209
+    },
+    {
+      "path": "public/media/brand/live-78-v4.jpg",
+      "sha256": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+      "bytes": 82419
+    },
+    {
+      "path": "public/media/brand/live-poster-v4.webp",
+      "sha256": "5422efa8daf2e018f593b321d229286c2d66c8c8c79556edcbc4cdcab062b554",
+      "bytes": 46806
+    },
+    {
+      "path": "public/media/brand/metalfan-chart.jpg",
+      "sha256": "2a3990d6f57d9488284a05d572d0544da7d82ae0234304ff2eebeddc8d0575d6",
+      "bytes": 184350
+    },
+    {
+      "path": "public/media/brand/metro-projects.jpg",
+      "sha256": "cfc61d926e5205a1ecf9643e373f457a73bb1992eee38b257c9d5a7b4bb656ea",
+      "bytes": 98744
+    },
+    {
+      "path": "public/media/brand/press-78-v4.jpg",
+      "sha256": "faca26d745f29fe25faaad9f1476d31879113e8e8c2affbe7352788256b4d103",
+      "bytes": 87675
+    },
+    {
+      "path": "public/media/brand/tamas-v4.jpg",
+      "sha256": "e5911b86753b954ac07a24a0d6ea35028664d7337e0d6e181387290ef3a8ff14",
+      "bytes": 59747
+    },
+    {
+      "path": "public/media/crowd-stage.jpg",
+      "sha256": "7bc81023933523074f6f146977d7074741e51e9d1c40c5eda0408108beb82e81",
+      "bytes": 129384
+    },
+    {
+      "path": "public/media/dominina-shirt.jpg",
+      "sha256": "65f53d00c3b1871734417725dac21be504c262fc64cd24d18fc2c513666b8683",
+      "bytes": 57063
+    },
+    {
+      "path": "public/media/hero-concert-v2-desktop.mp4",
+      "sha256": "0f060f7d43c5d3f1c03e0d4e5823d1e596e2d73901187d73e44bdc19e60ab681",
+      "bytes": 10064800
+    },
+    {
+      "path": "public/media/hero-concert-v2-mobile.mp4",
+      "sha256": "8233136f48ba17159c78604b5bbc90dfe990df99dc56e545f1277422f14cda7e",
+      "bytes": 5877453
+    },
+    {
+      "path": "public/media/hero-concert.mp4",
+      "sha256": "5ea20102b7af0b3b5af688751d853673e7424510c8a0b7ad7c058e4588777fe4",
+      "bytes": 23867985
+    },
+    {
+      "path": "public/media/services/agentic-ai-dev/cover-hermes-product-2026.jpg",
+      "sha256": "6590774eeea1526d36d9d20db519ca75a581d39fb073649627284a8932e0397c",
+      "bytes": 207768
+    },
+    {
+      "path": "public/media/services/ai-agents/cover.jpg",
+      "sha256": "413aa9b2a161d27454c8a973b0e3ec9b01c7a42d405d6ee5da0f213d91fc9b18",
+      "bytes": 223682
+    },
+    {
+      "path": "public/media/services/ai-photo/cover.jpg",
+      "sha256": "435f9b0c5adc2572d61923b92f1ce2c5c3cfb2de3b8d9bd0edb003d07eaa4b3e",
+      "bytes": 166248
+    },
+    {
+      "path": "public/media/services/ai-video/cover-influencer-reel-2026.jpg",
+      "sha256": "2ce2120cf60f0170b0ddf4cf3d4ce25fac2f14bb74dc2d0ce4eacf98fd459e1d",
+      "bytes": 213830
+    },
+    {
+      "path": "public/media/services/ai-video/teaser-poster.jpg",
+      "sha256": "0c0021f12b8982302b36dddcb32cceca188d86feadf579935d1dab9027da10b2",
+      "bytes": 264693
+    },
+    {
+      "path": "public/media/services/apps/cover-ai-app-product-2026.jpg",
+      "sha256": "fad069bec40a04401a2a967a38fc6f5838c8a5ffa6327ae49cb507a17b9e919d",
+      "bytes": 148127
+    },
+    {
+      "path": "public/media/services/bots/cover.jpg",
+      "sha256": "4606ffcafd80d9ee4c6e98bbfb1a43a1ef65c7b606b0c3812004b9b7b94ae1ea",
+      "bytes": 181246
+    },
+    {
+      "path": "public/media/services/creative-production/dominia-key-visual.jpg",
+      "sha256": "c679ebf520b05e0c9e84b825fbda187d57e4767f69160942714a28c90c8db542",
+      "bytes": 293228
+    },
+    {
+      "path": "public/media/services/creative-production/dominia-key-visual.png",
+      "sha256": "e999599d665ffabe65d37205413f54c9ffe31fc1a8de65a76f2dcffee2c79a73",
+      "bytes": 2416059
+    },
+    {
+      "path": "public/media/services/ecom-animation/cover.jpg",
+      "sha256": "2d1dd8e8aec298b3c0f16279a630831ef37b5147b88dfb18de0af089436c02c3",
+      "bytes": 248194
+    },
+    {
+      "path": "public/media/services/ecom-animation/teaser-poster.jpg",
+      "sha256": "576f6e1d7152d30e6b6887f3dc0baa19e1cadd5927da9496fc4b9009bf82e017",
+      "bytes": 293422
+    },
+    {
+      "path": "public/media/services/music/cover-stage-premium.jpg",
+      "sha256": "fd9ab1e3f7e30cc60d07b160c888238102adfa0b9c036b83dd66a9a673c3a135",
+      "bytes": 71308
+    },
+    {
+      "path": "public/media/services/music/cover.jpg",
+      "sha256": "61c103d99500d8535db1da0df61eeca5e8bc83a174d2a6da6f3e6b10811fd973",
+      "bytes": 215269
+    },
+    {
+      "path": "public/media/services/smm-content/cover-smm-manager-2026.jpg",
+      "sha256": "724840ff23774420e36aff5c036d429c549a0e5a84b32111c184b30b9d12c0b7",
+      "bytes": 184118
+    },
+    {
+      "path": "public/media/services/sound-design/cover.jpg",
+      "sha256": "ef49a0873e0cd954b4bedb5a9da68a1336d1645cd8f3edac5b8da1036090d2af",
+      "bytes": 292484
+    },
+    {
+      "path": "public/media/services/websites/cover-white-monitor.jpg",
+      "sha256": "242898808a5dae093a4fb4097796366a3d05df4c35a2318c54d4ee22fb7b5d2a",
+      "bytes": 298643
+    },
+    {
+      "path": "public/media/tour-team.jpg",
+      "sha256": "9920a430acca067927b9166b61b1c36d64e10ea7cca97d1ca4eb490253091980",
+      "bytes": 119118
+    },
+    {
+      "path": "public/offline.html",
+      "sha256": "0f944cee30cff4a049460c9bb847c8a2adeb5c6a4288a7a5300eeecb9cfb9aae",
+      "bytes": 1467
+    },
+    {
+      "path": "public/robots.txt",
+      "sha256": "b185d8dcf2a21a915d07942332989330f01b00e8dd284d96016ff02fc9938ed0",
+      "bytes": 64
+    },
+    {
+      "path": "public/sw.js",
+      "sha256": "9b4a3012a79257c53e5a86fb58bf5371db2f9990e90691b48eb0c6f6062eb376",
+      "bytes": 3803
+    },
+    {
+      "path": "tailwind.config.ts",
+      "sha256": "6cae14b4db7a04b66a7f0087a2bbf943a192cbe2d8adea9d9843f023a2630f63",
+      "bytes": 716
+    },
+    {
+      "path": "tests/brand-contract.test.mjs",
+      "sha256": "361f5038c1b7b4ab5cd663affd325ce3bef62b8652037bb1a75bc4049884a25d",
+      "bytes": 3645
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "c706793c44f83261b467440674bd653490054a9f1ca653e4fb407ac8fe09dc00",
+      "bytes": 599
+    }
+  ],
+  "sourceFilesCount": 81,
+  "sourceArchiveSha256": "ef9e1b45b164cdd2e5f88281de9d14776e542c501e0a4c92689744f92dae996a",
+  "originalHeroVideosPreserved": true,
+  "unchangedForeignFiles": [
+    "components/polstan-app.tsx",
+    "lib/content.ts",
+    "deploy/nginx/polstan.ru.conf"
+  ]
+}

@@ -1,5 +1,12 @@
 import type { Metadata, Viewport } from 'next';
+import localFont from 'next/font/local';
+import { headers } from 'next/headers';
 import './globals.css';
+import './brand.css';
+
+const onest = localFont({ src: './fonts/Onest.woff2', variable: '--font-onest', weight: '100 900', display: 'swap' });
+const signature = localFont({ src: './fonts/CormorantName-Italic.woff2', variable: '--font-signature', weight: '500', style: 'italic', display: 'swap' });
+const poster = localFont({ src: './fonts/DelaName.woff2', variable: '--font-poster', weight: '400', display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://polstan.ru'),
@@ -42,10 +49,12 @@ export const viewport: Viewport = {
   colorScheme: 'dark'
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = (await headers()).get('x-polstan-locale') === 'en' ? 'en' : 'ru';
   return (
-    <html lang="ru">
-      <body>{children}</body>
+    <html lang={locale}>
+      <head><script dangerouslySetInnerHTML={{ __html: "if(!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.dataset.motionPending='';window.__polstanMotionFallback=setTimeout(function(){delete document.documentElement.dataset.motionPending},2200)}" }} /></head>
+      <body className={`${onest.variable} ${signature.variable} ${poster.variable}`}>{children}</body>
     </html>
   );
 }

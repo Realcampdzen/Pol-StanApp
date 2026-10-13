@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-13T19:24:20.792Z",
+  "base": "http://127.0.0.1:3107",
+  "browser": "153.0.8010.12",
+  "passed": true,
+  "checks": [
+    "both languages at five viewport sizes, all sections accessible, no horizontal overflow, publications fit, pin only on eligible desktop",
+    "primary action fits the initial screen, 44-pixel video targets and current chapter navigation at all five sizes",
+    "mobile menu: open, Escape, restored focus, chapter navigation",
+    "all four project stories open and close by keyboard",
+    "current releases and media precede legacy, DOMINIA roles retain 2004/2025, historical archive works by keyboard",
+    "all five press images decode and retain real source links; documents open at full size",
+    "three publication viewers: fit, actual-size zoom, horizontal pan, keyboard focus trap, Escape and restored focus/scroll",
+    "Russian inquiry: empty and whitespace contacts show an associated inline error, keep focus and create no Telegram draft",
+    "no preselection; two services and prices reach prepared Telegram URL with Unicode, repeated campaign params and Roistat; editing invalidates the draft; no message sent",
+    "locale switch preserves query and repeated campaign values; English document language",
+    "English publication viewer: localized heading, zoom, close and scroll restoration",
+    "English inquiry: localized inline error clears after correction, valid contact prepares the draft",
+    "muted autoplay, explicit pause survives scrolling away/back, manual resume, offscreen pause",
+    "visibilitychange pauses/resumes video with simulated document.hidden",
+    "interrupted manual play preserves healthy video and retry controls (AbortError regression)",
+    "reduced motion: no pin, static live poster, explicit video play works",
+    "without JavaScript: English SSR language, story, native project details, direct contact; form cannot accidentally submit personal fields via GET",
+    "without JavaScript: publication link still opens the original, readable image",
+    "blocked video: real live poster and identity remain visible",
+    "production PWA: new shell cache active, both languages cached, concert videos excluded, offline page renders",
+    "no JavaScript exceptions or console errors in successful browser journeys"
+  ],
+  "viewports": [
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    }
+  ],
+  "designMetrics": [
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 900,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 746,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 8504,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 1366,
+      "height": 768,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 638,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 8208,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "height": 1024,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 869,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 7505,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "height": 844,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 700,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 9682,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "height": 568,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 498,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 9815,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 746,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 8500,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 768,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 638,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 8203,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 869,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 7465,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 700,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 9804,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 568,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 498,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 9559,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "buildId": "wrEHvdT3gV2WSRRztO3JM"
+}

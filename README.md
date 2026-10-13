@@ -1,17 +1,25 @@
-# PolStan PWA
+# PolStan — Stanislav Polesko
 
-Mobile-first personal web app for Stanislav Polesko: services, limited drops, concert video hero, Telegram-first lead flow and VPS deployment.
+The personal website of composer Stanislav Polesko, DOMINIA's producer and manager. The current site connects the original DOMINIA concert film, Tamas and Georgiy Zheryakov's Bach recording in first-round Grammy consideration, real publications and earlier projects.
+
+Live: [Russian](https://polstan.ru/ru) · [English](https://polstan.ru/en).
+
+The frontend uses Next.js, local Onest/Cormorant/Dela fonts and GSAP timelines, SplitText and ScrollTrigger. Desktop publication pinning is conditional on all captions and links fitting the viewport; mobile uses vertical reading. Reduced motion, no-JavaScript content, native document viewers, the service catalog, Telegram inquiry and PWA/TWA support are retained.
+
+First-round consideration is presented separately from nomination. Billboard's For Your Consideration placement and the Metalfan readers' poll are identified accurately. Current work precedes the Strategic Music, G1Deon, BEATKOIN and PolStan Music archive.
 
 ## Technical Docs
 
 - [Technical architecture and operations](docs/TECHNICAL.md)
 - [Android TWA build and Play release](android-twa/README.md)
 - [Changelog](CHANGELOG.md)
+- [Brand experience specification](openspec/changes/create-grammy-brand-experience/proposal.md)
+- [Release and browser verification](openspec/changes/create-grammy-brand-experience/verification.md)
 
 ## Local Development
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
@@ -36,7 +44,7 @@ If `.env` is absent, Docker Compose falls back to `polstan` and `admin@polstan.r
 ## Production Build
 
 ```bash
-npm run lint
+npm run check
 npm run build
 ```
 

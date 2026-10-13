@@ -1,0 +1,101 @@
+PASS installed Linux native bindings
+
+> polstan-pwa@1.0.0 check
+> npm run test:brand && npm run lint && npm run typecheck
+
+
+> polstan-pwa@1.0.0 test:brand
+> node --experimental-strip-types --test tests/brand-contract.test.mjs
+
+TAP version 13
+# (node:43) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///app/lib/brand-content.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to /app/package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: both languages distinguish first-round consideration from nomination, and credit both productions
+ok 1 - both languages distinguish first-round consideration from nomination, and credit both productions
+  ---
+  duration_ms: 2.123526
+  type: 'test'
+  ...
+# Subtest: career retains all four author projects and the correct artist identity
+ok 2 - career retains all four author projects and the correct artist identity
+  ---
+  duration_ms: 2.545412
+  type: 'test'
+  ...
+# Subtest: Telegram intent preserves multiple offerings, prices, Unicode and campaign attribution
+ok 3 - Telegram intent preserves multiple offerings, prices, Unicode and campaign attribution
+  ---
+  duration_ms: 42.576596
+  type: 'test'
+  ...
+# Subtest: unselected inquiry stays general and omits absent tracking
+ok 4 - unselected inquiry stays general and omits absent tracking
+  ---
+  duration_ms: 0.373387
+  type: 'test'
+  ...
+# Subtest: locale query preserves repeated campaign values and safe URL encoding
+ok 5 - locale query preserves repeated campaign values and safe URL encoding
+  ---
+  duration_ms: 0.840633
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 355.287741
+
+> polstan-pwa@1.0.0 lint
+> eslint .
+
+
+> polstan-pwa@1.0.0 typecheck
+> tsc --noEmit
+
+
+> polstan-pwa@1.0.0 build
+> next build
+
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+   ▲ Next.js 15.5.18
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 32.4s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/8) ...
+   Generating static pages (2/8)
+   Generating static pages (4/8)
+   Generating static pages (6/8)
+ ✓ Generating static pages (8/8)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ƒ /                                      135 B         103 kB
+├ ƒ /_not-found                            135 B         103 kB
+├ ƒ /.well-known/assetlinks.json           135 B         103 kB
+├ ● /[locale]                            22.6 kB         125 kB
+├   ├ /ru
+├   └ /en
+├ ○ /robots.txt                            135 B         103 kB
+└ ○ /sitemap.xml                           135 B         103 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/255-4f84124391a7dac4.js       46.2 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          2.03 kB
+
+
+ƒ Middleware                             34.1 kB
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand

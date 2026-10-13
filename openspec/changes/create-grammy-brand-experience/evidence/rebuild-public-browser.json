@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-13T23:17:38.946Z",
+  "buildId": "_XOXdkzz2gwiPi_Ry69WQ",
+  "passed": true,
+  "navigations": [
+    "https://polstan.ru/ru",
+    "https://polstan.ru/en"
+  ],
+  "requests": 48,
+  "errors": [],
+  "checks": [
+    "RU published build, three local fonts loaded, new author signature, metadata, 2025 source, muted live playback",
+    "Published GSAP publication reel, actual chart image, native reader and Escape",
+    "Mobile signature and buttons, no pin/overflow, menu, corrected helper contrast and Telegram draft without sending",
+    "EN published copy/metadata and byte-identical v9 service worker; local offline QA recorded separately"
+  ],
+  "fonts": {
+    "first": "signature, \"signature Fallback\", Georgia, serif",
+    "last": "poster, \"poster Fallback\", sans-serif",
+    "loaded": [
+      "onest",
+      "signature",
+      "signature Fallback",
+      "poster",
+      "poster Fallback"
+    ]
+  },
+  "additionalApiReads": 1,
+  "publicFramesOpenedByRoot": true,
+  "preservationChecks": {
+    "userAttachments": 16,
+    "foreignFilesUnchanged": true,
+    "originalVideosByteIdentical": true
+  },
+  "qaMediaRemovedFromProject": true,
+  "qaMediaRetentionMethod": "Windows Recycle Bin",
+  "cleanupVerifiedAt": "2026-10-13T23:24:49.880723+00:00"
+}

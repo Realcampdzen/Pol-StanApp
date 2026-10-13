@@ -1,0 +1,1780 @@
+{
+  "date": "2026-10-13T22:57:57.166Z",
+  "base": "http://127.0.0.1:3107",
+  "passed": true,
+  "journeys": [
+    {
+      "device": "desktop",
+      "width": 1440,
+      "height": 900,
+      "samples": [
+        {
+          "transform": "matrix(1, 0, -0.078318, 1.12, 0, 94.4922)",
+          "opacity": "1"
+        },
+        {
+          "transform": "matrix(1, 0, -0.00124179, 1.0021, 0, -1.29296)",
+          "opacity": "1"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        }
+      ],
+      "phases": [
+        {
+          "y": 125,
+          "line": "matrix(1, 0.0874887, 0, 1, 0, 109.609)"
+        },
+        {
+          "y": 250,
+          "line": "matrix(1, 0.0874887, 0, 1, 0, 109.609)"
+        },
+        {
+          "y": 375,
+          "line": "matrix(1, 0.0203464, 0, 1, 0, 22.1898)"
+        },
+        {
+          "y": 500,
+          "line": "matrix(1, 6.98132e-06, 0, 1, 0, -4.37534)"
+        },
+        {
+          "y": 625,
+          "line": "matrix(1, 0, 0, 1, 0, -0.00157837)"
+        },
+        {
+          "y": 750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8970,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "mediaPhases": [
+        {
+          "y": 125,
+          "transform": "matrix(0.8195, -0.0286176, 0.0286176, 0.8195, 0, 96)",
+          "opacity": 1,
+          "clip": "inset(32% 10%)",
+          "top": 1650.7843017578125,
+          "bottom": 2205.5595703125
+        },
+        {
+          "y": 1000,
+          "transform": "matrix(0.949027, -0.0117359, 0.0117359, 0.949027, 0, 27.5531)",
+          "opacity": 1,
+          "clip": "inset(13.9197% 3.5427%)",
+          "top": 670.4953002929688,
+          "bottom": 1298.95458984375
+        },
+        {
+          "y": 1125,
+          "transform": "matrix(1.0196, -7.11815e-05, 7.11815e-05, 1.0196, 0, -9.7862)",
+          "opacity": 1,
+          "clip": "inset(4.0565% 0.0202%)",
+          "top": 488.88946533203125,
+          "bottom": 1155.8818359375
+        },
+        {
+          "y": 1250,
+          "transform": "matrix(1.0003, 0, 0, 1.0003, 0, -0.1435)",
+          "opacity": 1,
+          "clip": "inset(0.0574% 0% 0%)",
+          "top": 379.86773681640625,
+          "bottom": 1034.18896484375
+        },
+        {
+          "y": 1375,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(0%)",
+          "top": 255.109375,
+          "bottom": 909.234375
+        }
+      ],
+      "captionPhases": [
+        {
+          "y": 125,
+          "transform": "matrix(1, 0, 0, 1, 18, 55)",
+          "opacity": 0,
+          "clip": "inset(0px 0px 100%)",
+          "top": 1530.515625,
+          "bottom": 1548.109375
+        },
+        {
+          "y": 875,
+          "transform": "matrix(1, 0, 0, 1, 7.5147, 20.6317)",
+          "opacity": 0.5825,
+          "clip": "inset(0% 0% 41.7486%)",
+          "top": 746.1473388671875,
+          "bottom": 763.7410888671875
+        },
+        {
+          "y": 1000,
+          "transform": "matrix(1, 0, 0, 1, 0.1207, -3.6043)",
+          "opacity": 0.9933,
+          "clip": "inset(0% 0% 0.6707%)",
+          "top": 596.9113159179688,
+          "bottom": 614.5050659179688
+        },
+        {
+          "y": 1125,
+          "transform": "matrix(1, 0, 0, 1, 0, -0.1497)",
+          "opacity": 1,
+          "clip": "inset(0%)",
+          "top": 475.3659362792969,
+          "bottom": 492.9596862792969
+        },
+        {
+          "y": 1250,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(0%)",
+          "top": 350.515625,
+          "bottom": 368.109375
+        }
+      ],
+      "milestones": [
+        "grammy-title",
+        "press-title",
+        "live-title",
+        "story-title",
+        "contact-title"
+      ],
+      "final": {
+        "atEnd": true,
+        "progress": "matrix(1, 0, 0, 1, 0, 0)",
+        "pinned": 1,
+        "headings": [
+          {
+            "id": "grammy-title",
+            "label": "DOMINIA: Tamas.Георгий Жеряков: Bach."
+          },
+          {
+            "id": "press-title",
+            "label": "Полоса Tamas в Billboard.№ 1 в опросе Metalfan."
+          },
+          {
+            "id": "live-title",
+            "label": "Поклонник DOMINIA с 2004.Продюсер и директор с 2025."
+          },
+          {
+            "id": "story-title",
+            "label": "До Tamas: G1Deon,кино и BEATKOIN."
+          },
+          {
+            "id": "contact-title",
+            "label": "Пришлите демо.Обсудим ваш релиз."
+          }
+        ]
+      },
+      "fastAnchor": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "opacity": 1
+      },
+      "keyboardReel": [
+        {
+          "href": "/media/brand/billboard-dominia.jpg",
+          "x": 86.390625,
+          "right": 368.4375,
+          "y": 252.28125,
+          "bottom": 656.28125,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "/media/brand/billboard-cover.jpg",
+          "x": 386.4375,
+          "right": 538.78125,
+          "y": 252.28125,
+          "bottom": 449.28125,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://vk.ru/wall-27452_15027",
+          "x": 86.390625,
+          "right": 231.671875,
+          "y": 694.78125,
+          "bottom": 738.78125,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://bulletins.billboard.com/specialissues/_misc/FLIP%20BOOKS/2026/Billboard_2026_10_1003.pdf#page=323",
+          "x": 256.671875,
+          "right": 420.90625,
+          "y": 694.78125,
+          "bottom": 738.78125,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "/media/brand/metalfan-chart.jpg",
+          "x": 863.96875,
+          "right": 1130.9375,
+          "y": 290.984375,
+          "bottom": 694.984375,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://www.metalfan.nl/article.php?sid=27476",
+          "x": 863.96875,
+          "right": 1005.765625,
+          "y": 733.484375,
+          "bottom": 777.484375,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://vk.ru/wall-27452_15042",
+          "x": 1030.765625,
+          "right": 1279.671875,
+          "y": 733.484375,
+          "bottom": 777.484375,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://78.ru/tv/programs/2026-10-12/vechernee-shou/vechernee-shou-1210261700",
+          "x": 389.3958740234375,
+          "right": 1051.7864990234375,
+          "y": 111.578125,
+          "bottom": 471.578125,
+          "stageLeft": 86.390625,
+          "stageRight": 1354.390625,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://78.ru/tv/programs/2026-10-12/vechernee-shou/vechernee-shou-1210261700",
+          "x": 389.3958740234375,
+          "right": 631.1771240234375,
+          "y": 657.28125,
+          "bottom": 701.28125,
+          "stageLeft": 86.390625,
+          "stageRight": 1354.390625,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://www.metronews.ru/novosti/peterbourg/reviews/gruppa-dominia-i-proekt-bach-the-saddest-transcriptions-for-piano-v-otbore-grammy-2192497/",
+          "x": 615.125,
+          "right": 1335.125,
+          "y": 111.578125,
+          "bottom": 453.578125,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        },
+        {
+          "href": "https://www.metronews.ru/novosti/peterbourg/reviews/gruppa-dominia-i-proekt-bach-the-saddest-transcriptions-for-piano-v-otbore-grammy-2192497/",
+          "x": 615.125,
+          "right": 765.5,
+          "y": 656.984375,
+          "bottom": 700.984375,
+          "stageLeft": 86.390625,
+          "stageRight": 1353.609375,
+          "scrollLeft": 0
+        }
+      ],
+      "reducedCleanup": true
+    },
+    {
+      "device": "mobile",
+      "width": 390,
+      "height": 844,
+      "samples": [
+        {
+          "transform": "matrix(1, 0, -0.00778628, 1.0132, 0, 4.71099)",
+          "opacity": "1"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, 0, -1.8475)",
+          "opacity": "1"
+        },
+        {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1"
+        }
+      ],
+      "phases": [
+        {
+          "y": 125,
+          "line": "matrix(1, 0.0874887, 0, 1, 0, 55.1172)"
+        },
+        {
+          "y": 250,
+          "line": "matrix(1, 0.0453013, 0, 1, 0, 27.5312)"
+        },
+        {
+          "y": 375,
+          "line": "matrix(1, 8.02851e-05, 0, 1, 0, -2.15182)"
+        },
+        {
+          "y": 500,
+          "line": "matrix(1, 0, 0, 1, 0, -0.000485031)"
+        },
+        {
+          "y": 625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 1875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 2875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 3875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 4875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 5875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 6875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 7875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8250,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8375,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8500,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8625,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8750,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 8875,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 9000,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 9125,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        },
+        {
+          "y": 9168,
+          "line": "matrix(1, 0, 0, 1, 0, 0)"
+        }
+      ],
+      "mediaPhases": [
+        {
+          "y": 125,
+          "transform": "matrix(0.8195, -0.0286176, 0.0286176, 0.8195, 0, 96)",
+          "opacity": 1,
+          "clip": "inset(32% 10%)",
+          "top": 1508.3143310546875,
+          "bottom": 1799.4044189453125
+        },
+        {
+          "y": 875,
+          "transform": "matrix(0.879637, -0.0215132, 0.0215132, 0.879637, 0, 64.2525)",
+          "opacity": 1,
+          "clip": "inset(23.6139% 7.005%)",
+          "top": 717.466064453125,
+          "bottom": 1026.7576904296875
+        },
+        {
+          "y": 1000,
+          "transform": "matrix(1.0178, -0.000387254, 0.000387254, 1.0178, 0, -8.8471)",
+          "opacity": 1,
+          "clip": "inset(4.3045% 0.1088%)",
+          "top": 499.28179931640625,
+          "bottom": 848.7427368164062
+        },
+        {
+          "y": 1125,
+          "transform": "matrix(1.0011, 0, 0, 1.0011, 0, -0.5525)",
+          "opacity": 1,
+          "clip": "inset(0.221% 0% 0%)",
+          "top": 385.50872802734375,
+          "bottom": 729.10498046875
+        },
+        {
+          "y": 1250,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(0%)",
+          "top": 261.25,
+          "bottom": 604.46875
+        }
+      ],
+      "captionPhases": [
+        {
+          "y": 125,
+          "transform": "matrix(1, 0, 0, 1, 18, 55)",
+          "opacity": 0,
+          "clip": "inset(0px 0px 100%)",
+          "top": 1413.25,
+          "bottom": 1429.25
+        },
+        {
+          "y": 875,
+          "transform": "matrix(1, 0, 0, 1, 1.0896, -0.4286)",
+          "opacity": 0.9395,
+          "clip": "inset(0% 0% 6.0531%)",
+          "top": 607.8214111328125,
+          "bottom": 623.8214111328125
+        },
+        {
+          "y": 1000,
+          "transform": "matrix(1, 0, 0, 1, 0, -2.0996)",
+          "opacity": 1,
+          "clip": "inset(0%)",
+          "top": 481.150390625,
+          "bottom": 497.150390625
+        },
+        {
+          "y": 1125,
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(0%)",
+          "top": 358.25,
+          "bottom": 374.25
+        }
+      ],
+      "milestones": [
+        "grammy-title",
+        "press-title",
+        "live-title",
+        "story-title",
+        "contact-title"
+      ],
+      "final": {
+        "atEnd": true,
+        "progress": "matrix(1, 0, 0, 1, 0, 0)",
+        "pinned": 0,
+        "headings": [
+          {
+            "id": "grammy-title",
+            "label": "DOMINIA: Tamas.Георгий Жеряков: Bach."
+          },
+          {
+            "id": "press-title",
+            "label": "Полоса Tamas в Billboard.№ 1 в опросе Metalfan."
+          },
+          {
+            "id": "live-title",
+            "label": "Поклонник DOMINIA с 2004.Продюсер и директор с 2025."
+          },
+          {
+            "id": "story-title",
+            "label": "До Tamas: G1Deon,кино и BEATKOIN."
+          },
+          {
+            "id": "contact-title",
+            "label": "Пришлите демо.Обсудим ваш релиз."
+          }
+        ]
+      },
+      "fastAnchor": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "opacity": 1
+      },
+      "keyboardReel": null,
+      "reducedCleanup": true
+    }
+  ],
+  "errors": [],
+  "buildId": "MJKtcGYBOFhctrRDYxUn_",
+  "focusAndResizeRuntime": {
+    "fit": [
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 700
+        },
+        "reel": false,
+        "available": 533,
+        "required": 558,
+        "cards": [
+          {
+            "type": "press-document press-billboard",
+            "client": 533,
+            "needed": 558
+          },
+          {
+            "type": "press-document press-chart",
+            "client": 533,
+            "needed": 558
+          },
+          {
+            "type": "press-tv",
+            "client": 533,
+            "needed": 553
+          },
+          {
+            "type": "press-metro",
+            "client": 533,
+            "needed": 513
+          }
+        ]
+      },
+      {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "reel": true,
+        "available": 601,
+        "required": 542,
+        "cards": [
+          {
+            "type": "press-document press-billboard",
+            "client": 601,
+            "needed": 542
+          },
+          {
+            "type": "press-document press-chart",
+            "client": 601,
+            "needed": 542
+          },
+          {
+            "type": "press-tv",
+            "client": 601,
+            "needed": 536
+          },
+          {
+            "type": "press-metro",
+            "client": 601,
+            "needed": 499
+          }
+        ]
+      },
+      {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "reel": true,
+        "available": 733,
+        "required": 666,
+        "cards": [
+          {
+            "type": "press-document press-billboard",
+            "client": 733,
+            "needed": 627
+          },
+          {
+            "type": "press-document press-chart",
+            "client": 733,
+            "needed": 666
+          },
+          {
+            "type": "press-tv",
+            "client": 733,
+            "needed": 622
+          },
+          {
+            "type": "press-metro",
+            "client": 733,
+            "needed": 589
+          }
+        ]
+      }
+    ],
+    "focus": [
+      {
+        "case": "before-1024",
+        "index": "5",
+        "label": "Результаты опроса",
+        "tag": "A",
+        "reel": true,
+        "required": 617,
+        "available": 733,
+        "reduce": false,
+        "visible": true,
+        "bounds": {
+          "left": 276.17041015625,
+          "right": 417.96728515625,
+          "top": 684.953125,
+          "bottom": 728.953125
+        }
+      },
+      {
+        "case": "after-1023",
+        "index": "5",
+        "label": "Результаты опроса",
+        "tag": "A",
+        "reel": false,
+        "required": null,
+        "available": null,
+        "reduce": false,
+        "visible": true,
+        "bounds": {
+          "left": 547.296875,
+          "right": 689.09375,
+          "top": 428.4375,
+          "bottom": 472.4375
+        }
+      },
+      {
+        "case": "before-reduce",
+        "index": "5",
+        "label": "Результаты опроса",
+        "tag": "A",
+        "reel": true,
+        "required": 666,
+        "available": 733,
+        "reduce": false,
+        "visible": true,
+        "bounds": {
+          "left": 388.7648620605469,
+          "right": 530.561767578125,
+          "top": 733.484375,
+          "bottom": 777.484375
+        }
+      },
+      {
+        "case": "after-reduce",
+        "index": "5",
+        "label": "Результаты опроса",
+        "tag": "A",
+        "reel": false,
+        "required": null,
+        "available": null,
+        "reduce": true,
+        "visible": true,
+        "bounds": {
+          "left": 770.390625,
+          "right": 912.1875,
+          "top": 428.171875,
+          "bottom": 472.171875
+        }
+      },
+      {
+        "case": "after-motion-restored",
+        "index": "5",
+        "label": "Результаты опроса",
+        "tag": "A",
+        "reel": true,
+        "required": 666,
+        "available": 733,
+        "reduce": false,
+        "visible": true,
+        "bounds": {
+          "left": 388.7648620605469,
+          "right": 530.561767578125,
+          "top": 733.484375,
+          "bottom": 777.484375
+        }
+      },
+      {
+        "case": "after-fit-700",
+        "index": "5",
+        "label": "Результаты опроса",
+        "tag": "A",
+        "reel": false,
+        "required": null,
+        "available": null,
+        "reduce": false,
+        "visible": true,
+        "bounds": {
+          "left": 770.390625,
+          "right": 912.1875,
+          "top": 171.171875,
+          "bottom": 215.171875
+        }
+      },
+      {
+        "case": "after-fit-900",
+        "index": "5",
+        "label": "Результаты опроса",
+        "tag": "A",
+        "reel": true,
+        "required": 666,
+        "available": 733,
+        "reduce": false,
+        "visible": true,
+        "bounds": {
+          "left": 388.7648620605469,
+          "right": 530.561767578125,
+          "top": 733.484375,
+          "bottom": 777.484375
+        }
+      },
+      {
+        "case": "outside-focus-not-stolen",
+        "label": "EN",
+        "tag": "A",
+        "reel": false,
+        "required": null,
+        "available": null,
+        "reduce": true,
+        "visible": false,
+        "bounds": {
+          "left": 1360.59375,
+          "right": 1396.8125,
+          "top": 10,
+          "bottom": 54
+        }
+      },
+      {
+        "case": "outside-focus-still-not-stolen",
+        "label": "EN",
+        "tag": "A",
+        "reel": true,
+        "required": 666,
+        "available": 733,
+        "reduce": false,
+        "visible": false,
+        "bounds": {
+          "left": 1360.59375,
+          "right": 1396.8125,
+          "top": 10,
+          "bottom": 54
+        }
+      }
+    ],
+    "errors": []
+  },
+  "additionalMacroPhases": {
+    "hero": [
+      {
+        "at": 2440.5,
+        "film": {
+          "transform": "matrix(1.0485, 0, 0, 1.0485, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(5.4526% 0.3631%)",
+          "top": -21.824981689453125,
+          "bottom": 921.8249206542969,
+          "left": -34.91998291015625,
+          "right": 1474.9198608398438
+        },
+        "name": {
+          "transform": "matrix(1, 0, -0.0102256, 1.0173, 0, 11.0173)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 466.4195251464844,
+          "bottom": 543.321044921875,
+          "left": 86.390625,
+          "right": 369.6323547363281
+        },
+        "author": {
+          "transform": "matrix(1, 0, 0, 1, 0, 8.6788)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 450.2413024902344,
+          "bottom": 838.6788330078125,
+          "left": 86.390625,
+          "right": 1186.390625
+        },
+        "actions": {
+          "transform": "matrix(1, 0, 0, 1, 0, 30)",
+          "opacity": 0,
+          "clip": "none",
+          "top": 806.6097412109375,
+          "bottom": 862.6097412109375,
+          "left": 86.390625,
+          "right": 513.953125
+        }
+      },
+      {
+        "at": 2947.39999999851,
+        "film": {
+          "transform": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(4% 0%)",
+          "top": -17.999969482421875,
+          "bottom": 918.0000305175781,
+          "left": -28.79998779296875,
+          "right": 1468.8001098632812
+        },
+        "name": {
+          "transform": "matrix(1, 0, -3.49066e-06, 1, 0, -3.01891)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 440.01702880859375,
+          "bottom": 515.6107788085938,
+          "left": 86.390625,
+          "right": 368.8596496582031
+        },
+        "author": {
+          "transform": "matrix(1, 0, 0, 1, 0, -4.9981)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 436.56439208984375,
+          "bottom": 825.0018920898438,
+          "left": 86.390625,
+          "right": 1186.390625
+        },
+        "actions": {
+          "transform": "matrix(1, 0, 0, 1, 0, 0.8541)",
+          "opacity": 0.9715,
+          "clip": "none",
+          "top": 769.85595703125,
+          "bottom": 825.85595703125,
+          "left": 86.390625,
+          "right": 513.953125
+        }
+      },
+      {
+        "at": 3504.599999997765,
+        "film": {
+          "transform": "matrix(1.0005, 0, 0, 1.0005, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(0.0459% 0% 0%)",
+          "top": -0.2249755859375,
+          "bottom": 900.2249755859375,
+          "left": -0.3599853515625,
+          "right": 1440.3599853515625
+        },
+        "name": {
+          "transform": "matrix(1, 0, 0, 1, 0, -0.0012095)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 448.030029296875,
+          "bottom": 523.623779296875,
+          "left": 86.390625,
+          "right": 368.859375
+        },
+        "author": {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 441.5625,
+          "bottom": 830,
+          "left": 86.390625,
+          "right": 1186.390625
+        },
+        "actions": {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 774,
+          "bottom": 830,
+          "left": 86.390625,
+          "right": 513.953125
+        }
+      },
+      {
+        "at": 4560.300000000745,
+        "film": {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "inset(0%)",
+          "top": 0,
+          "bottom": 900,
+          "left": 0,
+          "right": 1440
+        },
+        "name": {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 448.03125,
+          "bottom": 523.625,
+          "left": 86.390625,
+          "right": 368.859375
+        },
+        "author": {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 441.5625,
+          "bottom": 830,
+          "left": 86.390625,
+          "right": 1186.390625
+        },
+        "actions": {
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": 1,
+          "clip": "none",
+          "top": 774,
+          "bottom": 830,
+          "left": 86.390625,
+          "right": 513.953125
+        }
+      }
+    ],
+    "media": [
+      {
+        "viewportPoint": 0.95,
+        "scroll": 775,
+        "transform": "matrix(0.8195, -0.0286176, 0.0286176, 0.8195, 0, 96)",
+        "opacity": 1,
+        "clip": "inset(32% 10%)",
+        "top": 1000.7842407226562,
+        "bottom": 1555.5595703125,
+        "left": 136.06552124023438,
+        "right": 690.8407897949219
+      },
+      {
+        "viewportPoint": 0.73,
+        "scroll": 973,
+        "transform": "matrix(0.895289, -0.0194524, 0.0194524, 0.895289, 0, 55.9708)",
+        "opacity": 1,
+        "clip": "inset(21.4263% 6.2237%)",
+        "top": 740.9651489257812,
+        "bottom": 1339.3201904296875,
+        "left": 114.27560424804688,
+        "right": 712.6305847167969
+      },
+      {
+        "viewportPoint": 0.5,
+        "scroll": 1180,
+        "transform": "matrix(1.0149, 0, 0, 1.0149, 0, -7.454)",
+        "opacity": 1,
+        "clip": "inset(2.9816% 0% 0%)",
+        "top": 437.7821350097656,
+        "bottom": 1101.6535949707031,
+        "left": 81.51739501953125,
+        "right": 745.3888549804688
+      }
+    ],
+    "caption": [
+      {
+        "viewportPoint": 0.95,
+        "scroll": 746,
+        "transform": "matrix(1, 0, 0, 1, 18, 55)",
+        "opacity": 0,
+        "clip": "inset(0px 0px 100%)",
+        "top": 909.515625,
+        "bottom": 927.109375,
+        "left": 104.390625,
+        "right": 758.515625
+      },
+      {
+        "viewportPoint": 0.73,
+        "scroll": 944,
+        "transform": "matrix(1, 0, 0, 1, 1.2411, 0.068)",
+        "opacity": 0.9311,
+        "clip": "inset(0% 0% 6.8949%)",
+        "top": 656.5836181640625,
+        "bottom": 674.1773681640625,
+        "left": 87.63172149658203,
+        "right": 741.756721496582
+      },
+      {
+        "viewportPoint": 0.5,
+        "scroll": 1151,
+        "transform": "matrix(1, 0, 0, 1, 0, -0.0044)",
+        "opacity": 1,
+        "clip": "inset(0%)",
+        "top": 449.51123046875,
+        "bottom": 467.10498046875,
+        "left": 86.390625,
+        "right": 740.515625
+      }
+    ],
+    "heading": [
+      {
+        "viewportPoint": 0.95,
+        "scroll": 284,
+        "transform": "matrix(1, 0.0874887, 0, 1, 0, 109.609)",
+        "opacity": 0,
+        "clip": "none",
+        "top": 964.796875,
+        "bottom": 1148.721923828125,
+        "left": 86.390625,
+        "right": 1186.390625
+      },
+      {
+        "viewportPoint": 0.73,
+        "scroll": 482,
+        "transform": "matrix(1, 8.20305e-05, 0, 1, 0, -4.27748)",
+        "opacity": 0.9991,
+        "clip": "none",
+        "top": 652.9100341796875,
+        "bottom": 740.687744140625,
+        "left": 86.390625,
+        "right": 1186.390625
+      },
+      {
+        "viewportPoint": 0.5,
+        "scroll": 689,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "opacity": 1,
+        "clip": "none",
+        "top": 450.1875,
+        "bottom": 537.875,
+        "left": 86.390625,
+        "right": 1186.390625
+      }
+    ],
+    "tabs": [
+      {
+        "expected": 0,
+        "actual": "0",
+        "label": "Увеличить полосу",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 86.390625,
+          "right": 368.4375,
+          "top": 252.28125,
+          "bottom": 656.28125
+        }
+      },
+      {
+        "expected": 1,
+        "actual": "1",
+        "label": "Обложка",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 386.4375,
+          "right": 538.78125,
+          "top": 252.28125,
+          "bottom": 449.28125
+        }
+      },
+      {
+        "expected": 2,
+        "actual": "2",
+        "label": "Публикация группы",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 86.390625,
+          "right": 231.671875,
+          "top": 694.78125,
+          "bottom": 738.78125
+        }
+      },
+      {
+        "expected": 3,
+        "actual": "3",
+        "label": "Billboard, страница 323",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 256.671875,
+          "right": 420.90625,
+          "top": 694.78125,
+          "bottom": 738.78125
+        }
+      },
+      {
+        "expected": 4,
+        "actual": "4",
+        "label": "Увеличить скриншот",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 863.96875,
+          "right": 1130.9375,
+          "top": 290.984375,
+          "bottom": 694.984375
+        }
+      },
+      {
+        "expected": 5,
+        "actual": "5",
+        "label": "Результаты опроса",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 863.96875,
+          "right": 1005.765625,
+          "top": 733.484375,
+          "bottom": 777.484375
+        }
+      },
+      {
+        "expected": 6,
+        "actual": "6",
+        "label": "Публикация DOMINIA со скриншотом",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 1030.765625,
+          "right": 1279.671875,
+          "top": 733.484375,
+          "bottom": 777.484375
+        }
+      },
+      {
+        "expected": 7,
+        "actual": "7",
+        "label": "",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 389.3958740234375,
+          "right": 1051.7864990234375,
+          "top": 111.578125,
+          "bottom": 471.578125
+        }
+      },
+      {
+        "expected": 8,
+        "actual": "8",
+        "label": "Страница выпуска «Вечернего шоу»",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 389.3958740234375,
+          "right": 631.1771240234375,
+          "top": 657.28125,
+          "bottom": 701.28125
+        }
+      },
+      {
+        "expected": 9,
+        "actual": "9",
+        "label": "",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 615.125,
+          "right": 1335.125,
+          "top": 111.578125,
+          "bottom": 453.578125
+        }
+      },
+      {
+        "expected": 10,
+        "actual": "10",
+        "label": "Читать статью Metro",
+        "visible": true,
+        "opacity": 1,
+        "bounds": {
+          "left": 615.125,
+          "right": 765.5,
+          "top": 656.984375,
+          "bottom": 700.984375
+        }
+      }
+    ],
+    "mobileMedia": [
+      {
+        "viewportPoint": 0.95,
+        "scroll": 753,
+        "transform": "matrix(0.8195, -0.0286176, 0.0286176, 0.8195, 0, 96)",
+        "opacity": 1,
+        "clip": "inset(32% 10%)",
+        "top": 924.4080810546875,
+        "bottom": 1215.4981689453125,
+        "left": 49.45499038696289,
+        "right": 340.54501724243164
+      },
+      {
+        "viewportPoint": 0.73,
+        "scroll": 939,
+        "transform": "matrix(0.929885, -0.0146013, 0.0146013, 0.929885, 0, 37.6795)",
+        "opacity": 1,
+        "clip": "inset(16.5946% 4.4981%)",
+        "top": 663.5498657226562,
+        "bottom": 987.7153930664062,
+        "left": 32.91722869873047,
+        "right": 357.08275604248047
+      },
+      {
+        "viewportPoint": 0.5,
+        "scroll": 1133,
+        "transform": "matrix(1.0082, 0, 0, 1.0082, 0, -4.1159)",
+        "opacity": 1,
+        "clip": "inset(1.6464% 0% 0%)",
+        "top": 416.82061767578125,
+        "bottom": 762.8538208007812,
+        "left": 21.983413696289062,
+        "right": 368.01661682128906
+      }
+    ],
+    "mobileCaption": [
+      {
+        "viewportPoint": 0.95,
+        "scroll": 725,
+        "transform": "matrix(1, 0, 0, 1, 18, 55)",
+        "opacity": 0,
+        "clip": "inset(0px 0px 100%)",
+        "top": 857.34375,
+        "bottom": 873.34375,
+        "left": 41.390625,
+        "right": 384.609375
+      },
+      {
+        "viewportPoint": 0.73,
+        "scroll": 911,
+        "transform": "matrix(1, 0, 0, 1, 1.418, 0.648)",
+        "opacity": 0.9212,
+        "clip": "inset(0% 0% 7.878%)",
+        "top": 616.9917602539062,
+        "bottom": 632.9917602539062,
+        "left": 24.808624267578125,
+        "right": 368.0273742675781
+      },
+      {
+        "viewportPoint": 0.5,
+        "scroll": 1105,
+        "transform": "matrix(1, 0, 0, 1, 0, -0.0103)",
+        "opacity": 1,
+        "clip": "inset(0%)",
+        "top": 422.33343505859375,
+        "bottom": 438.33343505859375,
+        "left": 23.390625,
+        "right": 366.609375
+      }
+    ],
+    "finale": {
+      "wordmark": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "opacity": 1,
+        "clip": "none",
+        "top": 619.96875,
+        "bottom": 686.390625,
+        "left": 22.890625,
+        "right": 366.609375
+      },
+      "progress": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "opacity": 1,
+        "clip": "none",
+        "top": 0,
+        "bottom": 3,
+        "left": 0,
+        "right": 390
+      }
+    },
+    "errors": []
+  },
+  "laterChange": "After this motion run, only contact helper/placeholder contrast and helper font size were adjusted; final candidate requires focused contact/public smoke.",
+  "recordingsReviewed": {
+    "pending": false,
+    "journeys": [
+      {
+        "device": "desktop",
+        "seconds": 140.44,
+        "reviewFrames": {
+          "opening": 112.5,
+          "middle": 124,
+          "ending": 139.44
+        }
+      },
+      {
+        "device": "mobile",
+        "seconds": 28.92,
+        "reviewFrames": {
+          "opening": 2,
+          "middle": 14.46,
+          "ending": 27.92
+        }
+      }
+    ],
+    "retention": "temporary files removed after review",
+    "captureNote": "Desktop video includes a blank browser startup during concurrent local checks. Content frame times were identified from actual screenshots and reviewed, rather than assuming the midpoint was page content.",
+    "reviewers": [
+      "root",
+      "independent design critic"
+    ],
+    "result": "Actual hero, publication and finale frames opened and inspected for desktop/mobile. No material composition defects beyond the corrected contact contrast."
+  },
+  "motionSourceSha256": "a3f6216696123a87432c6e145e4808c28d7a565bc83286d31a9212a13e5607b2",
+  "finalValidation": {
+    "localBuildId": "X1Oxj-jj7g_wjzMr04ouJ",
+    "linuxBuildId": "_XOXdkzz2gwiPi_Ry69WQ",
+    "fullBrowserMatrixPassed": true,
+    "publicBrowserPassed": true,
+    "motionSourceUnchangedAfterRecordedJourney": true
+  },
+  "qaMediaRemovedFromProject": true,
+  "qaMediaRetentionMethod": "Windows Recycle Bin",
+  "cleanupVerifiedAt": "2026-10-13T23:24:49.864363+00:00"
+}

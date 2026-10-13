@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-13T19:24:20.792Z",
+  "buildId": "wrEHvdT3gV2WSRRztO3JM",
+  "browser": "153.0.8010.12",
+  "passed": true,
+  "metrics": [
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 900,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 746,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 8504,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 1366,
+      "height": 768,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 638,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 8208,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "height": 1024,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 869,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 7505,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "height": 844,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 700,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 9682,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "height": 568,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 498,
+      "headings": [
+        "Два петербургских альбома\nв первом туре Grammy",
+        "Tamas в Billboard\nи на первом месте Metalfan",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+        "Пришлите демо.\nОбсудим ваш релиз"
+      ],
+      "pageHeight": 9815,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 746,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 8500,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 768,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 638,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 8203,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "heroRoleFont": "13px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 869,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 7465,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 700,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 9804,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 568,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 498,
+      "headings": [
+        "Two Saint Petersburg albums\nin Grammy’s first round",
+        "Tamas in Billboard\nand at #1 on Metalfan",
+        "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+        "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+        "Send a demo.\nLet’s plan your release"
+      ],
+      "pageHeight": 9559,
+      "overflow": false
+    }
+  ],
+  "viewports": [
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    }
+  ]
+}

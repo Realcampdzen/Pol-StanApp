@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-14 — Personal brand website
+
+- Rebuilt the concert hero, author typography, controls and complete page composition while retaining the original DOMINIA videos.
+- Added GSAP opening sequences, text and media reveals, a conditional publication reel and a distinct inquiry/footer ending.
+- Published sourced RU/EN Grammy projects, Billboard/Metalfan/Metro/78 coverage, the 2025 first-round history and an earlier-work archive.
+- Retained the catalog, prices, attribution, Telegram inquiry, native document readers and PWA/TWA compatibility.
+- Verified the Linux release and public site; the owner approved both desktop and mobile presentation.
+- Included OpenSpec, source manifests and text-only verification reports. Temporary QA media and build helpers were removed.
+
 ## v1.0.0 - 2026-05-20
 
 Android v1 and production-ready PWA release.

@@ -1,0 +1,354 @@
+{
+  "date": "2026-10-13T23:15:24.858Z",
+  "buildId": "X1Oxj-jj7g_wjzMr04ouJ",
+  "browser": "153.0.8010.12",
+  "passed": true,
+  "metrics": [
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 900,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 830,
+      "headings": [
+        "DOMINIA: Tamas.\nГеоргий Жеряков: Bach.",
+        "Полоса Tamas в Billboard.\n№ 1 в опросе Metalfan.",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "До Tamas: G1Deon,\nкино и BEATKOIN.",
+        "Пришлите\nдемо.\nОбсудим\nваш релиз."
+      ],
+      "pageHeight": 9889,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 1366,
+      "height": 768,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 698,
+      "headings": [
+        "DOMINIA: Tamas.\nГеоргий Жеряков: Bach.",
+        "Полоса Tamas в Billboard.\n№ 1 в опросе Metalfan.",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "До Tamas: G1Deon,\nкино и BEATKOIN.",
+        "Пришлите\nдемо.\nОбсудим\nваш релиз."
+      ],
+      "pageHeight": 9419,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "height": 1024,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 960,
+      "headings": [
+        "DOMINIA: Tamas.\nГеоргий Жеряков: Bach.",
+        "Полоса Tamas в Billboard.\n№ 1 в опросе Metalfan.",
+        "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+        "До Tamas: G1Deon,\nкино и BEATKOIN.",
+        "Пришлите\nдемо.\nОбсудим\nваш релиз."
+      ],
+      "pageHeight": 8277,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "height": 844,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "10px",
+      "primaryActionBottom": 770,
+      "headings": [
+        "DOMINIA: Tamas.\nГеоргий\nЖеряков: Bach.",
+        "Полоса Tamas\nв Billboard.\n№ 1 в\nопросе Metalfan.",
+        "Поклонник\nDOMINIA с 2004.\nПродюсер\nи директор с 2025.",
+        "До Tamas: G1Deon,\nкино и BEATKOIN.",
+        "Пришлите\nдемо.\nОбсудим\nваш релиз."
+      ],
+      "pageHeight": 10021,
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "height": 568,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "10px",
+      "primaryActionBottom": 504,
+      "headings": [
+        "DOMINIA: Tamas.\nГеоргий\nЖеряков: Bach.",
+        "Полоса Tamas\nв Billboard.\n№ 1 в\nопросе Metalfan.",
+        "Поклонник\nDOMINIA с 2004.\nПродюсер и\nдиректор с 2025.",
+        "До\nTamas: G1Deon,\nкино\nи BEATKOIN.",
+        "Пришлите\nдемо.\nОбсудим\nваш релиз."
+      ],
+      "pageHeight": 9818,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 830,
+      "headings": [
+        "DOMINIA’s Tamas.\nGeorgiy Zheryakov’s Bach.",
+        "Tamas in Billboard.\n#1 with Metalfan readers.",
+        "A DOMINIA fan since 2004.\nProducer and manager since 2025.",
+        "Before Tamas: G1Deon,\nfilm scores\nand BEATKOIN.",
+        "Send a demo.\nLet’s talk\nabout\nyour release."
+      ],
+      "pageHeight": 9920,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 768,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 698,
+      "headings": [
+        "DOMINIA’s Tamas.\nGeorgiy Zheryakov’s Bach.",
+        "Tamas in Billboard.\n#1 with Metalfan readers.",
+        "A DOMINIA fan since 2004.\nProducer and manager since 2025.",
+        "Before Tamas: G1Deon,\nfilm scores\nand BEATKOIN.",
+        "Send a demo.\nLet’s talk\nabout\nyour release."
+      ],
+      "pageHeight": 9452,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "11px",
+      "primaryActionBottom": 960,
+      "headings": [
+        "DOMINIA’s Tamas.\nGeorgiy Zheryakov’s Bach.",
+        "Tamas in Billboard.\n#1 with Metalfan readers.",
+        "A DOMINIA fan since 2004.\nProducer and manager since 2025.",
+        "Before Tamas: G1Deon,\nfilm scores\nand BEATKOIN.",
+        "Send\na demo.\nLet’s\ntalk\nabout\nyour release."
+      ],
+      "pageHeight": 8189,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "heroRoleFont": "14px",
+      "albumMetaFont": "10px",
+      "primaryActionBottom": 770,
+      "headings": [
+        "DOMINIA’s Tamas.\nGeorgiy\nZheryakov’s Bach.",
+        "Tamas in Billboard.\n#1 with\nMetalfan readers.",
+        "A DOMINIA\nfan since 2004.\nProducer and\nmanager since 2025.",
+        "Before\nTamas: G1Deon,\nfilm scores\nand BEATKOIN.",
+        "Send a demo.\nLet’s talk\nabout\nyour release."
+      ],
+      "pageHeight": 9873,
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 568,
+      "heroRoleFont": "12px",
+      "albumMetaFont": "10px",
+      "primaryActionBottom": 504,
+      "headings": [
+        "DOMINIA’s Tamas.\nGeorgiy\nZheryakov’s Bach.",
+        "Tamas in Billboard.\n#1 with\nMetalfan readers.",
+        "A DOMINIA\nfan since 2004.\nProducer\nand manager\nsince 2025.",
+        "Before\nTamas: G1Deon,\nfilm scores\nand BEATKOIN.",
+        "Send a demo.\nLet’s\ntalk about\nyour release."
+      ],
+      "pageHeight": 9594,
+      "overflow": false
+    }
+  ],
+  "viewports": [
+    {
+      "locale": "ru",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "ru",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "pinned": true,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "height": 568,
+      "overflow": false,
+      "pinned": false,
+      "primaryActionInViewport": true,
+      "videoTargetsAtLeast44": true,
+      "chapterNavigationTracksScroll": true,
+      "publicationFitsViewport": true
+    }
+  ],
+  "ownerAccepted": true,
+  "actualVisualReview": {
+    "heroCycle": [
+      "Before opened by root and critic: disjoint name, obscured performance, generic buttons",
+      "First after opened: unified signature and plate controls; critic requested name gap, balanced year and mobile action gap",
+      "Second after opened: all three fixes verified by root and critic"
+    ],
+    "chapters": "Root and critic opened five desktop chapter frames and six desktop/mobile journey frames",
+    "contactContrast": {
+      "buildId": "X1Oxj-jj7g_wjzMr04ouJ",
+      "viewports": [
+        {
+          "width": 1440,
+          "height": 900,
+          "styles": {
+            "privacy": {
+              "size": "12px",
+              "opacity": "1",
+              "color": "rgb(241, 239, 232)"
+            },
+            "placeholder": {
+              "opacity": "1",
+              "color": "rgb(241, 239, 232)"
+            },
+            "eyebrow": {
+              "size": "12px",
+              "opacity": "1"
+            }
+          }
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "styles": {
+            "privacy": {
+              "size": "12px",
+              "opacity": "1",
+              "color": "rgb(241, 239, 232)"
+            },
+            "placeholder": {
+              "opacity": "1",
+              "color": "rgb(241, 239, 232)"
+            },
+            "eyebrow": {
+              "size": "12px",
+              "opacity": "1"
+            }
+          }
+        }
+      ]
+    },
+    "contactRenderedFramesOpened": true,
+    "retention": "Reviewed QA images/recordings removed from project through Windows Recycle Bin; original production media preserved"
+  },
+  "qaMediaRemovedFromProject": true,
+  "qaMediaRetentionMethod": "Windows Recycle Bin",
+  "cleanupVerifiedAt": "2026-10-13T23:24:49.871942+00:00",
+  "ownerAcceptance": {
+    "date": "2026-10-14",
+    "desktop": true,
+    "mobile": true,
+    "feedback": "The owner liked the desktop, especially GSAP, then confirmed the same level on mobile.",
+    "scope": "Final redesigned release; historical small technical cycles remain distinct from design acceptance."
+  }
+}

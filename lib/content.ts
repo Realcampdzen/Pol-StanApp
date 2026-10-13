@@ -71,7 +71,7 @@ const ruServices: ServicePackage[] = [
     idealFor: 'артисты, релизы, спецпроекты, авторские бренды',
     priceLabel: 'от 150 000₽',
     cta: 'Обсудить проект',
-    media: '/media/services/creative-production/dominia-key-visual.png',
+    media: '/media/services/creative-production/dominia-key-visual.jpg',
     branch: 'polstan',
     useCases: [
       { title: 'Музыкальный или творческий релиз', description: 'Визуальный мир, сайт, обложки, афиши, промо и точка сборки проекта.' },
@@ -382,7 +382,7 @@ const enServices: ServicePackage[] = [
     idealFor: 'artists, releases, special projects, author brands',
     priceLabel: 'from 150,000 RUB',
     cta: 'Discuss project',
-    media: '/media/services/creative-production/dominia-key-visual.png',
+    media: '/media/services/creative-production/dominia-key-visual.jpg',
     branch: 'polstan',
     useCases: [
       { title: 'Music or creative release', description: 'Visual identity, site, covers, posters, promo and a digital hub.' },

@@ -5,6 +5,9 @@ dist
 .env
 .env*.local
 .secrets/
+/.codex-remote-attachments/
+/_motion-temp/
+/_publish-temp/
 *.tsbuildinfo
 Dockerfile.local
 .DS_Store

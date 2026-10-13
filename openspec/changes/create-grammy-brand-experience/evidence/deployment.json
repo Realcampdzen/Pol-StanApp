@@ -1,0 +1,61 @@
+{
+  "release": "grammy-20261013",
+  "passed": true,
+  "buildId": "TFz2W0GQVTv4Q7C2n5pmj",
+  "image": "sha256:b0c5c5fe50915a34fdb3c866d801d4ef5968ea50ecd52eadffed75c8b81f71f6",
+  "previousImage": "sha256:97f57027a5488ce7747fa422ce9d9bf7c5c1df7b59ac9b623d953b58557e361e",
+  "sourceArchiveSha256": "64515e04685a3b167a536f7a103266ce56c873fe60598e0f431428df8e29bb64",
+  "linuxStandalone": true,
+  "ruAndEn": true,
+  "range206": true,
+  "buildMemoryLimit": "900m",
+  "buildCpuLimit": 1,
+  "offlineNpmCi": true,
+  "deployedAt": "2026-10-14T00:20:53.823785+03:00",
+  "url": "https://polstan.ru/ru",
+  "internalHealth": 200,
+  "rollbackReady": true,
+  "nginxUnchanged": true,
+  "originalLockfileRestored": true,
+  "installScripts": "npm ci --ignore-scripts; sharp checks passed; unrs, sharp and musl SWC native bindings verified directly",
+  "publicVerification": {
+    "passed": true,
+    "checkedAt": "2026-10-13T21:21:31.58Z",
+    "browserCheckGroups": 6,
+    "pageNavigations": 2,
+    "requests": 45,
+    "errors": [],
+    "failedResponses": [],
+    "serviceWorkerSha256": "213252f39c8621e13b1820cb41ea982a54caf1cf00c048d567a6d8f162ee7efb"
+  },
+  "sourceFilesVerified": 79,
+  "runtimeDockerfile": "FROM polstan-web:rollback-grammy-20261013\nUSER root\nRUN rm -rf -- /app\nWORKDIR /app\nENV HOSTNAME=0.0.0.0 NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 PORT=3000\nCOPY --chown=nextjs:nextjs .next/standalone ./\nCOPY --chown=nextjs:nextjs .next/static ./.next/static\nCOPY --chown=nextjs:nextjs public ./public\nUSER nextjs\nEXPOSE 3000\nCMD [\"node\", \"server.js\"]",
+  "screenshots": [
+    {
+      "file": "public-desktop.png",
+      "sha256": "d2c460f17abf8fc55348215c65645a182affdd5ce471f6644b976616aea9aca0"
+    },
+    {
+      "file": "public-mobile.png",
+      "sha256": "ad0c8e2ba0eb604e120496223a6782c5a24df31e483ff4987e06e896b96aeee0"
+    },
+    {
+      "file": "public-media-desktop.png",
+      "sha256": "0c7af39a73a773ee13dbea34eda53520fe94e08a0f5517084ad5b5e120cdcbf8"
+    },
+    {
+      "file": "public-document-mobile.png",
+      "sha256": "00da1920d85d340252fbd9a53a441f0a89ac4b7b19daca8f3f43cd532eabd111"
+    },
+    {
+      "file": "public-english-mobile.png",
+      "sha256": "e83d05a24b67fe9f484559111cb1bd50f6c2c1f1de0022f7cf0277ac0e8f0b12"
+    }
+  ],
+  "remoteCleanupPassed": true,
+  "localCleanupPassed": true,
+  "localCleanupMethod": "Windows Recycle Bin; direct recursive deletion was rejected by automatic policy review",
+  "cleanupVerifiedAt": "2026-10-13T21:27:53.0586405Z",
+  "publicScreenshotsVisuallyReviewed": true,
+  "qaMediaRetention": "2026-10-14: QA screenshots and recordings removed from workspace at owner request. Historical filenames are metadata only; production media and user attachments remain sources."
+}

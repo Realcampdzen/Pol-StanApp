@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-13T21:21:31.580Z",
+  "base": "https://polstan.ru",
+  "passed": true,
+  "checks": [
+    "RU: published content, head metadata, DOMINIA roles, GSAP pin and real concert playback",
+    "Billboard, Metalfan, Metro and 78 images load from production",
+    "Mobile layout, menu, publication reader and Escape work on the published site",
+    "Contact validation, service selection and Telegram draft work; no message sent",
+    "PWA v8 activates, service-worker hash matches candidate, Android association remains unchanged",
+    "EN locale, canonical URLs, www redirect and root redirect work"
+  ],
+  "errors": [],
+  "failedResponses": [],
+  "navigations": [
+    {
+      "url": "https://polstan.ru/ru?utm_source=release_check",
+      "status": 200
+    },
+    {
+      "url": "https://polstan.ru/en?utm_source=release_check",
+      "status": 200
+    }
+  ],
+  "requests": 45,
+  "video": {
+    "src": "https://polstan.ru/media/hero-concert-v2-desktop.mp4",
+    "readyState": 4,
+    "muted": true,
+    "playing": true,
+    "duration": 61.533333,
+    "mediaError": null
+  },
+  "pwa": {
+    "active": "https://polstan.ru/sw.js",
+    "caches": [
+      "polstan-pwa-v8-three-review-cycles-shell",
+      "polstan-pwa-v8-three-review-cycles-media"
+    ]
+  },
+  "swSha256": "213252f39c8621e13b1820cb41ea982a54caf1cf00c048d567a6d8f162ee7efb"
+}

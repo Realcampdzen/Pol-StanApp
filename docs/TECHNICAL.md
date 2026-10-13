@@ -19,8 +19,8 @@ Android identity:
 ## Application Architecture
 
 - `app/` contains App Router routes, metadata, sitemap, robots and the dynamic Digital Asset Links route.
-- `components/polstan-app.tsx` is the main interactive client surface: hero video, services, drops, selection state and Telegram lead flow.
-- `lib/content.ts` and `lib/types.ts` define localized copy and content schema.
+- `components/brand-experience.tsx` is the main interactive client surface: DOMINIA live hero, Grammy releases, publication documents, project history and Telegram inquiry. Motion, video, document viewer and inquiry are separate components.
+- `lib/brand-content.ts` defines the sourced RU/EN personal-brand copy. `lib/content.ts` and `lib/types.ts` preserve the service/drop catalog, prices and content schema; `components/polstan-app.tsx` remains the legacy surface.
 - `lib/telegram.ts` builds the final Telegram deep link and message body.
 - `public/manifest.webmanifest`, `public/sw.js` and `public/offline.html` provide installability and offline behavior.
 - `android-twa/` contains the generated Android TWA project and release instructions.
@@ -80,10 +80,12 @@ Digital Asset Links are served by `app/.well-known/assetlinks.json/route.ts`. Th
 Current production uses the nginx VPS path:
 
 ```bash
-docker compose -f docker-compose.nginx.yml -p polstan up -d --build
+docker compose -f docker-compose.nginx.yml -p polstan up -d --no-build --no-deps --force-recreate web
 ```
 
 The app container binds to `127.0.0.1:3002` by default, and nginx proxies `polstan.ru` traffic to that port.
+
+The redesigned Grammy brand release was published on 14 October 2026 (Moscow), using Linux standalone build `_XOXdkzz2gwiPi_Ry69WQ` and runtime image `polstan-web:kinetic-20261014`. The command above promotes an already prepared runtime image. This release was built offline from the original lockfile with a 900 MB / 1 CPU build limit; temporary host build files were removed afterward. It was built with resource limits, verified in a separate loopback container, then promoted while preserving the previous image and source for rollback. See the [deployment evidence and public browser verification](../openspec/changes/create-grammy-brand-experience/verification.md#публикация-на-vps) for the source hashes, offline dependency-install procedure and cleanup record.
 
 Expected verification after deployment:
 

@@ -16,3 +16,8 @@ Caddyfile text eol=lf
 *.jpg binary
 *.jpeg binary
 *.mp4 binary
+*.webp binary
+*.woff2 binary
+
+# Preserve the original vendored font licenses, including their whitespace.
+app/fonts/*OFL.txt -whitespace

@@ -1,0 +1,248 @@
+{
+  "capturedAt": "2026-10-13",
+  "baselineHead": "fd46ff4ef2e8b57e27af6a927b3921bccb018665",
+  "hero": {
+    "hero-concert-v2-desktop.mp4": "0f060f7d43c5d3f1c03e0d4e5823d1e596e2d73901187d73e44bdc19e60ab681",
+    "hero-concert-v2-mobile.mp4": "8233136f48ba17159c78604b5bbc90dfe990df99dc56e545f1277422f14cda7e"
+  },
+  "preexistingDirtyFiles": {
+    "components/polstan-app.tsx": "c5eb9e3fffd9617265c54d6893b70e33e855ae72967df70807c340947b1836c1",
+    "lib/content.ts": "3921dd78333febab7ee6333db435f371ebfcc3d9b40e0c9080c805dd0d96117e",
+    "deploy/nginx/polstan.ru.conf": "4040b57394271634d3679d25fb8ccb0b7125d3381f7655badcb7b54171196e7c",
+    "next.config.mjs": "5d2d25f6a0515a25f5df528bf3474fb99a61da0e8ebc3bf4b4b26741376d7498",
+    "public/sw.js": "381774b77c09efb0313cf83dcebb758f2ee253994c315712b406a478018dc348"
+  },
+  "userAttachments": {
+    "assets": [
+      {
+        "file": "1-1000040514.jpg",
+        "sha256": "faca26d745f29fe25faaad9f1476d31879113e8e8c2affbe7352788256b4d103",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 87675,
+        "source_file": "1-1000040514.jpg"
+      },
+      {
+        "file": "2-1000040511.jpg",
+        "sha256": "6d51d1db81ae21fb8e79e57fd248902fb55623d78d52a9ebb95df3de259e0d84",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 99132,
+        "source_file": "2-1000040511.jpg"
+      },
+      {
+        "file": "3-1000040500.jpg",
+        "sha256": "d1df51ec40a0c8b621017c4134757a60530da1610a221ed3512c19a5601c7b57",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 73025,
+        "source_file": "3-1000040500.jpg"
+      },
+      {
+        "file": "4-1000040510.jpg",
+        "sha256": "560ce54552c074ce9c1e9e1f7d3dac5a715d6b540ce57ed870017654115b659c",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 75195,
+        "source_file": "4-1000040510.jpg"
+      },
+      {
+        "file": "5-1000040513.jpg",
+        "sha256": "da2a4d612be9fe7dc82b77fce6cff31c55e1cf0c64d4e8c6105449e2f23ab2b1",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 78379,
+        "source_file": "5-1000040513.jpg"
+      },
+      {
+        "file": "1-1000040492.jpg",
+        "sha256": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+        "width": 1280,
+        "height": 960,
+        "exif_date": null,
+        "bytes": 82419,
+        "source_file": "1-1000040492.jpg"
+      },
+      {
+        "file": "2-1000040494.jpg",
+        "sha256": "d72d9c5c516bace25ec5a12935fd4b19a7833b987231452d7cfe34a4ab2e123d",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 87917,
+        "source_file": "2-1000040494.jpg"
+      },
+      {
+        "file": "3-1000040496.jpg",
+        "sha256": "a048493e8b693fd162aeb8b8d3fda801d69287f4cfd7cd90775b9dd449460d70",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 109807,
+        "source_file": "3-1000040496.jpg"
+      },
+      {
+        "file": "4-1000040473.jpg",
+        "sha256": "c296e4819cf8c8f85131e0c232e68ce89d4b716829a134ff36ea9582e950828e",
+        "width": 1280,
+        "height": 960,
+        "exif_date": null,
+        "bytes": 101167,
+        "source_file": "4-1000040473.jpg"
+      },
+      {
+        "file": "5-1000040498.jpg",
+        "sha256": "d9230061dac245da540d461783c29c0dd3f1bbba6fc2837c8cfed9eab6600020",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 61034,
+        "source_file": "5-1000040498.jpg"
+      },
+      {
+        "file": "1-1000040470.jpg",
+        "sha256": "2754ae0fd7ed6a4a2f6dd3a138f4a301e3c7b0ad8d9f713015275655ae779937",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 66297,
+        "source_file": "1-1000040470.jpg"
+      },
+      {
+        "file": "2-1000040472.jpg",
+        "sha256": "957d2f80eb27b5ea78f1288c0c5ebac71c683c7820c963ee1bf7e472b47f8244",
+        "width": 1280,
+        "height": 960,
+        "exif_date": null,
+        "bytes": 79700,
+        "source_file": "2-1000040472.jpg"
+      },
+      {
+        "file": "3-1000040471.jpg",
+        "sha256": "cbd2fe3aac1bd8d586c6dac89ca896e8be111fc8700924774e9b9a8513f24fac",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 73490,
+        "source_file": "3-1000040471.jpg"
+      },
+      {
+        "file": "4-1000040474.jpg",
+        "sha256": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+        "width": 1280,
+        "height": 960,
+        "exif_date": null,
+        "bytes": 82419,
+        "source_file": "4-1000040474.jpg"
+      },
+      {
+        "file": "5-1000040469.jpg",
+        "sha256": "c84f4caa0e6f02e57a4a53607291ac515cd8a4dd59360d9bd7eec6a88aa0cf80",
+        "width": 960,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 106982,
+        "source_file": "5-1000040469.jpg"
+      },
+      {
+        "file": "1-1000040536.jpg",
+        "sha256": "4339547a6575b6a6cf665330193e5f10b163cd22c5c7c9504dee24e29b5fcafc",
+        "width": 576,
+        "height": 1280,
+        "exif_date": null,
+        "bytes": 43914,
+        "source_file": "1-1000040536.jpg"
+      }
+    ]
+  },
+  "candidateSourceHashes": {
+    "app/[locale]/page.tsx": "5a4b40e03dc367af2948f3c45f090e7ca297e96f831c2075768d6b809e6b9fef",
+    "app/layout.tsx": "4251845a0ff156ad76a46e1ba88e46388338a1b85e79b7075e216dfec88a792e",
+    "app/brand.css": "d9ae72eed7de507d2221ef8d2889461cb077db38d046ed70ba6cab1d78e9f946",
+    "app/fonts/Manrope.woff2": "670850eed769a9abd2a303f3350b0e0306e80141b9f598639b081afa851c0182",
+    "app/fonts/Oswald.woff2": "61afde5308df0f4251a1b885159ee4511b2f776d494e70882e6840eaa7012fd2",
+    "components/live-hero.tsx": "8228ea2e3ed429107cff6df2470799ac7daceea09edf259a413dc23b748ccb80",
+    "components/brand-experience.tsx": "dfc611be684bec9fe09ed00d35dc07bf1366178112c1eef91ca1a34c3457b04f",
+    "components/brand-motion.tsx": "60c8578a0df2e664e40c2cf509c89cfad7eb366e665a6d1a16227546e8905713",
+    "components/brand-inquiry.tsx": "5bd3dbdb0cdb0e671740431940f04eb2b29da5143113a730b4febadb5121be53",
+    "lib/brand-content.ts": "3ea7d8d1765299da4e6eb8d1abfbc538198c7c53c1ce3cd65b09a07bd3229daf",
+    "middleware.ts": "790dfb39bc8d249819f065e1b344bcd090bb1a0fc4c6ac4b4fc05dd2e1893e5c",
+    "next.config.mjs": "a6d9720906b71b03cffe436bf70370db07dfc921acc931385ef397f139f540f3",
+    "package.json": "2144218ec6bf5be433ca6c7082ed56fa0c1bc92f522e1b77074c5e8c40763fb4",
+    "package-lock.json": "78dae62b289a50c815160e3633fbda5a5bd4816cc894974707459aa82dfd0d0c",
+    "public/sw.js": "213252f39c8621e13b1820cb41ea982a54caf1cf00c048d567a6d8f162ee7efb",
+    "tests/brand-contract.test.mjs": "753c7152c3ede23052b27345edfef366ac322847aabd37ad0e04bddb05e691d9",
+    "public/media/brand/bach-v4.webp": "67a13ef2bf94474b0b33790aef80da17524facf0ed7aeb8e4c342ac5291cf779",
+    "public/media/brand/live-78-v4.jpg": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+    "public/media/brand/live-poster-v4.webp": "5422efa8daf2e018f593b321d229286c2d66c8c8c79556edcbc4cdcab062b554",
+    "public/media/brand/press-78-v4.jpg": "faca26d745f29fe25faaad9f1476d31879113e8e8c2affbe7352788256b4d103",
+    "public/media/brand/tamas-v4.jpg": "e5911b86753b954ac07a24a0d6ea35028664d7337e0d6e181387290ef3a8ff14",
+    "public/media/brand/billboard-dominia.jpg": "63460c892d435742028a8a3709cba0d9e89667ebfe11a7e87655f4b1a9027a33",
+    "public/media/brand/billboard-cover.jpg": "a69ff4f70e19889da2ae28a050174435d95d54dc4926367bac03b952b06786bf",
+    "public/media/brand/metalfan-chart.jpg": "2a3990d6f57d9488284a05d572d0544da7d82ae0234304ff2eebeddc8d0575d6",
+    "public/media/brand/metro-projects.jpg": "cfc61d926e5205a1ecf9643e373f457a73bb1992eee38b257c9d5a7b4bb656ea",
+    "components/press-document.tsx": "18a24e7e15e345b9b197d110b72b5b0302e51e8942498811cf608b406d6a9135"
+  },
+  "buildId": "wrEHvdT3gV2WSRRztO3JM",
+  "runtime": {
+    "next": "15.5.18",
+    "react": "19.2.6",
+    "gsap": "3.15.0"
+  },
+  "refinedAt": "2026-10-13T19:28:47.248Z",
+  "qaSourceHash": "ec66ebb6d2198c16b87a2c236da19e8d59678662be7173294d6b9cf1e04e2f33",
+  "mediaProvenance": {
+    "billboard-cover.jpg": {
+      "sourcePage": "https://vk.ru/wall-27452_15027",
+      "sourceImage": "https://sun9-81.vkuserphoto.ru/s/v1/ig2/yaFyO3KXm_8zy4YNtn_13vc-hRdWXKnETAWX_kGu3IH-7eGHf1h32ZOiIokS9ZwL0ylBTOolXkOR27oiMBsKaCkR.jpg?quality=95&as=32x41,48x61,72x92,108x138,160x205,240x307,360x461,480x615,540x692,640x820,720x922,1080x1383,1097x1405&from=bu&u=keVGbh8sn31MTXr1SbO2l25EP7uJIFDSv7w8L4It3LM&cs=1097x0",
+      "width": 1097,
+      "height": 1405,
+      "unmodified": true
+    },
+    "billboard-dominia.jpg": {
+      "sourcePage": "https://vk.ru/wall-27452_15027",
+      "sourceImage": "https://sun9-46.vkuserphoto.ru/s/v1/ig2/sVuOokM2GskMGCT7l3EpX6-pzqe7aZ2rYyYxpkQLs_-jBPugB4c1xoZ_9FSl3DG-Wht5PxWKY7Vr_Et_aUxC7QWY.jpg?quality=95&as=32x41,48x61,72x92,108x138,160x204,240x306,360x459,480x613,540x689,640x817,720x919,1080x1378,1176x1501&from=bu&u=bnIp9m-RmOBXtzxNAsa6OnBN2pLtwvBNRZWLKOssiqs&cs=1176x0",
+      "width": 1176,
+      "height": 1501,
+      "unmodified": true
+    },
+    "metalfan-chart.jpg": {
+      "sourcePage": "https://vk.ru/wall-27452_15042",
+      "sourceImage": "https://sun9-53.vkuserphoto.ru/s/v1/ig2/0t-qSSHex53H4F4rdoKtWATUASF605vdZ10Bzhj3VKkoU8BVMB27p9Cb7Fd2h7vHhhp0jd_7iSgy4QfG3VD0xC6H.jpg?quality=95&as=32x43,48x65,72x97,108x146,160x216,240x324,360x486,480x647,540x728,640x863,645x870&from=bu&cs=640x0",
+      "corroboratedBy": "https://www.metalfan.nl/article.php?sid=27476",
+      "width": 640,
+      "height": 863,
+      "unmodified": true
+    },
+    "metro-projects.jpg": {
+      "sourcePage": "https://www.metronews.ru/novosti/peterbourg/reviews/gruppa-dominia-i-proekt-bach-the-saddest-transcriptions-for-piano-v-otbore-grammy-2192497/",
+      "sourceImage": "https://ss.metronews.ru/userfiles/materials/202/2022393/858x429.jpg",
+      "width": 858,
+      "height": 429,
+      "unmodified": true
+    },
+    "live-78-v4.jpg": {
+      "sourceAttachment": "1-1000040492.jpg",
+      "sha256": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+      "width": 1280,
+      "height": 960,
+      "unmodified": true
+    }
+  },
+  "preservationVerifiedAt": "2026-10-13T19:28:47.249Z",
+  "preservationChecks": {
+    "heroVideos": true,
+    "originalAttachments": true,
+    "preexistingPolstanComponent": true,
+    "preexistingCatalog": true,
+    "preexistingNginx": true,
+    "nextConfigAfterRemovingOwnedMetadataAddition": true,
+    "serviceWorkerAfterRemovingOwnedVersionAndBrandAssets": true
+  },
+  "attachmentPrivacy": "Original user attachments stay local and are ignored by Git; public provenance retains source basenames, dimensions and content hashes."
+}

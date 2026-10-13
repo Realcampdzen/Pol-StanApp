@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-13T17:46:08.158Z",
+  "engine": {
+    "name": "axe-core",
+    "version": "4.13.0"
+  },
+  "browser": "153.0.8010.12",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21aa",
+    "wcag22aa"
+  ],
+  "main": [],
+  "menu": [],
+  "measurementBuildId": "cKkg29vfCO7b7ybMcI4w_",
+  "measurementStage": "Original candidate before anti-slop/current-evidence refinement; not rerun for the final candidate"
+}

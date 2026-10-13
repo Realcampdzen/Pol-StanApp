@@ -1,0 +1,1177 @@
+{
+  "objective": "Три цикла проверки по design-taste-frontend и frontend-skill, исправлений и повторной проверки",
+  "skills": [
+    "C:/Users/stepa/.codex/skills/taste-skill/SKILL.md",
+    "C:/Users/stepa/.codex/skills/frontend-skill/SKILL.md"
+  ],
+  "cycles": [
+    {
+      "cycle": 1,
+      "status": "verified",
+      "baselineBuildId": "cKkg29vfCO7b7ybMcI4w_",
+      "resultBuildId": "hK4PWIz1g3P1QAk7AKKRa",
+      "findings": [
+        "Общие заголовки и повторяющиеся слоганы",
+        "Слабая иерархия актуальных СМИ и ранних работ",
+        "Обрезанные лица, мелкие подписи и небольшие органы управления"
+      ],
+      "corrections": [
+        "Конкретные события в заголовках, новая иерархия Grammy / СМИ / DOMINIA / архив",
+        "Настоящие Billboard, Metalfan и Metro; уточнение ролей 2004/2025",
+        "Кадрирование, подписи 11-14 px, touch targets 44 px, компактный архив"
+      ],
+      "sourceHashes": {
+        "app/[locale]/page.tsx": "5a4b40e03dc367af2948f3c45f090e7ca297e96f831c2075768d6b809e6b9fef",
+        "app/layout.tsx": "4251845a0ff156ad76a46e1ba88e46388338a1b85e79b7075e216dfec88a792e",
+        "app/brand.css": "409f88b7977e4c8ea9dff1d5878d2c14e05c0f84fe5711ef9683b28b72256b5a",
+        "app/fonts/Manrope.woff2": "670850eed769a9abd2a303f3350b0e0306e80141b9f598639b081afa851c0182",
+        "app/fonts/Oswald.woff2": "61afde5308df0f4251a1b885159ee4511b2f776d494e70882e6840eaa7012fd2",
+        "components/live-hero.tsx": "8228ea2e3ed429107cff6df2470799ac7daceea09edf259a413dc23b748ccb80",
+        "components/brand-experience.tsx": "661358a720bbb5a1362c0ca2c91ec773f582ba4decab528908d8449640e016ad",
+        "components/brand-motion.tsx": "60c8578a0df2e664e40c2cf509c89cfad7eb366e665a6d1a16227546e8905713",
+        "components/brand-inquiry.tsx": "fca15c8ca7b686a66c28a334add07609bfcfd374ae52b8dcf60ec20898ea9e42",
+        "lib/brand-content.ts": "281b3c685613b8b75d5bfa2768265549929cd63f8775280fcfd766979b699214",
+        "middleware.ts": "790dfb39bc8d249819f065e1b344bcd090bb1a0fc4c6ac4b4fc05dd2e1893e5c",
+        "next.config.mjs": "a6d9720906b71b03cffe436bf70370db07dfc921acc931385ef397f139f540f3",
+        "package.json": "2144218ec6bf5be433ca6c7082ed56fa0c1bc92f522e1b77074c5e8c40763fb4",
+        "package-lock.json": "78dae62b289a50c815160e3633fbda5a5bd4816cc894974707459aa82dfd0d0c",
+        "public/sw.js": "e96a61a1c8d59dd0e1fe8cdc24302cfb2a79ce8e2bfe6c5774e7b880bf3b2162",
+        "tests/brand-contract.test.mjs": "753c7152c3ede23052b27345edfef366ac322847aabd37ad0e04bddb05e691d9",
+        "public/media/brand/bach-v4.webp": "67a13ef2bf94474b0b33790aef80da17524facf0ed7aeb8e4c342ac5291cf779",
+        "public/media/brand/live-78-v4.jpg": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+        "public/media/brand/live-poster-v4.webp": "5422efa8daf2e018f593b321d229286c2d66c8c8c79556edcbc4cdcab062b554",
+        "public/media/brand/press-78-v4.jpg": "faca26d745f29fe25faaad9f1476d31879113e8e8c2affbe7352788256b4d103",
+        "public/media/brand/tamas-v4.jpg": "e5911b86753b954ac07a24a0d6ea35028664d7337e0d6e181387290ef3a8ff14",
+        "public/media/brand/billboard-dominia.jpg": "63460c892d435742028a8a3709cba0d9e89667ebfe11a7e87655f4b1a9027a33",
+        "public/media/brand/billboard-cover.jpg": "a69ff4f70e19889da2ae28a050174435d95d54dc4926367bac03b952b06786bf",
+        "public/media/brand/metalfan-chart.jpg": "2a3990d6f57d9488284a05d572d0544da7d82ae0234304ff2eebeddc8d0575d6",
+        "public/media/brand/metro-projects.jpg": "cfc61d926e5205a1ecf9643e373f457a73bb1992eee38b257c9d5a7b4bb656ea"
+      },
+      "verification": {
+        "check": "passed",
+        "build": "passed",
+        "browser": {
+          "date": "2026-10-13T18:51:13.951Z",
+          "base": "http://127.0.0.1:3107",
+          "browser": "153.0.8010.12",
+          "passed": true,
+          "checks": [
+            "five viewport sizes, all sections accessible, no horizontal overflow, pin only on eligible desktop",
+            "primary action fits the initial screen, 44-pixel video targets and current chapter navigation at all five sizes",
+            "mobile menu: open, Escape, restored focus, chapter navigation",
+            "all four project stories open and close by keyboard",
+            "current releases and media precede legacy, DOMINIA roles retain 2004/2025, historical archive works by keyboard",
+            "all five press images decode and retain real source links; documents open at full size",
+            "no preselection; two services and prices reach prepared Telegram URL with Unicode, repeated campaign params and Roistat; editing invalidates the draft; no message sent",
+            "locale switch preserves query and repeated campaign values; English document language",
+            "muted autoplay, explicit pause survives scrolling away/back, manual resume, offscreen pause",
+            "visibilitychange pauses/resumes video with simulated document.hidden",
+            "interrupted manual play preserves healthy video and retry controls (AbortError regression)",
+            "reduced motion: no pin, static live poster, explicit video play works",
+            "without JavaScript: English SSR language, story, native project details, direct contact; form cannot accidentally submit personal fields via GET",
+            "blocked video: real live poster and identity remain visible",
+            "production PWA: new shell cache active, both languages cached, concert videos excluded, offline page renders",
+            "no JavaScript exceptions or console errors in successful browser journeys"
+          ],
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 1366,
+              "height": 768,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 768,
+              "height": 1024,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 390,
+              "height": 844,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 320,
+              "height": 568,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            }
+          ],
+          "errors": []
+        },
+        "visual": {
+          "date": "2026-10-13T18:52:23.739Z",
+          "buildId": "hK4PWIz1g3P1QAk7AKKRa",
+          "browser": "153.0.8010.12",
+          "metrics": [
+            {
+              "locale": "ru",
+              "width": 1440,
+              "height": 900,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 14%",
+              "primaryActionBottom": 746,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 8442,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 1366,
+              "height": 768,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 14%",
+              "primaryActionBottom": 638,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 8146,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 390,
+              "height": 844,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 38%",
+              "primaryActionBottom": 700,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 9564,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 320,
+              "height": 568,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 38%",
+              "primaryActionBottom": 498,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 9697,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 1440,
+              "height": 900,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 14%",
+              "primaryActionBottom": 746,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 8438,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 1366,
+              "height": 768,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 14%",
+              "primaryActionBottom": 638,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 8141,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 390,
+              "height": 844,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 38%",
+              "primaryActionBottom": 700,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 9686,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 320,
+              "height": 568,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "videoCrop": "50% 38%",
+              "primaryActionBottom": 498,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 9441,
+              "overflow": false
+            }
+          ],
+          "pins": [
+            {
+              "locale": "ru",
+              "width": 1440,
+              "height": 900,
+              "top": 100,
+              "bottom": 670.4375
+            },
+            {
+              "locale": "ru",
+              "width": 1366,
+              "height": 768,
+              "top": 100,
+              "bottom": 542.1875
+            },
+            {
+              "locale": "en",
+              "width": 1440,
+              "height": 900,
+              "top": 100,
+              "bottom": 670.4375
+            },
+            {
+              "locale": "en",
+              "width": 1366,
+              "height": 768,
+              "top": 100,
+              "bottom": 542.1875
+            }
+          ]
+        },
+        "skillReview": {
+          "antiSlop": "passed: событийные заголовки и фактические роли, без заглушек и декоративных индексов",
+          "frontend": "passed: крупные реальные медиа, читаемые подписи, кадрирование, адаптивность и touch targets"
+        }
+      },
+      "evidence": "iteration-1-mobile.png",
+      "evidenceHashes": {
+        "iteration-1-mobile.png": "c4c1382aa8b3c9b4d8e7cf41585b571a9b955e83e16b0c320819c2f8f4184db4"
+      }
+    },
+    {
+      "cycle": 2,
+      "status": "verified",
+      "baselineBuildId": "hK4PWIz1g3P1QAk7AKKRa",
+      "findings": [
+        "На 390 px текст в скриншоте Metalfan требует увеличения",
+        "У документов нет видимого действия увеличения; открывается сырая картинка в другой вкладке",
+        "Первый CTA Billboard ведёт к PDF, доступность которого не подтверждена"
+      ],
+      "corrections": [
+        "Native dialog и явные действия увеличения трёх документов",
+        "Режимы fit / 1:1 и горизонтальная прокрутка без overflow страницы",
+        "Обход focus, Escape и восстановление focus/scroll",
+        "Проверенный пост группы первым действием Billboard; исходные ссылки без JS сохранены"
+      ],
+      "verification": {
+        "check": "passed",
+        "build": "passed",
+        "browser": {
+          "date": "2026-10-13T19:10:07.848Z",
+          "base": "http://127.0.0.1:3107",
+          "browser": "153.0.8010.12",
+          "passed": true,
+          "checks": [
+            "five viewport sizes, all sections accessible, no horizontal overflow, pin only on eligible desktop",
+            "primary action fits the initial screen, 44-pixel video targets and current chapter navigation at all five sizes",
+            "mobile menu: open, Escape, restored focus, chapter navigation",
+            "all four project stories open and close by keyboard",
+            "current releases and media precede legacy, DOMINIA roles retain 2004/2025, historical archive works by keyboard",
+            "all five press images decode and retain real source links; documents open at full size",
+            "three publication viewers: fit, actual-size zoom, horizontal pan, keyboard focus trap, Escape and restored focus/scroll",
+            "no preselection; two services and prices reach prepared Telegram URL with Unicode, repeated campaign params and Roistat; editing invalidates the draft; no message sent",
+            "locale switch preserves query and repeated campaign values; English document language",
+            "muted autoplay, explicit pause survives scrolling away/back, manual resume, offscreen pause",
+            "visibilitychange pauses/resumes video with simulated document.hidden",
+            "interrupted manual play preserves healthy video and retry controls (AbortError regression)",
+            "reduced motion: no pin, static live poster, explicit video play works",
+            "without JavaScript: English SSR language, story, native project details, direct contact; form cannot accidentally submit personal fields via GET",
+            "without JavaScript: publication link still opens the original, readable image",
+            "blocked video: real live poster and identity remain visible",
+            "production PWA: new shell cache active, both languages cached, concert videos excluded, offline page renders",
+            "no JavaScript exceptions or console errors in successful browser journeys"
+          ],
+          "viewports": [
+            {
+              "width": 1440,
+              "height": 900,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 1366,
+              "height": 768,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 768,
+              "height": 1024,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 390,
+              "height": 844,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            },
+            {
+              "width": 320,
+              "height": 568,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true
+            }
+          ],
+          "errors": []
+        },
+        "english320": {
+          "title": "Tamas took first place",
+          "zoom": true,
+          "close": true,
+          "scrollRestored": true,
+          "overflow": false
+        },
+        "skillReview": {
+          "antiSlop": "passed: реальные документы, функциональные подписи вне изображений, без декоративных индикаторов и лишнего UI",
+          "frontend": "passed: сценическая композиция сохранена, документ читается 1:1, 44 px controls, focus и no-JS fallback проверены"
+        }
+      },
+      "resultBuildId": "qi3S7oWCjMWcNO72OdQXp",
+      "sourceHashes": {
+        "app/[locale]/page.tsx": "5a4b40e03dc367af2948f3c45f090e7ca297e96f831c2075768d6b809e6b9fef",
+        "app/layout.tsx": "4251845a0ff156ad76a46e1ba88e46388338a1b85e79b7075e216dfec88a792e",
+        "app/brand.css": "01380e523cc6ad81155dc5fad9531c4a1cc5684c20a850b852577e47ed0a1195",
+        "app/fonts/Manrope.woff2": "670850eed769a9abd2a303f3350b0e0306e80141b9f598639b081afa851c0182",
+        "app/fonts/Oswald.woff2": "61afde5308df0f4251a1b885159ee4511b2f776d494e70882e6840eaa7012fd2",
+        "components/live-hero.tsx": "8228ea2e3ed429107cff6df2470799ac7daceea09edf259a413dc23b748ccb80",
+        "components/brand-experience.tsx": "282927c1e869cf0bf36b396fa9ac81f76c3f9541bbff6449ba46f2b11d4c7ec3",
+        "components/brand-motion.tsx": "60c8578a0df2e664e40c2cf509c89cfad7eb366e665a6d1a16227546e8905713",
+        "components/brand-inquiry.tsx": "fca15c8ca7b686a66c28a334add07609bfcfd374ae52b8dcf60ec20898ea9e42",
+        "lib/brand-content.ts": "281b3c685613b8b75d5bfa2768265549929cd63f8775280fcfd766979b699214",
+        "middleware.ts": "790dfb39bc8d249819f065e1b344bcd090bb1a0fc4c6ac4b4fc05dd2e1893e5c",
+        "next.config.mjs": "a6d9720906b71b03cffe436bf70370db07dfc921acc931385ef397f139f540f3",
+        "package.json": "2144218ec6bf5be433ca6c7082ed56fa0c1bc92f522e1b77074c5e8c40763fb4",
+        "package-lock.json": "78dae62b289a50c815160e3633fbda5a5bd4816cc894974707459aa82dfd0d0c",
+        "public/sw.js": "408283be35e8dba0dd3aaf6f6138cb7fc6ccd1876b1db176b79d9a147d24ee48",
+        "tests/brand-contract.test.mjs": "753c7152c3ede23052b27345edfef366ac322847aabd37ad0e04bddb05e691d9",
+        "public/media/brand/bach-v4.webp": "67a13ef2bf94474b0b33790aef80da17524facf0ed7aeb8e4c342ac5291cf779",
+        "public/media/brand/live-78-v4.jpg": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+        "public/media/brand/live-poster-v4.webp": "5422efa8daf2e018f593b321d229286c2d66c8c8c79556edcbc4cdcab062b554",
+        "public/media/brand/press-78-v4.jpg": "faca26d745f29fe25faaad9f1476d31879113e8e8c2affbe7352788256b4d103",
+        "public/media/brand/tamas-v4.jpg": "e5911b86753b954ac07a24a0d6ea35028664d7337e0d6e181387290ef3a8ff14",
+        "public/media/brand/billboard-dominia.jpg": "63460c892d435742028a8a3709cba0d9e89667ebfe11a7e87655f4b1a9027a33",
+        "public/media/brand/billboard-cover.jpg": "a69ff4f70e19889da2ae28a050174435d95d54dc4926367bac03b952b06786bf",
+        "public/media/brand/metalfan-chart.jpg": "2a3990d6f57d9488284a05d572d0544da7d82ae0234304ff2eebeddc8d0575d6",
+        "public/media/brand/metro-projects.jpg": "cfc61d926e5205a1ecf9643e373f457a73bb1992eee38b257c9d5a7b4bb656ea",
+        "components/press-document.tsx": "18a24e7e15e345b9b197d110b72b5b0302e51e8942498811cf608b406d6a9135"
+      },
+      "qaSourceHash": "31cd141b7198d85cadc6f296e78fef5643218d1a57e430b970d517c7a19aec08",
+      "evidence": "iteration-2-document.png",
+      "followupDiscoveredInCycle3": "Fit был проверен на 390×844; расширенная проверка 320×568 / tablet / desktop обнаружила overflow внутри viewer и включена в третий цикл.",
+      "evidenceHashes": {
+        "iteration-2-document.png": "7e6168f73a6f6242ba8ec25caa0a2d61bca250e9c3a8f5d9f3cdca2c9195afa4"
+      }
+    },
+    {
+      "cycle": 3,
+      "status": "verified",
+      "baselineObservations": {
+        "contact": {
+          "valid": false,
+          "valueMissing": true,
+          "ariaInvalid": null,
+          "description": null,
+          "focused": true
+        },
+        "inlineErrors": 0,
+        "buttons": [
+          {
+            "text": "Добавить в проект",
+            "name": null
+          },
+          {
+            "text": "Добавить в проект",
+            "name": null
+          }
+        ],
+        "inlineErrorSelector": ".brand-form [role=\"alert\"]"
+      },
+      "findings": [
+        "Контакт отклоняется браузером без связанного inline объяснения и aria-invalid",
+        "Кнопки выбора разных услуг имеют одинаковое доступное имя без контекста",
+        "После добавления просмотра документов необходимо повторно проверить всю композицию и оба языка",
+        "Fit не ограничивал auto grid row на низком экране и desktop",
+        "Focus outline поля контакта пересекал подпись"
+      ],
+      "corrections": [
+        "Локализованная inline ошибка с aria-describedby/aria-invalid, focus и очисткой после исправления",
+        "Доступные имена кнопок содержат название услуги; поля и цены сохранены",
+        "Режим fit ограничен minmax(0, 1fr) в обоих направлениях",
+        "Отступ подписи поля и focus outline исправлены",
+        "Подписи увеличения документов синхронизированы через локализованный контент"
+      ],
+      "verification": {
+        "check": "passed: 5 tests, ESLint, TypeScript",
+        "build": "passed",
+        "browser": {
+          "date": "2026-10-13T19:24:20.792Z",
+          "base": "http://127.0.0.1:3107",
+          "browser": "153.0.8010.12",
+          "passed": true,
+          "checks": [
+            "both languages at five viewport sizes, all sections accessible, no horizontal overflow, publications fit, pin only on eligible desktop",
+            "primary action fits the initial screen, 44-pixel video targets and current chapter navigation at all five sizes",
+            "mobile menu: open, Escape, restored focus, chapter navigation",
+            "all four project stories open and close by keyboard",
+            "current releases and media precede legacy, DOMINIA roles retain 2004/2025, historical archive works by keyboard",
+            "all five press images decode and retain real source links; documents open at full size",
+            "three publication viewers: fit, actual-size zoom, horizontal pan, keyboard focus trap, Escape and restored focus/scroll",
+            "Russian inquiry: empty and whitespace contacts show an associated inline error, keep focus and create no Telegram draft",
+            "no preselection; two services and prices reach prepared Telegram URL with Unicode, repeated campaign params and Roistat; editing invalidates the draft; no message sent",
+            "locale switch preserves query and repeated campaign values; English document language",
+            "English publication viewer: localized heading, zoom, close and scroll restoration",
+            "English inquiry: localized inline error clears after correction, valid contact prepares the draft",
+            "muted autoplay, explicit pause survives scrolling away/back, manual resume, offscreen pause",
+            "visibilitychange pauses/resumes video with simulated document.hidden",
+            "interrupted manual play preserves healthy video and retry controls (AbortError regression)",
+            "reduced motion: no pin, static live poster, explicit video play works",
+            "without JavaScript: English SSR language, story, native project details, direct contact; form cannot accidentally submit personal fields via GET",
+            "without JavaScript: publication link still opens the original, readable image",
+            "blocked video: real live poster and identity remain visible",
+            "production PWA: new shell cache active, both languages cached, concert videos excluded, offline page renders",
+            "no JavaScript exceptions or console errors in successful browser journeys"
+          ],
+          "viewports": [
+            {
+              "locale": "ru",
+              "width": 1440,
+              "height": 900,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 1366,
+              "height": 768,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 768,
+              "height": 1024,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 390,
+              "height": 844,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 320,
+              "height": 568,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 1440,
+              "height": 900,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 1366,
+              "height": 768,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 768,
+              "height": 1024,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 390,
+              "height": 844,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 320,
+              "height": 568,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            }
+          ],
+          "designMetrics": [
+            {
+              "locale": "ru",
+              "width": 1440,
+              "height": 900,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 746,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 8504,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 1366,
+              "height": 768,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 638,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 8208,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 768,
+              "height": 1024,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 869,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 7505,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 390,
+              "height": 844,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 700,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 9682,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 320,
+              "height": 568,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 498,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 9815,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 1440,
+              "height": 900,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 746,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 8500,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 1366,
+              "height": 768,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 638,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 8203,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 768,
+              "height": 1024,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 869,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 7465,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 390,
+              "height": 844,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 700,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 9804,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 320,
+              "height": 568,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 498,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 9559,
+              "overflow": false
+            }
+          ],
+          "errors": [],
+          "buildId": "wrEHvdT3gV2WSRRztO3JM"
+        },
+        "visual": {
+          "date": "2026-10-13T19:24:20.792Z",
+          "buildId": "wrEHvdT3gV2WSRRztO3JM",
+          "browser": "153.0.8010.12",
+          "passed": true,
+          "metrics": [
+            {
+              "locale": "ru",
+              "width": 1440,
+              "height": 900,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 746,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 8504,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 1366,
+              "height": 768,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 638,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 8208,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 768,
+              "height": 1024,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 869,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 7505,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 390,
+              "height": 844,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 700,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 9682,
+              "overflow": false
+            },
+            {
+              "locale": "ru",
+              "width": 320,
+              "height": 568,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 498,
+              "headings": [
+                "Два петербургских альбома\nв первом туре Grammy",
+                "Tamas в Billboard\nи на первом месте Metalfan",
+                "Поклонник DOMINIA с 2004.\nПродюсер и директор с 2025.",
+                "G1Deon, «Сын» и BEATKOIN:\nработы до 2025 года",
+                "Пришлите демо.\nОбсудим ваш релиз"
+              ],
+              "pageHeight": 9815,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 1440,
+              "height": 900,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 746,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 8500,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 1366,
+              "height": 768,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 638,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 8203,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 768,
+              "height": 1024,
+              "heroRoleFont": "13px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 869,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 7465,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 390,
+              "height": 844,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 700,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 9804,
+              "overflow": false
+            },
+            {
+              "locale": "en",
+              "width": 320,
+              "height": 568,
+              "heroRoleFont": "12px",
+              "albumMetaFont": "11px",
+              "primaryActionBottom": 498,
+              "headings": [
+                "Two Saint Petersburg albums\nin Grammy’s first round",
+                "Tamas in Billboard\nand at #1 on Metalfan",
+                "A DOMINIA fan since 2004.\nProducer and director since 2025.",
+                "G1Deon, The Son and BEATKOIN:\nwork before 2025",
+                "Send a demo.\nLet’s plan your release"
+              ],
+              "pageHeight": 9559,
+              "overflow": false
+            }
+          ],
+          "viewports": [
+            {
+              "locale": "ru",
+              "width": 1440,
+              "height": 900,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 1366,
+              "height": 768,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 768,
+              "height": 1024,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 390,
+              "height": 844,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "ru",
+              "width": 320,
+              "height": 568,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 1440,
+              "height": 900,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 1366,
+              "height": 768,
+              "overflow": false,
+              "pinned": true,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 768,
+              "height": 1024,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 390,
+              "height": 844,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            },
+            {
+              "locale": "en",
+              "width": 320,
+              "height": 568,
+              "overflow": false,
+              "pinned": false,
+              "primaryActionInViewport": true,
+              "videoTargetsAtLeast44": true,
+              "chapterNavigationTracksScroll": true,
+              "publicationFitsViewport": true
+            }
+          ]
+        },
+        "skillReview": {
+          "antiSlop": "passed: повторно проверены RU/EN заголовки и utility copy; конкретные события, реальные источники, отсутствие запрещённых клише и декоративных labels",
+          "frontend": "passed: финальная композиция просмотрена; fit во всех 10 сочетаниях локали/размера, 1:1, focus, ошибки формы и no-JS работают"
+        }
+      },
+      "baselineBuildId": "qi3S7oWCjMWcNO72OdQXp",
+      "resultBuildId": "wrEHvdT3gV2WSRRztO3JM",
+      "sourceHashes": {
+        "app/[locale]/page.tsx": "5a4b40e03dc367af2948f3c45f090e7ca297e96f831c2075768d6b809e6b9fef",
+        "app/layout.tsx": "4251845a0ff156ad76a46e1ba88e46388338a1b85e79b7075e216dfec88a792e",
+        "app/brand.css": "d9ae72eed7de507d2221ef8d2889461cb077db38d046ed70ba6cab1d78e9f946",
+        "app/fonts/Manrope.woff2": "670850eed769a9abd2a303f3350b0e0306e80141b9f598639b081afa851c0182",
+        "app/fonts/Oswald.woff2": "61afde5308df0f4251a1b885159ee4511b2f776d494e70882e6840eaa7012fd2",
+        "components/live-hero.tsx": "8228ea2e3ed429107cff6df2470799ac7daceea09edf259a413dc23b748ccb80",
+        "components/brand-experience.tsx": "dfc611be684bec9fe09ed00d35dc07bf1366178112c1eef91ca1a34c3457b04f",
+        "components/brand-motion.tsx": "60c8578a0df2e664e40c2cf509c89cfad7eb366e665a6d1a16227546e8905713",
+        "components/brand-inquiry.tsx": "5bd3dbdb0cdb0e671740431940f04eb2b29da5143113a730b4febadb5121be53",
+        "lib/brand-content.ts": "3ea7d8d1765299da4e6eb8d1abfbc538198c7c53c1ce3cd65b09a07bd3229daf",
+        "middleware.ts": "790dfb39bc8d249819f065e1b344bcd090bb1a0fc4c6ac4b4fc05dd2e1893e5c",
+        "next.config.mjs": "a6d9720906b71b03cffe436bf70370db07dfc921acc931385ef397f139f540f3",
+        "package.json": "2144218ec6bf5be433ca6c7082ed56fa0c1bc92f522e1b77074c5e8c40763fb4",
+        "package-lock.json": "78dae62b289a50c815160e3633fbda5a5bd4816cc894974707459aa82dfd0d0c",
+        "public/sw.js": "213252f39c8621e13b1820cb41ea982a54caf1cf00c048d567a6d8f162ee7efb",
+        "tests/brand-contract.test.mjs": "753c7152c3ede23052b27345edfef366ac322847aabd37ad0e04bddb05e691d9",
+        "public/media/brand/bach-v4.webp": "67a13ef2bf94474b0b33790aef80da17524facf0ed7aeb8e4c342ac5291cf779",
+        "public/media/brand/live-78-v4.jpg": "0849a9f47c9c9169bd06818d8e6d44ac6a37710a7cb7507411a205710eada5ee",
+        "public/media/brand/live-poster-v4.webp": "5422efa8daf2e018f593b321d229286c2d66c8c8c79556edcbc4cdcab062b554",
+        "public/media/brand/press-78-v4.jpg": "faca26d745f29fe25faaad9f1476d31879113e8e8c2affbe7352788256b4d103",
+        "public/media/brand/tamas-v4.jpg": "e5911b86753b954ac07a24a0d6ea35028664d7337e0d6e181387290ef3a8ff14",
+        "public/media/brand/billboard-dominia.jpg": "63460c892d435742028a8a3709cba0d9e89667ebfe11a7e87655f4b1a9027a33",
+        "public/media/brand/billboard-cover.jpg": "a69ff4f70e19889da2ae28a050174435d95d54dc4926367bac03b952b06786bf",
+        "public/media/brand/metalfan-chart.jpg": "2a3990d6f57d9488284a05d572d0544da7d82ae0234304ff2eebeddc8d0575d6",
+        "public/media/brand/metro-projects.jpg": "cfc61d926e5205a1ecf9643e373f457a73bb1992eee38b257c9d5a7b4bb656ea",
+        "components/press-document.tsx": "18a24e7e15e345b9b197d110b72b5b0302e51e8942498811cf608b406d6a9135"
+      },
+      "qaSourceHash": "ec66ebb6d2198c16b87a2c236da19e8d59678662be7173294d6b9cf1e04e2f33",
+      "evidence": [
+        "iteration-3-form.png",
+        "document-viewer-mobile.png",
+        "design-overview.png"
+      ],
+      "changedFromPrevious": [
+        "app/brand.css",
+        "components/brand-experience.tsx",
+        "components/brand-inquiry.tsx",
+        "lib/brand-content.ts",
+        "public/sw.js"
+      ],
+      "evidenceHashes": {
+        "iteration-3-form.png": "2819688f1063cd897451d907bffb1a2110b243a965a16bf4d2a889d09a9370ed",
+        "document-viewer-mobile.png": "d8860aacbc3dab64ac4d3cabe290df0c13f3e62c75642182340ba8dde86da4ab",
+        "design-overview.png": "353fa85ef7f714027f43697a92bab858e69576ba66838bb311cdc551c65dc64f"
+      }
+    }
+  ],
+  "completedCycles": 3,
+  "finalBuildId": "wrEHvdT3gV2WSRRztO3JM",
+  "finalReviewAt": "2026-10-13T19:28:47.252Z",
+  "cleanup": {
+    "verifiedAt": "2026-10-13T19:30:39.931Z",
+    "temporaryDirectoryAbsent": true,
+    "previewStopped": true,
+    "method": "Windows Recycle Bin; original attachments and unrelated caches preserved"
+  },
+  "ownerAccepted": false,
+  "designPassClaimWithdrawn": true,
+  "correction": "2026-10-14: these are technical and editorial iterations, not three independent visual design passes. Owner rejected the result.",
+  "qaMediaRetention": "2026-10-14: QA screenshots and recordings removed from workspace at owner request. Historical filenames are metadata only; production media and user attachments remain sources.",
+  "subsequentReleaseOwnerAcceptance": {
+    "date": "2026-10-14",
+    "desktop": true,
+    "mobile": true,
+    "feedback": "The owner liked the desktop, especially GSAP, then confirmed the same level on mobile.",
+    "scope": "Final redesigned release; historical small technical cycles remain distinct from design acceptance."
+  }
+}
