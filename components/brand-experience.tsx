@@ -4,13 +4,47 @@ import Image from 'next/image';
 import { ArrowUp, ArrowUpRight, ArrowRight, Menu, Plus, X } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import type { SiteContent } from '@/lib/types';
-import { brandSources, getBrandContent, type BrandContent } from '@/lib/brand-content';
+import { brandSources, dominiaStar, getBrandContent, type BrandContent } from '@/lib/brand-content';
 import { LiveHero } from './live-hero';
 import { BrandMotion } from './brand-motion';
 import { BrandInquiry } from './brand-inquiry';
 import { PressDocument } from './press-document';
 
-const chapterIds = ['home', 'grammy', 'press', 'story', 'contact'] as const;
+const chapterIds = ['home', 'grammy', 'dominia-star', 'press', 'story', 'contact'] as const;
+
+function DominiaStarStory({ copy, locale }: { copy: BrandContent['star']; locale: SiteContent['locale'] }) {
+  const source = { href: brandSources.dominiaManifesto, label: copy.sourceLabel };
+
+  return (
+    <section id="dominia-star" className="brand-star brand-section" aria-labelledby="dominia-star-title">
+      <header className="star-story-heading">
+        <time className="brand-eyebrow" dateTime={dominiaStar.published}>{copy.date}</time>
+        <h2 className="brand-title" id="dominia-star-title">{copy.title}</h2>
+      </header>
+      <div className="star-story-layout">
+        <figure className="star-story-sky">
+          <div className="star-story-sky-frame" data-star-art>
+            <Image {...dominiaStar.sky} alt={copy.skyAlt} sizes="(max-width: 900px) 88vw, 50vw" loading="lazy" unoptimized />
+          </div>
+          <figcaption className="star-story-caption">
+            <strong>{copy.skyLabel}</strong><span>Slooh</span>
+            <span className="star-story-coordinates">{dominiaStar.coordinates}</span>
+          </figcaption>
+        </figure>
+        <div className="star-story-copy">
+          <p className="brand-body">{copy.body}</p>
+          <figure className="star-story-certificate">
+            <div className="star-story-certificate-frame" data-star-art>
+              <PressDocument locale={locale} {...dominiaStar.certificate} alt={copy.certificateAlt} title={copy.certificateTitle} label={copy.certificateAction} className="star-story-certificate-document" sizes="(max-width: 374px) 88vw, 330px" source={source} />
+            </div>
+            <figcaption className="star-story-caption">{copy.certificateCaption} {dominiaStar.certificateNumber}</figcaption>
+          </figure>
+          <a className="brand-text-link star-story-source" href={source.href} target="_blank" rel="noreferrer">{source.label}<ArrowUpRight size={16} aria-hidden="true" /></a>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 function PressCoverage({ copy, locale }: { copy: BrandContent['press']; locale: SiteContent['locale'] }) {
   return (
@@ -110,6 +144,7 @@ export function BrandExperience({ content: site, initialQueryString, initialRois
           </div>
           <aside className="grammy-previous" aria-labelledby="grammy-previous-title"><h3 id="grammy-previous-title">{copy.grammy.previousRound.title}</h3><div><p>{copy.grammy.previousRound.text}</p><a className="brand-text-link" href={copy.grammy.previousRound.href} target="_blank" rel="noreferrer">{copy.grammy.previousRound.sourceLabel}<ArrowUpRight size={15} /></a></div></aside>
         </section>
+        <DominiaStarStory copy={copy.star} locale={site.locale} />
         <PressCoverage copy={copy.press} locale={site.locale} />
         <section className="live-interlude" aria-labelledby="live-title"><div className="live-image"><Image src="/media/brand/live-78-v4.jpg" alt={copy.live.caption} fill sizes="100vw" unoptimized /></div><div className="live-interlude-shade" aria-hidden="true" /><div className="live-interlude-copy" data-reveal><h2 id="live-title" className="brand-title">{copy.live.title.split("\n").map((line, index) => <span className="title-phrase" key={index}>{line}</span>)}</h2><p>{copy.live.body}</p><a className="brand-text-link" href={brandSources.dominia} target="_blank" rel="noreferrer">{copy.live.cta}<ArrowUpRight size={17} /></a></div><p className="live-caption">{copy.live.caption}</p></section>
         <section id="story" className="brand-story brand-section" aria-labelledby="story-title"><div className="story-heading" data-reveal><div><h2 id="story-title" className="brand-title">{copy.story.title.split("\n").map((line, index) => <span className="title-phrase" key={index}>{line}</span>)}</h2></div><p className="brand-body">{copy.story.intro}</p></div>

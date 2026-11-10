@@ -6,6 +6,7 @@ export const brandSources = {
   metro: 'https://www.metronews.ru/novosti/peterbourg/reviews/gruppa-dominia-i-proekt-bach-the-saddest-transcriptions-for-piano-v-otbore-grammy-2192497/',
   television: 'https://78.ru/tv/programs/2026-10-12/vechernee-shou/vechernee-shou-1210261700',
   dominia: 'https://www.dominia.info/',
+  dominiaManifesto: 'https://smi24.net/spb/430308916/',
   tamas: 'https://dominia.bandcamp.com/album/tamas',
   bach: 'https://classical.music.apple.com/us/album/6799122575',
   strategic: 'https://moscowfilmschool.ru/about/events/6560-saund-dizayn-v-igrakh/',
@@ -24,6 +25,14 @@ export const brandSources = {
 } as const;
 
 export const grammyStatus = 'first-round-consideration' as const;
+
+export const dominiaStar = {
+  published: '2026-11-10',
+  certificateNumber: 'RUS32122',
+  coordinates: 'RA 00h 57m 28.99s · Dec +62° 34′ 04.7″',
+  sky: { src: '/media/brand/dominia-star-field.webp', width: 1280, height: 1280 },
+  certificate: { src: '/media/brand/dominia-star-certificate.webp', width: 1280, height: 960 }
+} as const;
 
 const ru = {
   "meta": {
@@ -228,6 +237,18 @@ const ru = {
     "commercial": "Музыка для рекламы: AELF, ВТБ Лизинг, банк «Восточный».",
     "commercialLink": "Композиторские титры",
     "archiveLabel": "Хронология и фильмография, 2003-2024"
+  },
+  "star": {
+    "date": "10 ноября 2026",
+    "title": "Звезда в Кассиопее получила символическое имя DOMINIA",
+    "body": "К выходу манифеста «Право разума на будущее» группа выбрала звезду HD 5458. В манифесте DOMINIA размышляет о том, как человек и искусственный интеллект могли бы вместе исследовать Вселенную.",
+    "skyLabel": "DOMINIA · HD 5458 · Кассиопея",
+    "skyAlt": "На снимке звёздного поля Кассиопеи красная линия указывает на звезду HD 5458.",
+    "certificateCaption": "Сертификат",
+    "certificateTitle": "Сертификат именования звезды DOMINIA",
+    "certificateAlt": "Сертификат RUS32122 о символическом именовании звезды DOMINIA, датированный 6 ноября 2026 года.",
+    "certificateAction": "Рассмотреть сертификат",
+    "sourceLabel": "Читать о манифесте"
   },
   "press": {
     "eyebrow": "ОКТЯБРЬ 2026",
@@ -507,6 +528,18 @@ const en: typeof ru = {
     "commercial": "Music for advertising: AELF, VTB Leasing and Vostochny Bank.",
     "commercialLink": "Composer credits",
     "archiveLabel": "Timeline and film scores, 2003-2024"
+  },
+  "star": {
+    "date": "10 November 2026",
+    "title": "A star in Cassiopeia received the symbolic name DOMINIA",
+    "body": "To mark the release of its manifesto, The Right of Intelligence to a Future, the band chose the star HD 5458. In it, DOMINIA reflects on how humans and artificial intelligence might explore the universe together.",
+    "skyLabel": "DOMINIA · HD 5458 · Cassiopeia",
+    "skyAlt": "A red line points to HD 5458 in a photograph of the star field in Cassiopeia.",
+    "certificateCaption": "Certificate",
+    "certificateTitle": "DOMINIA star naming certificate",
+    "certificateAlt": "Certificate RUS32122, dated 6 November 2026, recording the symbolic name DOMINIA for the star.",
+    "certificateAction": "View the certificate",
+    "sourceLabel": "Read about the manifesto (in Russian)"
   },
   "press": {
     "eyebrow": "OCTOBER 2026",

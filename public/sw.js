@@ -1,4 +1,4 @@
-const VERSION = 'polstan-pwa-v9-kinetic-brand';
+const VERSION = 'polstan-pwa-v11-dominia-headline';
 const SHELL_CACHE = `${VERSION}-shell`;
 const STATIC_CACHE = `${VERSION}-static`;
 const MEDIA_CACHE = `${VERSION}-media`;

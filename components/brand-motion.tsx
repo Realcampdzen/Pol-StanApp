@@ -174,16 +174,24 @@ export function BrandMotion({ scope }: { scope: RefObject<HTMLDivElement | null>
         });
         splits.push(split);
       });
-      root.querySelectorAll<HTMLElement>('.grammy-context>.brand-body, .grammy-previous p, .album-description, .press-document-body, .press-tv>div>p:not(.brand-eyebrow), .press-metro>div>p:not(.brand-eyebrow), .live-interlude-copy>p, .story-heading>.brand-body, .contact-heading>.brand-body').forEach((paragraph) => {
+      root.querySelectorAll<HTMLElement>('.grammy-context>.brand-body, .grammy-previous p, .album-description, .star-story-copy>.brand-body, .press-document-body, .press-tv>div>p:not(.brand-eyebrow), .press-metro>div>p:not(.brand-eyebrow), .live-interlude-copy>p, .story-heading>.brand-body, .contact-heading>.brand-body').forEach((paragraph) => {
         if (!eligible(paragraph)) return;
-        const split = SplitText.create(paragraph, { type: 'words', tag: 'span', aria: 'auto', wordsClass: 'motion-word' });
-        gsap.set(split.words, { display: 'inline-block', transformOrigin: 'left bottom' });
-        sequence(paragraph).addLabel('gather', 0)
-          .fromTo(split.words, { opacity: .08, y: 35, rotationX: -65 }, { opacity: 1, y: -3, rotationX: 0, duration: .7, stagger: { amount: .65 }, ease: 'power2.out' }, 'gather')
-          .addLabel('read', .72).to(split.words, { y: 0, duration: .35, stagger: { amount: .55 } }, 'read');
+        const starLead = paragraph.matches('.star-story-copy>.brand-body');
+        const revealWords = ({ words }: SplitText) => {
+          gsap.set(words, { display: 'inline-block', transformOrigin: 'left bottom' });
+          return sequence(paragraph).addLabel('gather', 0)
+            .fromTo(words, { opacity: .08, y: 35, rotationX: -65 }, { opacity: 1, y: -3, rotationX: 0, duration: .7, stagger: { amount: .65 }, ease: 'power2.out' }, 'gather')
+            .addLabel('read', .72).to(words, { y: 0, duration: .35, stagger: { amount: .55 } }, 'read');
+        };
+        // Keep this long lead's moving words inside their own lines at narrow widths.
+        const split = SplitText.create(paragraph, {
+          type: starLead ? 'lines,words' : 'words', tag: 'span', aria: 'auto', wordsClass: 'motion-word',
+          ...(starLead ? { mask: 'lines' as const, autoSplit: true, linesClass: 'motion-line', onSplit: revealWords } : {})
+        });
+        if (!starLead) revealWords(split);
         splits.push(split);
       });
-      root.querySelectorAll<HTMLElement>('.album-art, .billboard-pages, .chart-document, .press-tv-image, .press-metro-image').forEach((art, index) => {
+      root.querySelectorAll<HTMLElement>('.album-art, .brand-star [data-star-art], .billboard-pages, .chart-document, .press-tv-image, .press-metro-image').forEach((art, index) => {
         if (!eligible(art)) return;
         const images = art.querySelectorAll('img');
         sequence(art).addLabel('frame', 0)
@@ -194,7 +202,7 @@ export function BrandMotion({ scope }: { scope: RefObject<HTMLDivElement | null>
       });
       // Dates, captions, document actions and sources receive the same visible
       // arrival rhythm. Form fields and text inside native viewers stay static.
-      const captions = '.brand-eyebrow, .grammy-year, .grammy-status, .grammy-status-note, .album-meta, .album-subtitle, .album-credits>p:not(.brand-eyebrow), .album-categories ul, .press-document figcaption, .press-document-action, .press-tv small, .live-caption, .project-preview, .brand-footer p, .brand-footer>div:nth-child(2)';
+      const captions = '.brand-eyebrow, .grammy-year, .grammy-status, .grammy-status-note, .album-meta, .album-subtitle, .album-credits>p:not(.brand-eyebrow), .album-categories ul, .star-story-caption, .press-document figcaption, .press-document-action, .press-tv small, .live-caption, .project-preview, .brand-footer p, .brand-footer>div:nth-child(2)';
       root.querySelectorAll<HTMLElement>(captions).forEach((caption) => {
         if (!eligible(caption) || caption.closest('.brand-hero, .brand-form, .collaboration-catalog, .inquiry-selection') || caption.parentElement?.closest('.album-meta')) return;
         sequence(caption).addLabel('hidden', 0)
